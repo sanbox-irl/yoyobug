@@ -2,7 +2,7 @@
     "id": "e4b53fa5-9ecc-4aa6-a7f1-d753f77e598a",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_inputterminal",
+    "name": "obj_input_terminal",
     "eventList": [
         {
             "id": "95efe4be-10bf-4bfc-add4-a207be614463",
@@ -31,6 +31,16 @@
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "e4b53fa5-9ecc-4aa6-a7f1-d753f77e598a"
+        },
+        {
+            "id": "e2e9a086-a5e1-4621-a46d-ce19d6a42665",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 64,
             "eventtype": 8,
             "m_owner": "e4b53fa5-9ecc-4aa6-a7f1-d753f77e598a"
         }
