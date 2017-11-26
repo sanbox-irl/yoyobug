@@ -17,6 +17,6 @@ if !(command_result == "")
 if (	!(user_input == "")		||	(count_to_clear		<=	0))
 	{
 	command_result = "";
-	count_to_clear = 120;
+	count_to_clear = 5*60;
 	}
 

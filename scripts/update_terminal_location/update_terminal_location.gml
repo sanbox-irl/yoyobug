@@ -10,7 +10,6 @@ if point_in_rectangle(	mouse_x,			mouse_y,
 	if mouse_check_button(mb_left)
 		{
 		selected = true;
-		show_debug_message("yup")
 		} else selected = false;
 }
 if selected_at_first

@@ -1,15 +1,11 @@
 var command = argument[0];
 
-var array = string_split(command, " ");
+var array = string_split(command, "-");
 if (string_length(array[0]) > 0)
 {
-	if (string_char_at(array[0],1) == "/")
-	{
-		array[0] = string_delete(array[0], 1, 1);
-		var script_index = asset_get_index(array[0] + "_execute");
-		if (script_exists(script_index))
-		{	
-			command_result = string(script_execute(script_index,array));
-		} else command_result = "Unknown command, Dinklebot. Try help for a list."
-	}	
+	var script_index = asset_get_index(array[0] + "_execute");
+	if (script_exists(script_index))
+	{	
+		command_result = string(script_execute(script_index,array));
+	} else command_result = "Unknown command, Dinklebot. Try help for a list."
 }
