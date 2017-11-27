@@ -1,5 +1,7 @@
 user_input = "";
+display_string="";
 command_string = "";
+run = false;
 command_result = "";
 
 start_x = 10;
