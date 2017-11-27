@@ -15,7 +15,3 @@ draw_text(_term_x + _start_x,_term_y+_start_y,">" + user_input);
 draw_text(_term_x + _start_x, _term_y + _start_y + _line_height, command_string);
 draw_text_ext(_term_x + _start_x, _term_y+ _start_y + _line_height * 2, command_result,-1,term_width*xscale);
 
-
-show_debug_message(string("Untouched Start " + string(start_x)));
-show_debug_message(string("Local start" + string(_start_x)));
-
