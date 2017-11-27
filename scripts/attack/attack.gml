@@ -1,5 +1,5 @@
 var type = argument[0];
-var returnable = "Get 'em, boy!"
+var returnable = "Got 'em, boys!"
 
 if type = "basic"
 {
@@ -12,9 +12,11 @@ if type = "basic"
 			}
 		vspd=(-flip)*(3);
 	
-	if counter > 5
+	if counter > 100 || !(obj_input_terminal.command_string == "attack")
 		{
 		vspd = 0;
+		x = starting_x;
+		y = starting_y;
 		counter = 0;
 		obj_input_terminal.run = false;
 		flip = 1;
