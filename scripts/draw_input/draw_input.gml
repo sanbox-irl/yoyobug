@@ -1,6 +1,6 @@
 //Figure out Scaling
-var xscale = view_wport[0]/480;
-var yscale = view_hport[0]/270;
+var xscale = view_wport[0]/obj_camera.width;
+var yscale = view_hport[0]/obj_camera.height;
 
 var _term_x		=	term_x*		xscale;
 var _term_y		=	term_y*		yscale;
