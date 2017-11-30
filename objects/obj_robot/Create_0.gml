@@ -2,14 +2,11 @@
 x_start = 9;
 y_start = 1;
 
-x = tile_width*x_start;
-y = tile_width*y_start;
+move_dir = 0;
 
-//var id_ = id;
 
-//	if (obj_room_controller.game_grid[# x_start,y_start] == "")	{
-//		obj_room_controller.game_grid[# x_start,y_start] = id;	
-//	}
+x_to = x;
+y_to = y;
 
 velocity_ = [0,0];
 
@@ -28,3 +25,4 @@ flip = 1;
 counter = 0;
 
 image_speed = 0;
+
