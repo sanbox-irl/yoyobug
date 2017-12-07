@@ -11,7 +11,5 @@ line_height = string_height(">");
 
 
 count_to_clear = 60;
-
-random_execution_grid = ds_grid_create(1000,1000)
-distribution_stack = ds_stack_create()
-
+counter = 0;
+flick_cursor = 1;

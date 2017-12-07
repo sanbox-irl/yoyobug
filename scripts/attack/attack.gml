@@ -1,25 +1,19 @@
-var type = argument[0];
-var returnable = "Got 'em, boys!"
+var dir = argument[0];
+var returnable = "Attacking..."
 
-if type = "basic"
-{
-	with obj_robot	{
-		if place_meeting(x,y+vspd,obj_wall)	{
-			flip*= -1;
-			counter +=1;
-			}
-		vspd=(-flip)*(3);
-	
-		if counter > 100 || !(obj_input_terminal.command_string == "attack")	{
-			vspd = 0;
-			x = starting_x;
-			y = starting_y;
-			counter = 0;
-			obj_input_terminal.run = false;
-			flip = 1;
-			return returnable;
-			}
-	}
+var attack_x = lengthdir_x(tile_width,dir);
+var attack_y = lengthdir_y(tile_width,dir);
+
+var robot_number = instance_number(obj_robot);
+var robot = 0;
+
+for (var i = 0; i < robot_number; ++i) {
+    robot[i] = instance_find(obj_robot,i);
+	robot[i].attack_end_x = robot[i].x + attack_x;
+	robot[i].attack_end_y = robot[i].y + attack_y;
+	robot[i].attack_dir = dir;
+	missile[i] = instance_create_layer(robot[i].attack_end_x,robot[i].attack_end_y,"Instances",obj_missile);
 }
 
-return "Attacking..."
+run=false;
+return returnable;

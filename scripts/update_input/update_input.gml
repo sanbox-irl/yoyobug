@@ -10,16 +10,6 @@ if (keyboard_check_pressed(vk_enter))
 	run = true;
 }
 
-if !(command_result == "")
-	{
-	count_to_clear-=global.dt;
-	}
-	
-if (	!(user_input == "")		||	(count_to_clear		<=	0))
-	{
-	command_result = "";
-	count_to_clear = 5*60;
-	}
 if run
 	{
 run_command(command_string);
