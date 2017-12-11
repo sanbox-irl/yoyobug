@@ -15,16 +15,16 @@ if count < 3	{
 
 ///Find the place of the first tower.
 do {
-	x_place[0]	= irandom_range(1,grid_width);	//Do 1 so we're in the grid.
-	y_place[0] = irandom_range(2,grid_height);	//Two so we're in the play area.
-} until (game_grid[# x_place[0],y_place[0]] == noone);
+	x_place[0]	= irandom_range(1,global.grid_width);	//Do 1 so we're in the grid.
+	y_place[0] = irandom_range(2,global.grid_height);	//Two so we're in the play area.
+} until (global.game_grid[# x_place[0],y_place[0]] == noone);
 
 ///Make the towers.
 for (var i = 1; i < number; ++i) {
 	do {
-	    x_place[i] = irandom_range(1,grid_width)
-		y_place[i] = irandom_range(2,grid_height);
-	} until ((game_grid[# x_place[i],y_place[i]]== noone) &&
+	    x_place[i] = irandom_range(1,global.grid_width)
+		y_place[i] = irandom_range(2,global.grid_height);
+	} until ((global.game_grid[# x_place[i],y_place[i]]== noone) &&
 			 (point_distance(x_place[i]*tile_width,y_place[i]*tile_width,x_place[i-1]*tile_width,y_place[i-1]*tile_width)>tile_width*2)
 			);
 }

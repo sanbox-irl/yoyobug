@@ -9,21 +9,21 @@ var _len = tile_width;
 var robots_number = instance_number(obj_robot)
 var robot = 0;
 
-	for (var i = 0; i < robots_number; ++i) {
-	    robot[i]		= instance_find(obj_robot,i);
-		var		x_move	= lengthdir_x(_len,dir_ang);
-		var		y_move	= lengthdir_y(_len,dir_ang);
+for (var i = 0; i < robots_number; ++i) {
+	robot[i]		= instance_find(obj_robot,i);
+	var		x_move	= lengthdir_x(_len,dir_ang);
+	var		y_move	= lengthdir_y(_len,dir_ang);
 
-		for (var j = 1; j < (real(magnitude)+1); ++j) {
-			if (!	(	instance_place(	robot[i].x+x_move*j,
-										robot[i].y+y_move*j,obj_solid)	)	){
-			robot[i].x_to = robot[i].x+x_move*j;
-			robot[i].y_to = robot[i].y+y_move*j;
-			} else return;
-		}
-		robot[i].move_dir		= dir_ang;
-		robot[i].move_magnitude = real(magnitude);
+	for (var j = 1; j < (real(magnitude)+1); ++j) {
+		if (!	(	instance_place(	robot[i].x+x_move*j,
+									robot[i].y+y_move*j,obj_solid)	)	){
+		robot[i].x_to = robot[i].x+x_move*j;
+		robot[i].y_to = robot[i].y+y_move*j;
+		} else break;
 	}
+	robot[i].move_dir		= dir_ang;
+	robot[i].move_magnitude = real(magnitude);
+}
 
 _returnable = "Droid position altered." 
 }	else {
