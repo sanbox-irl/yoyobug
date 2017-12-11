@@ -9,6 +9,6 @@ x_to = x;
 y_to =y;
 
 dir = down;
-
+spr = spr_enemy_bot_down;
 
 show_debug_message(target);
