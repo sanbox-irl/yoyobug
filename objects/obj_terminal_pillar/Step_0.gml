@@ -1,9 +1,19 @@
-timer+=global.dt;
-scale	+=	global.dt/draw_tower_time;
-
-if timer >= draw_tower_time
-	{
-	scale = wave(0.95,1.05,1,0);
-	draw_tower = true;	
+if init_draw	{
+	tower_height+=global.dt;
+	screen_shake(1,1);
+	if tower_height > sprite_height-1	{
+		tower_height = sprite_height;
+		init_draw = false;
 	}
+}
 
+if end_draw		{
+	tower_height-=global.dt*3;
+	screen_shake(1,1);
+	if tower_height <= 0
+		{
+		instance_destroy();	
+		}
+	
+	
+}

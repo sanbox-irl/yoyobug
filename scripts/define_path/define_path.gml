@@ -8,6 +8,5 @@ if !(mp_grid_path(global.AI_grid,global.path,sx,sy,tile_width*8,tile_width*8,fal
 	return false;
 	}	else	{
 		path_set_kind(global.path,0);
-		show_debug_message("it worked?");
 		return true;
 	}

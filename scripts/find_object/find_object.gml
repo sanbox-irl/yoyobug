@@ -40,4 +40,4 @@ switch (dir) {
 
 x_to = x+lengthdir_x(tile_width,dir);
 y_to = y+lengthdir_y(tile_width,dir);
-
+return dir;

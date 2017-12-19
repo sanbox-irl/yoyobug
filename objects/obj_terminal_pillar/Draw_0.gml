@@ -1,7 +1,9 @@
-draw_sprite_ext(spr_white_circle_64x64,0,bbox_left+sprite_width/2,bbox_bottom-sprite_get_height(spr_white_circle_64x64)/4,image_xscale*scale,image_yscale*scale,0,color,1)
-if draw_tower	{
-	draw_self();	
-}
+if init_draw	{
+	draw_sprite_part(sprite_index,image_index,0,0,sprite_width,tower_height,x,y-tower_height+tile_width);
+} else if end_draw	{
+	draw_sprite_part(sprite_index,image_index,0,0,sprite_width,tower_height,x,y-tower_height+tile_width);
+	} else draw_self();
 
-
-
+var rad_x	= x+tile_width/2;
+var rad_y	= y-tile_width/2;
+var rad		= tile_width/4;

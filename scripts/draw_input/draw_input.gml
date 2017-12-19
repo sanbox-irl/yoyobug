@@ -1,6 +1,10 @@
 //Figure out Scaling
-var xscale = view_wport[0]/obj_camera.width;
-var yscale = view_hport[0]/obj_camera.height;
+var cam = obj_camera;
+var xscale = view_wport[0]/cam.width;
+var yscale = view_hport[0]/cam.height;
+
+var x_shake = cam.x_to - cam.x;
+
 
 var _term_x		=	term_x*		xscale;
 var _term_y		=	term_y*		yscale;
@@ -13,9 +17,9 @@ var _letter_length = string_width("a")*1.5;
 
 draw_set_color(c_lime);
 draw_set_font(fnt_debug);
-draw_text(_term_x + _start_x,_term_y+_start_y,">" + user_input); //Draws the wrods
-draw_text(_term_x + _start_x, _term_y + _start_y + _line_height, display_string); //Draws the past command.
-draw_text_ext(_term_x + _start_x, _term_y+ _start_y + _line_height * 2, command_result,-1,term_width*xscale-_start_x*1.5); //Draws the result.
+draw_text(x_shake+_term_x + _start_x,_term_y+_start_y,">" + user_input); //Draws the wrods
+draw_text(x_shake+_term_x + _start_x, _term_y + _start_y + _line_height, display_string); //Draws the past command.
+draw_text_ext(x_shake+_term_x + _start_x, _term_y+ _start_y + _line_height * 2, command_result,-1,term_width*xscale-_start_x*1.5); //Draws the result.
 
 
 if counter mod 60 = 0	{
@@ -27,3 +31,4 @@ if (flick_cursor == 1)	{
 draw_rectangle(_term_x + _start_x + _line_length + _letter_length,_term_y+_start_y,
 				_term_x + _start_x + _line_length + _letter_length+10,_term_y+_start_y+15, false);
 }
+

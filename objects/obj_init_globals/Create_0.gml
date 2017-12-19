@@ -17,3 +17,4 @@ global.grid_height = 10;
 
 global.game_grid = ds_grid_create(global.grid_width,global.grid_height);
 
+global.dev_mode = true;
