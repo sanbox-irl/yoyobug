@@ -1,5 +1,4 @@
-randomize();
-var count = argument0;
+
 
 //Find the number of towers we're making.
 if count < 3	{
@@ -30,7 +29,6 @@ for (var i = 1; i < number; ++i) {
 }
 
 for (var i = 0; i < number; ++i) {
-    randomize();
 	x_place[i]*=tile_width;
 	y_place[i]*=tile_width;
 	spawning_tower[i]				= instance_create_layer(x_place[i],y_place[i],"Instances",obj_terminal_pillar);

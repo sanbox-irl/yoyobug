@@ -1,0 +1,1 @@
+part_system_destroy(global.part_sys_terminal_appears);

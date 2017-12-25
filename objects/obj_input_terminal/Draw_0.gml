@@ -9,6 +9,3 @@ draw_rectangle(term_x,term_y,term_x+term_width-1,term_y-5,false);
 
 draw_set_color(c_lime);
 draw_set_font(fnt_timer);
-
-
-draw_text_color(term_x+term_width-string_width(check_how_left)-10,term_y+term_height-string_height(check_how_left)-5,check_how_left,timer_color,timer_color,timer_color,timer_color,1);

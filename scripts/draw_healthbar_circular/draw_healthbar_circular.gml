@@ -14,7 +14,7 @@ sang=argument3
 hp=argument4
 tex=sprite_get_texture(argument5,0)
 steps=200
-thick=sprite_get_height(argument5)
+thick=sprite_get_height(argument5)/2
 
 if ceil(steps*(hp/100)) >= 1 {
     

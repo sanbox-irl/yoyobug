@@ -1,0 +1,10 @@
+global.part_sys_terminal_appears	=   part_system_create_layer("Walls",true);
+global.dirt_type					=	part_type_create();
+part_type_sprite(global.dirt_type,spr_new_particles,false,false,true);
+part_type_size(global.dirt_type,0.2,0.3,0,0);
+purple1 = make_color_rgb(63,54,86);
+blue1	= make_color_rgb(66,91,121);
+part_type_color2(global.dirt_type,purple1,blue1);
+part_type_alpha2(global.dirt_type,1,0.5);
+part_type_blend(global.dirt_type,true);
+part_type_orientation(global.dirt_type,0,360,3,1,true);

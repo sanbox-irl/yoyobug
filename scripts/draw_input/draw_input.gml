@@ -1,10 +1,16 @@
 //Figure out Scaling
 var cam = obj_camera;
-var xscale = view_wport[0]/cam.width;
-var yscale = view_hport[0]/cam.height;
+global.x_scale	= display_get_gui_width()/cam.width;
+global.y_scale	= display_get_gui_height()/cam.height;
+
+var xscale = global.x_scale;
+var yscale = global.y_scale;
 
 var x_shake = cam.x_to - cam.x;
 
+
+draw_set_color(c_lime);
+draw_set_font(fnt_debug);
 
 var _term_x		=	term_x*		xscale;
 var _term_y		=	term_y*		yscale;
@@ -17,9 +23,9 @@ var _letter_length = string_width("a")*1.5;
 
 draw_set_color(c_lime);
 draw_set_font(fnt_debug);
-draw_text(x_shake+_term_x + _start_x,_term_y+_start_y,">" + user_input); //Draws the wrods
-draw_text(x_shake+_term_x + _start_x, _term_y + _start_y + _line_height, display_string); //Draws the past command.
-draw_text_ext(x_shake+_term_x + _start_x, _term_y+ _start_y + _line_height * 2, command_result,-1,term_width*xscale-_start_x*1.5); //Draws the result.
+draw_text(_term_x + _start_x,_term_y+_start_y,">" + user_input); //Draws the wrods
+draw_text(_term_x + _start_x, _term_y + _start_y + _line_height, display_string); //Draws the past command.
+draw_text_ext(_term_x + _start_x, _term_y+ _start_y + _line_height * 2, command_result,-1,term_width*xscale-_start_x*1.5); //Draws the result.
 
 
 if counter mod 60 = 0	{

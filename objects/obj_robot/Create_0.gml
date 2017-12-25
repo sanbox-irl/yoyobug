@@ -1,4 +1,6 @@
 //Movement Variables
+event_inherited();
+
 x_start = 9;
 y_start = 1;
 calculate_complete = false;
@@ -28,3 +30,6 @@ move_magnitude = 1;
 
 counter = 0;
 image_speed = 0.5;
+
+
+sat = 1;

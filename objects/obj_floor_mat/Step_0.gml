@@ -1,5 +1,18 @@
-var pillar = instance_nearest(x,y,obj_terminal_pillar)
+if !instance_exists(originator_tower)	{
+	instance_destroy(id);	
+} else	{
+var tower = originator_tower;
+scale = 2*(tower.tower_height/tower.sprite_height);
+}
 
-if not pillar.init_draw && not pillar.end_draw	{	
-	scale = wave(0.95,1.05,1,0);
+if instance_number(obj_terminal) > 0	{
+	var term = term_inst;
+	if instance_exists(term_inst)	{
+		can_draw_term = true;
+		term_rad_x = term.x+tile_width/2;
+		term_rad_y = term.y+tile_width/2;
+		if term.sprite_index = spr_terminal	{
+		term_scale = 1.5*(term.image_index+1)/(term.image_number);
+	}
+	}
 }

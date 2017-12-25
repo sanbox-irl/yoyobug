@@ -29,6 +29,17 @@ switch (move_dir) {
 
 if place_meeting(x,y,obj_enemy_robot)
 	{
-	instance_destroy();
+	to_be_destroyed = true;
 	}
 
+
+if to_be_destroyed	{
+	debug_message(string("Killing Robot ") + string(id));
+	image_speed = 0;
+	sat-=0.01*global.dt;
+	
+	if sat <= 0	{
+		instance_destroy(id);
+		screen_shake(2,30);
+	}
+}

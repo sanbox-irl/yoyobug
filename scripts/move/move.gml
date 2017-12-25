@@ -11,6 +11,7 @@ var robot = 0;
 
 for (var i = 0; i < robots_number; ++i) {
 	robot[i]		= instance_find(obj_robot,i);
+	if robot[i].to_be_destroyed == false	{
 	var		x_move	= lengthdir_x(_len,dir_ang);
 	var		y_move	= lengthdir_y(_len,dir_ang);
 
@@ -23,6 +24,7 @@ for (var i = 0; i < robots_number; ++i) {
 	}
 	robot[i].move_dir		= dir_ang;
 	robot[i].move_magnitude = real(magnitude);
+	}
 }
 
 _returnable = "Droid position altered." 

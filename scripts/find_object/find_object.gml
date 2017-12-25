@@ -7,10 +7,16 @@ if !(ds_exists(global.game_grid,ds_type_grid))	{
 			return false;	
 		}
 
-var _x_place	= ds_grid_value_x(global.game_grid,0,0,global.grid_width,global.grid_height,target);
-var _y_place	= ds_grid_value_y(global.game_grid,0,0,global.grid_width,global.grid_height,target);
+_target_place[x_array]	= ds_grid_value_x(global.game_grid,0,0,global.grid_width,global.grid_height,target)+1;
+_target_place[y_array]	= ds_grid_value_y(global.game_grid,0,0,global.grid_width,global.grid_height,target)+1;
 
-dir = point_direction(x,y,_x_place*tile_width,_y_place*tile_width);
+
+
+for (var i = 0; i < array_length_1d(_target_place); ++i) {
+    _target_place[i]*=tile_width;
+}
+
+dir = point_direction(x,y,_target_place[x_array],_target_place[y_array]);
 
 if (dir < 45) || (dir > 315)		{
 	dir = right;	
@@ -36,6 +42,7 @@ switch (dir) {
 		dir = left;
 		break;
 }
+
 
 
 x_to = x+lengthdir_x(tile_width,dir);

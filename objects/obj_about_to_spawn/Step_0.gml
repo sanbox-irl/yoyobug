@@ -10,7 +10,7 @@
 
 counter+=global.dt;
 
-small_number+=1/2;
+small_number+=2*global.dt;
 
 if (radius-small_number <= 0)	{
 	screen_shake(1,1);

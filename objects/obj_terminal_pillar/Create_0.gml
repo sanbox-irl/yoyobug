@@ -9,6 +9,10 @@ end_draw = false;
 timer = 0
 draw_timer = 0;
 
-var inst = instance_create_layer(x,y,"Background_Color",obj_floor_mat);
-inst.color = color;
-inst.scale = scale;
+//Booleans
+find_your_terminal	= true;
+make_a_floor_mat	= true;
+tower_locked		= false;
+terminal_inst		= noone;
+
+electrified = false;

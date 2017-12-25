@@ -1,10 +1,15 @@
 //Move the guys!
-if global.enter		{
+if obj_robot_controller.update_enemy		{
+debug_message("Updated!");
+
 	spr = find_object();
 	if spr == false	{
 		target = instance_nearest(x,y,obj_robot);
 		spr = find_object();
 	}
+
+
+
 
 
 switch (spr) {

@@ -1,7 +1,7 @@
 var longitude = room_width/tile_width;
 var latitude = room_height/tile_width;
 draw_set_color(c_white);
-draw_set_alpha(0.3);
+draw_set_alpha(0.5);
 
 //Drawing North South Lines
 for (var i = 1; i < longitude; i++) {

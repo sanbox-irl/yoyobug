@@ -7,7 +7,7 @@
         "e4b53fa5-9ecc-4aa6-a7f1-d753f77e598a"
     ],
     "filterType": "GMObject",
-    "folderName": "Terminal Objects",
+    "folderName": "Inputs",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
