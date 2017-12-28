@@ -34,12 +34,17 @@ if place_meeting(x,y,obj_enemy_robot)
 
 
 if to_be_destroyed	{
+	if sat <= 0	{
+		if make_once	{
+		var explo_id = instance_create_layer(x,y,"Background_Instances",obj_explosions);
+		explo_id.caller = id;
+		screen_shake(2,30);
+		make_once = false;
+		}
+	} else	{
 	debug_message(string("Killing Robot ") + string(id));
 	image_speed = 0;
 	sat-=0.01*global.dt;
-	
-	if sat <= 0	{
-		instance_destroy(id);
-		screen_shake(2,30);
+		
 	}
 }

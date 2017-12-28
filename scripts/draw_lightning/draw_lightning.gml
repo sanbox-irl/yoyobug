@@ -39,7 +39,8 @@ repeat (5000) { // edit for line segment limit
     //draw_set_alpha(alpha * 0.3)
     //draw_line_width(px, py, cx, cy, 3.7)
     //draw_set_alpha(alpha * 0.7)
-	
+
+	//draw_line_width_spr(px,py,cx,cy,1,draw_get_color(),draw_get_alpha());
     draw_line_width(px, py, cx, cy, 1)
     // exit condition:
     if (i >= l) break

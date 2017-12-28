@@ -21,3 +21,5 @@ view_camera[0] = camera;
 shake_length = 0;
 shake_magnitude = 0;
 shake_remain = 0;
+
+

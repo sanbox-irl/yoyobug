@@ -1,15 +1,16 @@
 var longitude = room_width/tile_width;
 var latitude = room_height/tile_width;
-draw_set_color(c_white);
-draw_set_alpha(0.5);
+var size = 1
 
-//Drawing North South Lines
+
+//Drawing Up-Down do Lines
 for (var i = 1; i < longitude; i++) {
-	draw_line(tile_width*i,tile_width,tile_width*i,room_height-8);
+	draw_sprite_stretched_ext(spr_onepixel,0,tile_width*i,tile_width,size,room_height-tile_width-7,c_black,0.1);
+	
 }
 
 //Drawing East-West Lines
 for (var i = 1; i<latitude; ++i) {
-	draw_line(tile_width,tile_width*i,room_width-tile_width,tile_width*i);
+	draw_sprite_stretched_ext(spr_onepixel,0,tile_width,tile_width*i,room_width-(2*tile_width),size,c_black,0.1);
 }
 draw_set_alpha(1);

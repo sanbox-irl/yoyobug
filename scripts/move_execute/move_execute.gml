@@ -1,8 +1,9 @@
 var params = argument0;
-
 var returnable = "";
+var length = array_length_1d(params);
 
-if array_length_1d(params) = 2 || 3	{
+
+if (length == 2) || (length == 3)	{
 	var dir_ang = "";
 	//Figure out the Direction with Parameter 1.
 	switch (params[1]) {
@@ -21,7 +22,7 @@ if array_length_1d(params) = 2 || 3	{
 	}
 	//figure out the Magntiude with Number 1;
 	var number = 1;
-	if (array_length_1d(params) == 3)
+	if (length == 3)
 		{
 		number = convert_string_to_real_number(params[2])	
 		}
@@ -30,9 +31,9 @@ if array_length_1d(params) = 2 || 3	{
 	return move(dir_ang,number);
 	
 	} 
-else if array_length_1d(params) = 1	{
+else if length = 1	{
 	returnable = "ERROR\nSpecify -direction, i.e. 'move-right'"
-} else if array_length_1d(params) > 3	{
+} else if length > 3	{
 	returnable = "ERROR\nToo many parameters. Can only move one direction!\nSpecify -direction, i.e. 'move-right'";
 }
 	

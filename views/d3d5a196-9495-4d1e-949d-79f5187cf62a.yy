@@ -15,7 +15,10 @@
         "93623de0-f924-499a-abb9-087f084d12e0",
         "008c2a77-0d18-4cda-aa19-01763652521b",
         "39453c73-f089-40e7-891e-dc8bb63fd930",
-        "fcafc7f8-4377-441c-b585-2c01389dfcad"
+        "fcafc7f8-4377-441c-b585-2c01389dfcad",
+        "0e1c482a-2d35-462a-a940-422a7f57c1a9",
+        "a0becfaf-2626-49c4-8169-c1692ee18e47",
+        "abfe7193-9313-48ab-acca-ee462c5f9339"
     ],
     "filterType": "GMSprite",
     "folderName": "Unused Sprites",

@@ -10,4 +10,10 @@ global.game_grid = ds_grid_create(global.grid_width,global.grid_height);
 
 global.dev_mode = true;
 
+global.start = false;
+
+if window_get_fullscreen()	{
+	global.fullscreen = true;	
+} else global.fullscreen = false;
+
 init_part();

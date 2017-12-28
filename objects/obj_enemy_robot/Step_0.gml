@@ -4,13 +4,8 @@ debug_message("Updated!");
 
 	spr = find_object();
 	if spr == false	{
-		target = instance_nearest(x,y,obj_robot);
 		spr = find_object();
 	}
-
-
-
-
 
 switch (spr) {
     case 90:
@@ -30,7 +25,12 @@ switch (spr) {
 
 }
 
-x = lerp(x,x_to,0.2);
-y = lerp(y,y_to,0.2);
+if point_distance(x,y,x_to,y_to) > 0.1	{
+	x = lerp(x,x_to,0.2);
+	y = lerp(y,y_to,0.2);
+} else	{
+	x = x_to;
+	y = y_to;
+}
 
 

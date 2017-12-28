@@ -6,7 +6,8 @@
     "children": [
         "1678aa1d-c170-4982-b40a-46679971e246",
         "36e20221-ca4d-47ab-8647-12a56b32a495",
-        "60d62b50-79c5-4386-8841-759276c64f1c"
+        "60d62b50-79c5-4386-8841-759276c64f1c",
+        "3541cdf3-7985-471a-a4a3-61f846f353ed"
     ],
     "filterType": "GMScript",
     "folderName": "State Scripts - Robots",

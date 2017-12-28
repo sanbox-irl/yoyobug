@@ -3,6 +3,15 @@ var magnitude = argument[1];
 if magnitude = "-2" magnitude = 0;
 var _returnable = "";
 
+if magnitude > 1	{
+	for (var i = 0; i < instance_number(obj_enemy_robot); ++i) {
+	    var _enem_inst = instance_find(obj_enemy_robot,i);
+		if instance_exists(_enem_inst)	{
+			_enem_inst.last_dir = noone;	
+		}
+	}	
+}
+
 
 if !(dir_ang == "")	{
 var _len = tile_width;

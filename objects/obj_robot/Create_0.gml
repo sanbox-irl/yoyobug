@@ -33,3 +33,5 @@ image_speed = 0.5;
 
 
 sat = 1;
+
+make_once = true;
