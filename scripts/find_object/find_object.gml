@@ -22,15 +22,16 @@ repeat (5000)	{	///You're not actually gonna go that many cycles. It's just in c
 
 	//Check for Collisions here:
 	if !(place_meeting(x_to,y_to,obj_solid))	{
-		//Here we choose which Dir to Choose.
-		if last_dir != noone	{
-				set_dir = last_dir;
-		}
-		
 		//Here we find out if we did it in one go.
 		if i = 1	{	
 			last_dir = noone;	
 		} else last_dir = set_dir;
+		
+		//Here we choose which Dir to Choose.
+		if last_dir != noone	{
+				set_dir = last_dir;
+		}
+	
 		
 		break;	
 	} else		{
