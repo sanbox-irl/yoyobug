@@ -1,8 +1,8 @@
-//param from
-//param to
-//param duration
-//param offset
-//Wave(from, to, duration, offset)
+///@param from
+///@param to
+///@param duration
+///@param offset
+///@Wave(from, to, duration, offset)
  
 // Returns a value that will wave back and forth between [from-to] over [duration] seconds
 // Examples

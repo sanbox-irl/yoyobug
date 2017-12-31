@@ -3,4 +3,4 @@
 
 // Inherit the parent event
 event_inherited();
-init_part()
+font = font_add("visitor1.ttf",120,false,false,32,128);

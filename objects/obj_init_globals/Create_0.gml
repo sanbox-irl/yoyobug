@@ -17,3 +17,7 @@ if window_get_fullscreen()	{
 } else global.fullscreen = false;
 
 init_part();
+
+var starting_energy = 3;
+global.energy = starting_energy; 
+

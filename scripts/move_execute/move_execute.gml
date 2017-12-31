@@ -22,14 +22,16 @@ if (length == 2) || (length == 3)	{
 	}
 	//figure out the Magntiude with Number 1;
 	var number = 1;
-	if (length == 3)
-		{
+	if (length == 3)	{
+		if (global.energy < 1)	{
+			return "ERROR\nInsufficient Energy. Find energy in destroyed enemies and green capsules."
+		}
+		
 		number = convert_string_to_real_number(params[2])	
 		}
 
 	//Return the Function
 	return move(dir_ang,number);
-	
 	} 
 else if length = 1	{
 	returnable = "ERROR\nSpecify -direction, i.e. 'move-right'"

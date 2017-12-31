@@ -22,7 +22,7 @@ if init_draw	{
 		init_draw = false;
 		electrified = true;
 		
-		terminal_inst = instance_create_layer(x_place_terminal,y_place_terminal,"Walls",obj_terminal);
+		terminal_inst = instance_create_layer(x_place_terminal,y_place_terminal,"Higher_Instances",obj_terminal);
 		terminal_inst.originator_tower = id;
 		terminal_inst.spr = term_spr;
 		floor_mat.term_inst = terminal_inst;
@@ -39,7 +39,7 @@ if (end_draw == true)		&& (tower_locked == false) {
 		}
 }
 
-//Locking the tower (I.e. the player is winning bLEGH)
+//Locking the tower (I.e. the player is winning EWW WINNING)
 if instance_exists(terminal_inst)	{
 	if terminal_inst.terminal_locked	{
 		tower_locked = true;	

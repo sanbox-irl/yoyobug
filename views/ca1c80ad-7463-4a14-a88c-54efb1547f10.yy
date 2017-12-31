@@ -16,7 +16,7 @@
         "33b112e4-637e-4359-8581-af40e0a1e508"
     ],
     "filterType": "GMScript",
-    "folderName": "State Scripts - Game Controller",
+    "folderName": "Game Controller",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

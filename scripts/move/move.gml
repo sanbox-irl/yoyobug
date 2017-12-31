@@ -42,4 +42,8 @@ _returnable = "Droid position altered."
 	}
 
 run = false;
+if real(magnitude) > 1	{
+	global.energy--;	
+}
+
 return _returnable;

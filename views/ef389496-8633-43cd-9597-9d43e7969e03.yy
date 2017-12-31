@@ -14,7 +14,7 @@
         "c89976ed-5c10-4379-943c-0e44bc752f21"
     ],
     "filterType": "GMScript",
-    "folderName": "State Machine (Pixelated Pope)",
+    "folderName": "State Machine Itself",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

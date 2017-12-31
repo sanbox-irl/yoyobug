@@ -1,15 +1,16 @@
 var params = argument0;
 var returnable = "";
 
-var x_place, y_place;
+var place;
 
 
 do {
-	x_place = irandom(global.grid_width);
-	y_place = irandom(global.grid_height);
-} until (global.game_grid[# x_place,y_place] == noone);
+	place[x_array] = irandom_range(1,global.grid_width);
+	place[y_array] = irandom_range(1,global.grid_height);
+} until (global.game_grid[# place[x_array],place[y_array]] == noone);
 
-x_place*=tile_width;
-y_place*=tile_width;
+for (var i = 0; i < array_length_1d(place); ++i) {
+   place[i]*=tile_width;
+}
 
-return spawn(x_place,y_place,counter);
+return spawn(place[x_array],place[y_array]);

@@ -1,4 +1,4 @@
-///@param
+///@param init_state
 //Sets the default state for the object.  Called only in the create event.
 if(is_real(argument[0]))
 {

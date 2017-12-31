@@ -14,9 +14,7 @@
         "6d284a8a-9a9d-48bf-83f1-f99d76656036",
         "e9a7b9ed-6ba4-40a4-ac47-111f6d746318",
         "e5a861aa-b995-43b9-a6c7-d41d61b4dd62",
-        "fbfa1dbd-5d4e-44f6-8a56-934da7bda646",
-        "6b38318d-7808-4f05-9ab4-382c1117c4db",
-        "24cfba44-d49d-4bf0-881a-439d6f75e826"
+        "fbfa1dbd-5d4e-44f6-8a56-934da7bda646"
     ],
     "IsDnD": false,
     "layers": [
@@ -52,11 +50,37 @@
         },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "Higher_Instances",
+            "id": "44f63031-abca-461c-8879-2b058e7b7b80",
+            "depth": 100,
+            "grid_x": 32,
+            "grid_y": 32,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "instances": [
+
+            ],
+            "layers": [
+
+            ],
+            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRInstanceLayer",
+            "mvc": "1.0",
+            "userdefined_depth": false,
+            "visible": true
+        },
+        {
+            "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Instances",
             "id": "5da6a658-6e3a-4c2d-a101-ffde8f5a7a11",
-            "depth": 100,
-            "grid_x": 16,
-            "grid_y": 16,
+            "depth": 200,
+            "grid_x": 32,
+            "grid_y": 32,
             "hierarchyFrozen": false,
             "hierarchyVisible": true,
             "inheritLayerDepth": false,
@@ -65,9 +89,7 @@
             "inheritVisibility": false,
             "instances": [
 {"name": "inst_585E4E17","id": "4773a38c-3afb-4700-91be-11b764137e00","colour": { "Value": 4294967295 },"creationCodeFile": "InstanceCreationCode_inst_585E4E17.gml","creationCodeType": ".gml","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_585E4E17","objId": "61d10644-a637-4c3e-96cc-a55aabb0d18f","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 352,"y": 96},
-{"name": "inst_1DD047E6","id": "425eda93-ac8b-4a62-85d7-de340c94d975","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_1DD047E6","objId": "a8c86c2f-cb4e-4354-a57b-be61cb09bd9d","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 368,"y": 240},
-{"name": "inst_115865A8","id": "6b38318d-7808-4f05-9ab4-382c1117c4db","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_115865A8","objId": "c7c71641-9a06-46b7-a0c4-0020ea70284a","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 6,"mvc": "1.0","x": 336,"y": 192},
-{"name": "inst_1A9C8E53","id": "24cfba44-d49d-4bf0-881a-439d6f75e826","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_1A9C8E53","objId": "61b5e3a1-bcd7-4d6c-9bc1-244fa8e157fe","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 256,"y": 128}
+{"name": "inst_1DD047E6","id": "425eda93-ac8b-4a62-85d7-de340c94d975","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_1DD047E6","objId": "a8c86c2f-cb4e-4354-a57b-be61cb09bd9d","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 368,"y": 240}
             ],
             "layers": [
 
@@ -83,7 +105,7 @@
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Background_Instances",
             "id": "e374c61d-e9be-45b4-b900-e787344af7df",
-            "depth": 200,
+            "depth": 300,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -109,7 +131,7 @@
             "__type": "GMRTileLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Collision_Tiles",
             "id": "6665f675-82da-4cac-99d5-997c794c2469",
-            "depth": 300,
+            "depth": 400,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -167,7 +189,7 @@
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
             "name": "Background_Color",
             "id": "2f87a01e-43ea-485e-9759-6eac9b3aead1",
-            "depth": 400,
+            "depth": 500,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -196,7 +218,7 @@
             "animationFPS": 15,
             "animationSpeedType": "0",
             "colour": { "Value": 4282001455 },
-            "depth": 500,
+            "depth": 600,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -261,7 +283,7 @@
         "id": "c481aaa6-b819-492d-8ee6-88c5d6eb6371",
         "clearDisplayBuffer": true,
         "clearViewBackground": false,
-        "enableViews": true,
+        "enableViews": false,
         "inheritViewSettings": false,
         "modelName": "GMRoomViewSettings",
         "mvc": "1.0"

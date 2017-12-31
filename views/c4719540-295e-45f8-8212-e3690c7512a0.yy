@@ -10,7 +10,7 @@
         "3541cdf3-7985-471a-a4a3-61f846f353ed"
     ],
     "filterType": "GMScript",
-    "folderName": "State Scripts - Robots",
+    "folderName": "Robot-Controller",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
