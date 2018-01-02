@@ -17,3 +17,5 @@
 #macro	term_direc	6
 #macro	x_array     0
 #macro	y_array		1
+
+#macro DRAW_VAR		1

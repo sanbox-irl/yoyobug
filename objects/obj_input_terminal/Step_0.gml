@@ -28,5 +28,4 @@ if global.energy == 0	{
 	temp_alpha = 1;	
 	}
 }
-debug_message(temp_alpha);
 

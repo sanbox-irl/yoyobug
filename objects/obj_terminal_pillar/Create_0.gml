@@ -16,3 +16,9 @@ tower_locked		= false;
 terminal_inst		= noone;
 
 electrified = false;
+
+//state_machine_init();
+//state_create("Init_Draw",state_pillar_init_1);
+//state_create("Standard_Draw",state_pillar_standard_draw);
+//state_create("End_Draw",state_pillar_end_draw);
+//state_init("Init_Draw");

@@ -7,3 +7,5 @@ state_map=ds_map_create();
 state_keys=ds_map_create(); //The inverse map of the state map.
 state_stack=ds_stack_create();
 state_new=true;
+
+state_var = array_create(6);

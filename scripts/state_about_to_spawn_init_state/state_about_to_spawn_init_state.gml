@@ -1,5 +1,7 @@
-timer += global.dt;
-small_timer +=global.dt;
-if small_timer > 15	{
-	small_timer = 0;	
+//State About the Spawn -- Init State. 
+rad = timer/30;
+
+
+if rad > 1	{
+	state_switch("Waiting_to_Die",0);
 }

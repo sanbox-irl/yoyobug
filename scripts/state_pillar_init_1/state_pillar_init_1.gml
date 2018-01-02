@@ -1,11 +1,9 @@
-///Find The Terminal's Place and Prep to Make It.
-//state_execute();
-if find_your_terminal	{
+//Get the location of our Terminal.
+if state_new	{
 	var ref			 =	obj_room_controller;
 	x_place_terminal =	ref.tower_grid[# tower_number, terminal_x];
 	y_place_terminal =	ref.tower_grid[# tower_number, terminal_y];
 	term_spr		 =	ref.tower_grid[# tower_number, term_direc];
-	find_you_terminal = false;
 }
 
 //Our initial Draw Event
@@ -29,23 +27,3 @@ if init_draw	{
 		floor_mat.term_inst = terminal_inst;
 	}
 }
-
-//Killing the Tower 
-if (end_draw == true)		&& (tower_locked == false) {
-	tower_height-=global.dt*3;
-	screen_shake(1,1);
-	if tower_height <= 0
-		{
-		instance_destroy();	
-		}
-}
-
-//Locking the tower (I.e. the player is winning EWW WINNING)
-if instance_exists(terminal_inst)	{
-	if terminal_inst.terminal_locked	{
-		tower_locked = true;	
-		electrified = false;
-	}	
-}
-
-debug_message(fps_real);

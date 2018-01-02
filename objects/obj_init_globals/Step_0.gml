@@ -8,5 +8,3 @@ for (var i = 0; i < global.grid_width; ++i) {
 		global.game_grid[# i,j] = instance_place(i*tile_width+tile_width+16,j*tile_width+tile_width+16,obj_robot);
 	}
 }
-
-debug_message(global.energy);
