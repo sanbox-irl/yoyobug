@@ -18,4 +18,6 @@
 #macro	x_array     0
 #macro	y_array		1
 
+#macro PASS_VAR		0
 #macro DRAW_VAR		1
+#macro BOOL_VAR		2

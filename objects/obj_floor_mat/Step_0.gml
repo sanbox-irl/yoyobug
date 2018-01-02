@@ -1,9 +1,10 @@
 if !instance_exists(originator_tower)	{
-	instance_destroy(id);	
-} else	{
-var tower = originator_tower;
-scale = 2*(tower.tower_height/tower.sprite_height);
+	exit;	
 }
+
+var tower = originator_tower;
+scale = 2*(tower.state_var[PASS_VAR]/tower.sprite_height);
+
 
 if instance_number(obj_terminal) > 0	{
 	var term = term_inst;

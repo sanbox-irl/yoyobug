@@ -1735,6 +1735,14 @@
             }
         },
         {
+            "Key": "8975930e-32bd-488f-a027-03cd2178aa72",
+            "Value": {
+                "id": "3c14a4bc-d453-457f-9ebf-c6acf602c075",
+                "resourcePath": "scripts\\state_pillar_standard_draw\\state_pillar_standard_draw.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8a47b4db-505a-4dd5-81f4-f57a19c32aed",
             "Value": {
                 "id": "659e3c17-a5f0-452f-8987-adfcb5678ab1",
@@ -1746,7 +1754,7 @@
             "Key": "8a90f63a-cac3-4ad9-ae9b-95319878dda1",
             "Value": {
                 "id": "1882dc27-87e3-4d1d-90f2-2a2b156351fe",
-                "resourcePath": "scripts\\state_pillar_init_1\\state_pillar_init_1.yy",
+                "resourcePath": "scripts\\state_pillar_init\\state_pillar_init.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1867,6 +1875,14 @@
             "Value": {
                 "id": "53b23125-f705-4625-a8e5-668bec90fbd2",
                 "resourcePath": "scripts\/EaseInQuad\/EaseInQuad.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "955ecc73-2e49-43ed-9f5e-018d04f33048",
+            "Value": {
+                "id": "29d6a2de-6328-4862-afac-5a0cdf17007c",
+                "resourcePath": "scripts\\state_pillar_end_draw\\state_pillar_end_draw.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3717,7 +3733,9 @@
         "1b630d56-543b-43e5-ab91-9885ed682c6c",
         "ea371ef4-4f3e-4b1a-960f-795044c3fa20",
         "613e7a15-1504-4e45-8394-5f4f63f19c2b",
-        "8a90f63a-cac3-4ad9-ae9b-95319878dda1"
+        "8a90f63a-cac3-4ad9-ae9b-95319878dda1",
+        "8975930e-32bd-488f-a027-03cd2178aa72",
+        "955ecc73-2e49-43ed-9f5e-018d04f33048"
     ],
     "tutorial": ""
 }

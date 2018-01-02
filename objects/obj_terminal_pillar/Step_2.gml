@@ -1,1 +1,1 @@
-//state_update();
+state_update();
