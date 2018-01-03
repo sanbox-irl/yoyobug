@@ -19,6 +19,7 @@ var energy_level = string(global.energy);
 draw_set_halign(fa_center);
 draw_set_valign(fa_top);
 draw_set_color(c_lime);
+draw_set_font(fnt_debug);
 
 //Drawing the Icons
 draw_set_alpha(1);

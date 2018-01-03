@@ -1,2 +1,4 @@
-draw_set_font(fnt_title);
-draw_text_color(room_width/10,room_height/10,"TERMINAL",c_lime,c_lime,c_lime,c_lime,1);
+shader_set(sh_recolor);
+	shader_set_uniform_f_array(_uni_color,_color);
+	draw_sprite(spr_menu_background,0,0,0);
+shader_reset();
