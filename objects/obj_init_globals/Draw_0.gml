@@ -1,3 +1,7 @@
+if not global.is_playroom	{
+	exit;	
+}
+
 var longitude = room_width/tile_width;
 var latitude = room_height/tile_width;
 var size = 1

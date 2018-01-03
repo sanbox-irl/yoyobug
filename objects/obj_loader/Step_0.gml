@@ -1,7 +1,4 @@
-if inst_global && inst_terminal
-	{
-	room_goto(room0);	
-	}
+
 
 if room = room0
 	{
