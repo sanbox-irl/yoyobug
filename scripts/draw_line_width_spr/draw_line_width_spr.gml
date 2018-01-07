@@ -11,7 +11,7 @@ var _x	= argument0;
 var _y	= argument1;
 var _x2	= argument2;
 var _y2 = argument3;
-var _width = (argument4);
+var _width = (argument4)/2;
 var _color = argument5;
 var _alpha = argument6;
 

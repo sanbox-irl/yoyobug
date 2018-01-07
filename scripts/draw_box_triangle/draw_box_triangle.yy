@@ -1,8 +1,8 @@
 {
-    "id": "371af8ad-7323-4b52-9d3b-3d90c60723f0",
+    "id": "6769e57f-4a39-408e-bc95-da3cf305bc78",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "make_terminal_directions",
+    "name": "draw_box_triangle",
     "IsCompatibility": false,
     "IsDnD": false
 }

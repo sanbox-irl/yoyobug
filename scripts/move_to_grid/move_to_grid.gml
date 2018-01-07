@@ -9,9 +9,9 @@ _grid_size = argument2;
 _diff = array_create(2);
 
 //Core
-_diff[x_array] = argument0 mod _grid_size;
-_diff[y_array] = argument1 mod _grid_size;
+_diff[X_ARRAY] = argument0 mod _grid_size;
+_diff[Y_ARRAY] = argument1 mod _grid_size;
 
-argument0-= _diff[x_array];
-argument1-= _diff[y_array];
+argument0-= _diff[X_ARRAY];
+argument1-= _diff[Y_ARRAY];
 	

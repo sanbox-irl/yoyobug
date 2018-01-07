@@ -7,5 +7,6 @@ if (string_length(array[0]) > 0)
 	if (script_exists(script_index))
 	{	
 		command_result = string(script_execute(script_index,array));
-	} else command_result = "Unknown command, Dinklebot. Try help for a list."
+	} else command_result = "Unknown command. Use 'help' for a list."
 }
+

@@ -1,3 +1,6 @@
+init_resolution();
+
+
 camera = camera_create();
 
 

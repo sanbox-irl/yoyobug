@@ -5,6 +5,7 @@ var term_end_y = term_y + term_height
 
 
 draw_set_color(apple_gray);
+draw_set_alpha(1);
 draw_roundrect_ext(term_x-1,term_y-term_height/15,term_x+term_width-1,term_y,5,5,false);
 draw_rectangle(term_x,term_y,term_x+term_width-1,term_y-5,false);
 

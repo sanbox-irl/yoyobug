@@ -1,5 +1,15 @@
 ///Create the path
 event_inherited();
+
+state_machine_init();
+state_create("Init_Draw",state_enemy_init_draw);
+state_create("Standard_Draw",state_enemy_standard_draw);
+state_create("End_Draw",state_enemy_end_draw);
+state_init("Init_Draw");
+
+
+
+
 target = instance_nearest(x,y,obj_robot);
 
 x_pos = 0;

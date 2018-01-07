@@ -6,9 +6,9 @@ if !(ds_exists(global.game_grid,ds_type_grid))	{
 		} else if !(ds_grid_value_exists(global.game_grid,0,0,global.grid_width,global.grid_height,target))		{
 			return false;	
 		}
-_target_place[x_array]	= (ds_grid_value_x(global.game_grid,0,0,global.grid_width,global.grid_height,target)+1)*tile_width;
-_target_place[y_array]	= (ds_grid_value_y(global.game_grid,0,0,global.grid_width,global.grid_height,target)+1)*tile_width;
-orig_dir = point_direction(x,y,_target_place[x_array],_target_place[y_array]);
+_target_place[X_ARRAY]	= (ds_grid_value_x(global.game_grid,0,0,global.grid_width,global.grid_height,target)+1)*tile_width;
+_target_place[Y_ARRAY]	= (ds_grid_value_y(global.game_grid,0,0,global.grid_width,global.grid_height,target)+1)*tile_width;
+orig_dir = point_direction(x,y,_target_place[X_ARRAY],_target_place[Y_ARRAY]);
 var use_last = false;
 var i = 0;
 

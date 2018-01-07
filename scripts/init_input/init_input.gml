@@ -1,5 +1,5 @@
 user_input = "";
-display_string="";
+display_string="Insert all commands by typing.";
 command_string = "";
 run = false;
 command_result = "";

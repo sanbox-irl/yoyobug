@@ -1,12 +1,3 @@
-/*
-the grid appears as:
-    tower_grid[# i,0]	= x_place[i];
-	tower_grid[# i,1]	= y_place[i];
-	tower_grid[# i,2]	= x_term_place[i];
-	tower_grid[# i,3]	= y_term_place[i];
-	tower_grid[# i,4]	= tower_color;
-
-*/
 var _inst = 0;
 var _term = 0;
 

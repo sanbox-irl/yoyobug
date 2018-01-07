@@ -3,6 +3,6 @@ if obj_about_to_spawn.ready_to_spawn_tower	{
 	for (var i = 0; i < (instance_number(obj_about_to_spawn)); ++i) {
 	    instance_destroy(obj_about_to_spawn);
 	}
-	state_switch("Spawn Towers",true)
+	state_switch("Spawn Towers",false)
 	
 }

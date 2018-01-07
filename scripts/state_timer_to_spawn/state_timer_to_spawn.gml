@@ -1,4 +1,9 @@
-if global.dev_mode {time_left = 30;} else {time_left=15;}
+if global.dev_mode {
+	if keyboard_check_pressed(vk_up)	{
+		time_left+=20;	
+	}
+}
+time_left = 15;
 
 if state_timer/60 > time_left	{
 	draw_collision_lines = false;					
@@ -45,7 +50,7 @@ if state_timer/60 > time_left	{
 			var _col_inst2 = active_towers[| i+1];
 		} else var _col_inst2 = active_towers[| 0];
 		if instance_exists(obj_robot_parent)	{
-			var _col = collision_line(_col_inst1.x+offset[x_array],_col_inst1.y+offset[y_array],_col_inst2.x+offset[x_array],_col_inst2.y+offset[y_array],obj_robot_parent,false,false);
+			var _col = collision_line(_col_inst1.x+offset[X_ARRAY],_col_inst1.y+offset[Y_ARRAY],_col_inst2.x+offset[X_ARRAY],_col_inst2.y+offset[Y_ARRAY],obj_robot_parent,false,false);
 		}	else _col = noone;
 		if _col != noone	{
 			with _col	{

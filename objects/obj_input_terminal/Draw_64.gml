@@ -13,6 +13,7 @@ draw_set_color(c_lime);
 draw_set_font(fnt_debug);
 draw_set_halign(fa_left);
 draw_set_valign(fa_left);
+draw_set_alpha(1)
 
 var _term_x		=	term_x*		xscale;
 var _term_y		=	term_y*		yscale;

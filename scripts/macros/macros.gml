@@ -10,13 +10,13 @@
 ///Terminal Tower Macros
 #macro	tower_x		0
 #macro	tower_y		1
-#macro	terminal_x	2
+#macro	TERMINAL_X	2
 #macro	terminal_y	3
 #macro	random_no	4
 #macro	tower_color	5
 #macro	term_direc	6
-#macro	x_array     0
-#macro	y_array		1
+#macro	X_ARRAY     0
+#macro	Y_ARRAY		1
 
 #macro PASS_VAR		0
 #macro DRAW_VAR		1

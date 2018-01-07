@@ -1,8 +1,8 @@
 {
-    "id": "a338f863-5698-4dee-84c8-5f5e60daccf3",
+    "id": "7a3bee1f-f815-4d3c-adbb-e053a7251367",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "state_terminal_location",
+    "name": "state_gamestart_2",
     "IsCompatibility": false,
     "IsDnD": false
 }

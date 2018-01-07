@@ -1,8 +1,8 @@
 //Run through what we need to on this run. Not sure why this can't be in the step event.
 if state_var[BOOL_VAR] == 0	{
 	//Make our Exit Terminal
-	var ref			 =	obj_room_controller;
-	x_place_terminal =	ref.tower_grid[# tower_number, terminal_x];
+	var ref			 =	obj_tower_controller_parent;
+	x_place_terminal =	ref.tower_grid[# tower_number, TERMINAL_X];
 	y_place_terminal =	ref.tower_grid[# tower_number, terminal_y];
 	term_spr		 =	ref.tower_grid[# tower_number, term_direc];
 	
