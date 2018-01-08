@@ -55,7 +55,6 @@
 				}
 				command_result = instructions;
 				run = false;
-				global.energy++;
 				
 			}
 		#endregion

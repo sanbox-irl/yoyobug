@@ -1,4 +1,13 @@
-/// draw_lightning(x1, y1, x2, y2, xmin, xmax, ymin, ymax)
+///@func draw_lightning(x1, y1, x2, y2, xmin, xmax, ymin, ymax)
+///@param source_x
+///@param source_y
+///@param dest_x
+///@param dest_y
+///@param min_dist_step
+///@param max_dist_step
+///@ymin min_side_step
+///@ymax max_side_step
+
 //                  0   1   2   3     4     5     6     7
 /** Draws a lightning between points.
  * @x1 : source X

@@ -28,8 +28,7 @@ locked_number = 0;
 
 draw_collision_lines = false;
 
-purple1 = make_color_rgb(63,54,86);
-blue1	= make_color_rgb(66,91,121);
+
 active_towers = ds_list_create();
 
 offset = array_create(2);

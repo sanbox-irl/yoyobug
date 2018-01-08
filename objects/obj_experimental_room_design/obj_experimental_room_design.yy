@@ -1,48 +1,28 @@
 {
-    "id": "a0849a35-6042-494a-adc6-fce6659f1dae",
+    "id": "1c5d1df3-44de-4d3d-a1d6-096a0c81a170",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_game_winner",
+    "name": "obj_experimental_room_design",
     "eventList": [
         {
-            "id": "169c2cef-826e-46dd-b2ad-f2a8d6ec92ef",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 1,
-            "m_owner": "a0849a35-6042-494a-adc6-fce6659f1dae"
-        },
-        {
-            "id": "baae589a-d122-4aee-b13e-a5d414670fd1",
+            "id": "6cd1694f-a806-4881-baf1-ebb7e3401bd2",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "a0849a35-6042-494a-adc6-fce6659f1dae"
+            "m_owner": "1c5d1df3-44de-4d3d-a1d6-096a0c81a170"
         },
         {
-            "id": "c5460654-dce6-4eaa-a25c-3c80d1fdda4e",
+            "id": "ea88f975-b3b8-4707-967e-1b2f4569ce94",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 8,
-            "m_owner": "a0849a35-6042-494a-adc6-fce6659f1dae"
-        },
-        {
-            "id": "2d00d353-e54d-4f96-ab9d-ef84842286b9",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "a0849a35-6042-494a-adc6-fce6659f1dae"
+            "m_owner": "1c5d1df3-44de-4d3d-a1d6-096a0c81a170"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
