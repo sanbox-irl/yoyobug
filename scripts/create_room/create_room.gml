@@ -1,4 +1,4 @@
-var nlevel, nlevel_width, nlevel_height, random_number, tower1_abs_pos, tower2_abs_pos, tower3_abs_pos,
+var nlevel_width, nlevel_height, random_number, tower1_abs_pos, tower2_abs_pos, tower3_abs_pos,
 	tower1_list, tower2_list, tower3_list,tower1, tower2, tower3;
 	
 nlevel = csv_to_grid("stage0.csv",true,undefined,undefined,undefined);
@@ -79,7 +79,7 @@ for (var i = 0; i < ds_list_size(walls_list); ++i) {
     _x = walls_list[| i] mod global.grid_width;
 	_y = walls_list[| i] div global.grid_width;
 	
-	instance_create_layer(_x*tile_width,_y*tile_width,"Higher_Instances",obj_solid);
+	instance_create_layer(_x*tile_width+tile_width,_y*tile_width+tile_width,"Higher_Instances",obj_solid);
 }
 
 //Percent Walls
@@ -88,7 +88,7 @@ var list_size	= ds_list_size(percent_spawner);
 random_number	= irandom_range(0,(list_size-1));
 	_x = percent_spawner[| random_number] mod global.grid_width;
 	_y = percent_spawner[| random_number] div global.grid_width;
-	instance_create_layer(_x*tile_width,_y*tile_width,"Instances",obj_enemy_spawner);
+	instance_create_layer(_x*tile_width+tile_width,_y*tile_width +tile_width,"Instances",obj_enemy_spawner);
 	ds_list_delete(percent_spawner,random_number);
 
 
@@ -101,7 +101,7 @@ for (var i = 0; i < list_size; ++i) {
 	if chance(probability)	{
 		_x = percent_spawner[| i] mod global.grid_width;
 		_y = percent_spawner[| i] div global.grid_width;
-		instance_create_layer(_x*tile_width,_y*tile_width,"Instances",obj_enemy_spawner);
+		instance_create_layer(_x*tile_width+tile_width,_y*tile_width+tile_width,"Instances",obj_enemy_spawner);
 		ds_list_delete(percent_spawner,i);
 	}
 }
@@ -117,7 +117,7 @@ for (var i = 0; i < list_size; ++i) {
 	if chance(probability)	{
 		_x = percent_enemy_list[| i] mod global.grid_width;
 		_y = percent_enemy_list[| i] div global.grid_width;
-		instance_create_layer(_x*tile_width,_y*tile_width,"Instances",obj_enemy_robot);
+		instance_create_layer(_x*tile_width+tile_width,_y*tile_width+tile_width,"Instances",obj_enemy_robot);
 		ds_list_delete(percent_enemy_list,i);
 	}
 }
@@ -129,8 +129,20 @@ if robo_number > 2	{
 
 
 //Player Spawn
-random_number = irandom_range(0, ds_list_size(percent_player_spawn));
+random_number = irandom_range(0, ds_list_size(percent_player_spawn)-1);
 	_x = percent_player_spawn[| random_number] mod global.grid_width;
 	_y = percent_player_spawn[| random_number] div global.grid_width;
-	instance_create_layer(_x*tile_width,_y*tile_width,"Instances",obj_robot);
+	instance_create_layer(_x*tile_width+tile_width,_y*tile_width+tile_width,"Instances",obj_robot);
+	
+for (var i = 0; i < ds_list_size(percent_player_spawn); ++i) {
+	var probability = 0.5;
+	if chance(probability)	{
+		_x = percent_player_spawn[| i] mod global.grid_width;
+		_y = percent_player_spawn[| i] div global.grid_width;
+		instance_create_layer(_x*tile_width+tile_width,_y*tile_width+tile_width,"Instances",obj_solid);
+	}
+}	
+	
+	
+	
 
