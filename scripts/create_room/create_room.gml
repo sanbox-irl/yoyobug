@@ -1,5 +1,5 @@
 var nlevel, nlevel_width, nlevel_height, random_number, tower1_abs_pos, tower2_abs_pos, tower3_abs_pos,
-	tower1_list, tower2_list, tower3_list,tower1, tower2, tower3;
+	tower1, tower2, tower3;
 	
 nlevel = csv_to_grid("stage0.csv",true,undefined,undefined,undefined);
 nlevel_width = ds_grid_width(nlevel);
@@ -8,7 +8,6 @@ tower1_list = ds_list_create();
 tower2_list = ds_list_create();
 tower3_list	= ds_list_create();
 
-var walls_list, percent_walls_list,percent_enemy_list, percent_spawner, percent_player_spawn;
 
 var _x, _y;
 
@@ -107,12 +106,21 @@ for (var i = 0; i < list_size; ++i) {
 }
 
 //Percent Enemy
-for (var i = 0; i < list_size; ++i) {
+	//Spawn the First Enemy
+list_size = ds_list_size(percent_enemy_list);
+random_number = irandom_range(0, list_size -1 );
+	_x = percent_enemy_list[| random_number] mod global.grid_width;
+	_y = percent_enemy_list[| random_number] div global.grid_width;
+	instance_create_layer(_x*tile_width,_y*tile_width,"Instances",obj_enemy_robot);
+	ds_list_delete(percent_enemy_list,random_number);
+
+//Spawn the Rest
+for (var i = 0; i < ds_list_size(percent_enemy_list); ++i) {
     if percent_enemy_list[| i] == undefined	{
 		continue;	
 	}
 	list_size		= ds_list_size(percent_enemy_list);
-	var probability = 1/(list_size);
+	var probability = 1/(list_size-1);
 	
 	if chance(probability)	{
 		_x = percent_enemy_list[| i] mod global.grid_width;
@@ -129,8 +137,27 @@ if robo_number > 2	{
 
 
 //Player Spawn
-random_number = irandom_range(0, ds_list_size(percent_player_spawn));
+random_number = irandom_range(0, ds_list_size(percent_player_spawn)-1);
 	_x = percent_player_spawn[| random_number] mod global.grid_width;
 	_y = percent_player_spawn[| random_number] div global.grid_width;
 	instance_create_layer(_x*tile_width,_y*tile_width,"Instances",obj_robot);
+	
+ for (var i = 0; i < ds_list_size(percent_player_spawn); ++i) {
+     if percent_player_spawn[| i] == undefined	{
+		continue;	
+	}
+	list_size		= ds_list_size(percent_enemy_list);
+	var probability = 1/(list_size-2);
+	
+	if chance(probability)	{
+		_x = percent_player_spawn[| i] mod global.grid_width;
+		_y = percent_player_spawn[| i] div global.grid_width;
+		instance_create_layer(_x*tile_width,_y*tile_width,"Instances",obj_solid);
+		ds_list_delete(percent_player_spawn,i);
+	}
+ }
+	
+	
+	
+	
 
