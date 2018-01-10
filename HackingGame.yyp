@@ -818,7 +818,7 @@
             "Key": "371af8ad-7323-4b52-9d3b-3d90c60723f0",
             "Value": {
                 "id": "8a739827-28bd-4e66-bd82-0f9ff0a64589",
-                "resourcePath": "scripts\\state_room_term_directions\\state_room_term_directions.yy",
+                "resourcePath": "scripts\\make_terminal_directions\\make_terminal_directions.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1228,6 +1228,14 @@
                 "id": "97053b25-d889-46f8-91b8-1cb7847e3bf9",
                 "resourcePath": "sprites\\spr_gate_til\\spr_gate_til.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "55dd5778-0e64-46e3-8756-fd523d55eb7a",
+            "Value": {
+                "id": "808af8ce-bf44-462b-9de8-ad806789d466",
+                "resourcePath": "datafiles_yy\\stage0.csv.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -1659,6 +1667,14 @@
             "Value": {
                 "id": "f85cd26d-354c-4a77-8d59-e24ed866609d",
                 "resourcePath": "scripts\\state_enemy_end_draw\\state_enemy_end_draw.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7347040b-7201-48cc-bd55-efc610534da3",
+            "Value": {
+                "id": "8862b88f-d8c9-414d-9d59-555a1a0a8b2d",
+                "resourcePath": "scripts\\state_experimental_terminal_locations\\state_experimental_terminal_locations.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3487,14 +3503,6 @@
             }
         },
         {
-            "Key": "ec412845-a795-4950-a535-778cbe2ba47a",
-            "Value": {
-                "id": "b47fd36b-4b13-4e2f-a47f-d2134e7b9b7a",
-                "resourcePath": "datafiles_yy\\stage0.csv.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "ec417f56-6b07-477e-8e84-d32d57a7a437",
             "Value": {
                 "id": "d9f8e926-e637-41a4-afff-c247c6991b1b",
@@ -3698,7 +3706,7 @@
             "Key": "f7ea3fd3-4fb0-45ee-b41b-29c35316c563",
             "Value": {
                 "id": "7e78f85d-5d8f-4805-a09e-d059b97dad52",
-                "resourcePath": "scripts\\state_room_make_colors\\state_room_make_colors.yy",
+                "resourcePath": "scripts\\make_colors\\make_colors.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -4071,7 +4079,8 @@
         "e6f9625f-14fe-4507-ae16-391b7ca2703e",
         "457d3c22-e6b7-4351-8484-b4ff07dc52a1",
         "68233dd0-d765-4a5a-8bb2-9d1cac977796",
-        "3b97659c-23cd-49f5-9d95-13d229079e62"
+        "3b97659c-23cd-49f5-9d95-13d229079e62",
+        "7347040b-7201-48cc-bd55-efc610534da3"
     ],
     "tutorial": ""
 }
