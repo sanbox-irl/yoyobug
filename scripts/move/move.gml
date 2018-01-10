@@ -25,10 +25,9 @@ for (var i = 0; i < robots_number; ++i) {
 	var		y_move	= lengthdir_y(_len,dir_ang);
 
 	for (var j = 1; j < (real(magnitude)+1); ++j) {
-		if (!	(	instance_place(	robot[i].x+x_move*j,
-									robot[i].y+y_move*j,obj_solid)	)	){
-		robot[i].x_to = robot[i].x+x_move*j;
-		robot[i].y_to = robot[i].y+y_move*j;
+		if !	(	instance_place(	robot[i].x+x_move*j,robot[i].y+y_move*j,obj_solid)	){
+			robot[i].x_to = robot[i].x+x_move*j;
+			robot[i].y_to = robot[i].y+y_move*j;
 		} else break;
 	}
 	robot[i].move_dir		= dir_ang;

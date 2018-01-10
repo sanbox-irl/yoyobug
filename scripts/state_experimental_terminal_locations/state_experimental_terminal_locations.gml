@@ -8,9 +8,12 @@ y_term_place[number]	= -1;
 random_direc[number]	= 0;
 var distance_check		= 2;
 distance_check		   *= tile_width;
+
+var cycles				= 0;
 #region MAIN TOWER LOOP
 var check = true;
 repeat(5000)	{
+	cycles++;
 	//Reset the x_place;
 	for (var i = 0; i < number; ++i) {
 		x_place[i] = -1;
@@ -59,12 +62,15 @@ repeat(5000)	{
 		break;	
 	}
 }
+debug_message(string("Main Tower Cycles = ") + string(cycles));
+cycles = 0;
 #endregion
 
 #region MAIM TERMINAL LOOP
 //Main Terminal Loop
 var check_term = true;
 repeat(5000)	{
+	cycles++;
 	for (var i = 0; i < number; ++i) {
 		random_direc[i] = -1;
 		x_term_place[i] = -1;
@@ -86,15 +92,15 @@ repeat(5000)	{
 					break;
 				}
 			
-				if y_term_place[i] == y_term_place[i]	{
+				if y_term_place[i] == y_term_place[j]	{
 					check_term = false;
 					break;
 				}
 			
-				if point_distance(x_term_place[i]*tile_width,y_term_place[i]*tile_width,x_term_place[j]*tile_width,y_term_place[j]*tile_width)	< distance_check	{
-					check_term = false;
-					break;
-				}
+				//if point_distance(x_term_place[i]*tile_width,y_term_place[i]*tile_width,x_term_place[j]*tile_width,y_term_place[j]*tile_width)	< distance_check	{
+				//	check_term = false;
+				//	break;
+				//}
 			
 				///Special Checks
 				if point_distance(x_term_place[i]*tile_width,y_term_place[i]*tile_width,x_place[j],y_place[j]) < (distance_check/2)	{
@@ -103,22 +109,22 @@ repeat(5000)	{
 				}
 			
 				//Make sure we're still on the map.
-				if x_term_place >= global.grid_width{
+				if x_term_place[i] >= global.grid_width{
 					check_term = false;	
 					break;
 				}
 			
-				if x_term_place < 0	{
+				if x_term_place[i] <= 0	{
 					check_term = false;
 					break;
 				}
 			
-				if y_term_place < 0	{
+				if y_term_place[i] < 0	{
 					check_term = false;
 					break;
 				}
 			
-				if y_term_place >= global.grid_height {
+				if y_term_place[i] >= global.grid_height {
 					check_term = false;
 					break;
 				}
@@ -131,6 +137,8 @@ repeat(5000)	{
 	}
 	
 }
+debug_message(string("Terminal Cycles = ") + string(cycles));
+cycles = 0;
 #endregion
 
 //Convert to Room Coordinates:
@@ -147,7 +155,7 @@ for (var i = 0; i < number; ++i) {
 	tower_grid[# i,TERMINAL_X]	= x_term_place[i] + tile_width;
 	tower_grid[# i,TERMINAL_Y]	= y_term_place[i] + tile_width;
 	tower_grid[# i,RANDOM_NO]	= irandom(5);
-	tower_grid[# i,TOWER_COLOR]	= pillar_color_map[? tower_grid[# i,4]];
+	tower_grid[# i,TOWER_COLOR]	= pillar_color_map[? tower_grid[# i,RANDOM_NO]];
 	tower_grid[# i,TERM_DIREC]	= random_direc[i];
 }
 

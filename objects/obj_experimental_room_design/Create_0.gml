@@ -1,5 +1,7 @@
+event_inherited();
 active_towers = ds_list_create();
-number = 3;
+starting_number = 3;
+number = starting_number;
 draw_collision_lines = false;
 
 offset[X_ARRAY] = sprite_get_width(spr_totems)/2;

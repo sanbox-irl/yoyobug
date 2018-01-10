@@ -16,13 +16,13 @@ if state_timer/60 > time_left	{
 		}
 	}
 	
-	if knock_off_number = number	{
+	if knock_off_number = starting_number	{
 		state_switch("True Idle",0);	
 	} else {
 		ds_list_clear(active_towers);
 		state_switch("Wait to Respawn Towers",0);
 		time_left = 0;
-		number -= knock_off_number;
+		number = starting_number - knock_off_number;
 	}
 } else	{
 	state_var[DRAW_VAR] = true;
@@ -42,7 +42,7 @@ if state_timer/60 > time_left	{
 	//Actual Collision Code
 	for (var i = 0; i < ds_list_size(active_towers); ++i) {
 		var _col_inst1 = active_towers[| i];
-		if i != number -1	{
+		if i != number-1	{
 			var _col_inst2 = active_towers[| i+1];
 		} else var _col_inst2 = active_towers[| 0];
 		if instance_exists(obj_robot_parent)	{
