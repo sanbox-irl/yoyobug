@@ -11,7 +11,7 @@ tower_grid = ds_grid_create(10,10);
 
 state_machine_init();
 state_create("Terminal Colors",state_room_make_colors);
-state_create("Terminal Directions",state_room_term_directions);
+state_create("Terminal Directions",state_experimental_terminal_locations);
 state_create("Find Terminal Locations",state_find_term_locations);
 state_create("Idle",state_idle);
 state_create("Spawn Towers",state_spawn_towers);

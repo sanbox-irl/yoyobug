@@ -8,3 +8,5 @@ ds_list_destroy(percent_enemy_list);
 ds_list_destroy(percent_spawner);
 ds_list_destroy(percent_player_spawn);
 ds_list_destroy(do_not_spawn);
+
+state_cleanup();

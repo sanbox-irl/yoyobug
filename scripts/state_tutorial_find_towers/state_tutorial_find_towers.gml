@@ -20,19 +20,19 @@ for (var i = 0; i < number; ++i) {
 	x_term_place[i]*=tile_width;
 	y_term_place[i]*=tile_width;
 
-	tower_grid[# i,tower_x]	= x_place[i];
-	tower_grid[# i,tower_y]	= y_place[i];
+	tower_grid[# i,TOWER_X]	= x_place[i];
+	tower_grid[# i,TOWER_Y]	= y_place[i];
 	tower_grid[# i,TERMINAL_X]	= x_term_place[i];
-	tower_grid[# i,terminal_y]	= y_term_place[i];
-	tower_grid[# i,random_no]	= irandom(5);
-	tower_grid[# i,tower_color]	= pillar_color_map[? tower_grid[# i,random_no]];
-	tower_grid[# i,term_direc]	= random_direc[i];
+	tower_grid[# i,TERMINAL_Y]	= y_term_place[i];
+	tower_grid[# i,RANDOM_NO]	= irandom(5);
+	tower_grid[# i,TOWER_COLOR]	= pillar_color_map[? tower_grid[# i,RANDOM_NO]];
+	tower_grid[# i,TERM_DIREC]	= random_direc[i];
 }
 
 var _inst = array_create(number);
 for (var i = 0; i < number; ++i) {
-    _inst[i]		= instance_create_layer(tower_grid[# i, tower_x], tower_grid[# i, tower_y], "Instances",obj_about_to_spawn);
-	_inst[i].color	= tower_grid[# i, tower_color];
+    _inst[i]		= instance_create_layer(tower_grid[# i, TOWER_X], tower_grid[# i, TOWER_Y], "Instances",obj_about_to_spawn);
+	_inst[i].color	= tower_grid[# i, TOWER_COLOR];
 }
 
 state_switch("Idle",false);

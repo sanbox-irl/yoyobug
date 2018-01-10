@@ -2511,6 +2511,14 @@
             }
         },
         {
+            "Key": "ae44e6bb-f4d2-4744-ba7f-25562c984cd2",
+            "Value": {
+                "id": "3f9c32f0-ad4d-4a9e-b6c4-ea0bde4b14aa",
+                "resourcePath": "scripts\\room_create_tower_check\\room_create_tower_check.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "af685431-e2d4-4f6c-91e9-784ce52ea393",
             "Value": {
                 "id": "2dff148d-42a3-428b-8f48-766cd5d52eef",
@@ -4080,7 +4088,8 @@
         "457d3c22-e6b7-4351-8484-b4ff07dc52a1",
         "68233dd0-d765-4a5a-8bb2-9d1cac977796",
         "3b97659c-23cd-49f5-9d95-13d229079e62",
-        "7347040b-7201-48cc-bd55-efc610534da3"
+        "7347040b-7201-48cc-bd55-efc610534da3",
+        "ae44e6bb-f4d2-4744-ba7f-25562c984cd2"
     ],
     "tutorial": ""
 }

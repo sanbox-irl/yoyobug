@@ -8,13 +8,13 @@
 #macro tile_width	32
 
 ///Terminal Tower Macros
-#macro	tower_x		0
-#macro	tower_y		1
+#macro	TOWER_X		0
+#macro	TOWER_Y		1
 #macro	TERMINAL_X	2
-#macro	terminal_y	3
-#macro	random_no	4
-#macro	tower_color	5
-#macro	term_direc	6
+#macro	TERMINAL_Y	3
+#macro	RANDOM_NO	4
+#macro	TOWER_COLOR	5
+#macro	TERM_DIREC	6
 #macro	X_ARRAY     0
 #macro	Y_ARRAY		1
 

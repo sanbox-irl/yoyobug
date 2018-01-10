@@ -55,13 +55,13 @@ for (var i = 0; i < number; ++i) {
 //Store it all in the DS Grid
 
 for (var i = 0; i < number; ++i) {
-	tower_grid[# i,tower_x]	= x_place[i];
-	tower_grid[# i,tower_y]	= y_place[i];
+	tower_grid[# i,TOWER_X]	= x_place[i];
+	tower_grid[# i,TOWER_Y]	= y_place[i];
 	tower_grid[# i,TERMINAL_X]	= x_term_place[i];
-	tower_grid[# i,terminal_y]	= y_term_place[i];
-	tower_grid[# i,random_no]	= irandom(5);
-	tower_grid[# i,tower_color]	= pillar_color_map[? tower_grid[# i,4]];
-	tower_grid[# i,term_direc]	= random_direc[i];
+	tower_grid[# i,TERMINAL_Y]	= y_term_place[i];
+	tower_grid[# i,RANDOM_NO]	= irandom(5);
+	tower_grid[# i,TOWER_COLOR]	= pillar_color_map[? tower_grid[# i,4]];
+	tower_grid[# i,TERM_DIREC]	= random_direc[i];
 }
 
 debug_message(tower_grid[# 0,6]);

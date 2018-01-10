@@ -19,5 +19,9 @@ if (radius-small_number <= 0)	{
 }
 
 if incrementer > radius	{
-	ready_to_spawn_tower = true;
+	if instance_exists(obj_tower_controller_parent)	{
+		with (obj_tower_controller_parent)	{
+			state_var[0] = true;	
+		}
+	}
 }
