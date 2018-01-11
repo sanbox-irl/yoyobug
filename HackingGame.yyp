@@ -2418,7 +2418,7 @@
             "Key": "a8c86c2f-cb4e-4354-a57b-be61cb09bd9d",
             "Value": {
                 "id": "5afef1de-b3b3-479f-902f-ac8d3ac1d376",
-                "resourcePath": "objects\/obj_camera\/obj_camera.yy",
+                "resourcePath": "objects\\obj_camera_old\\obj_camera_old.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -3292,6 +3292,14 @@
                 "id": "06ce2c20-50ee-4a61-8387-984a3ae6cd9a",
                 "resourcePath": "scripts\/TweenEasyFade\/TweenEasyFade.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "dd51eebf-c610-454a-968f-8af4ead9b562",
+            "Value": {
+                "id": "f6f5df68-6454-43b7-8172-2ba0fd6e96b5",
+                "resourcePath": "objects\\obj_camera\\obj_camera.yy",
+                "resourceType": "GMObject"
             }
         },
         {

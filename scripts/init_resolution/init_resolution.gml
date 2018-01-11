@@ -50,6 +50,6 @@ surface_resize(application_surface, ideal_width, ideal_height);
 window_set_size(ideal_width, ideal_height);
 display_set_gui_size(ideal_width,ideal_height);
 
-global.full_screen = 0;
- 
+
+
 alarm[0] = 1; // THIS ALARM SHOULD CENTER THE VIEW (we cannot center the view within this script because of limitations within gamemaker.)
