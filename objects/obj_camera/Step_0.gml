@@ -9,6 +9,12 @@ shake_remain = max(0,shake_remain-((1/shake_length)*shake_magnitude))
 
 
 camera_set_view_pos(view_camera[target_view],x, y);
-view_set_camera(target_view,camera);
 
-debug_message(view_get_wport(target_view))
+
+if global.dev_mode	{
+	var shift_vertical = keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
+	y_to+=5*shift_vertical;
+	
+	var shift_horizontal	= keyboard_check_pressed(vk_right) - keyboard_check_pressed(vk_left);
+	x_to+=5*shift_horizontal;
+}

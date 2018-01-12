@@ -16,3 +16,5 @@ switch (state_name) {
 		draw_self();
 		break;
 }
+
+draw_text(x+tile_width,y,ds_list_find_index(global.orange_robots_list,id));

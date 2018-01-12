@@ -24,3 +24,6 @@ if window_get_fullscreen()	{
 global.purple1 = make_color_rgb(63,54,86);
 global.blue1	= make_color_rgb(66,91,121);
 global.green1	= make_color_rgb(103,145,137);
+
+
+global.orange_robots_list = ds_list_create();

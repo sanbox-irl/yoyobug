@@ -1,2 +1,1 @@
-debug_message(room);
-number =3;
+screen_shake(4,60);

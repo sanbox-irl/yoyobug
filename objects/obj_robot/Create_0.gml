@@ -16,3 +16,6 @@ y_to = y;
 
 calling_circle = 0;
 move_dir = choose(up,down,left,right);
+
+//add yourself to the list
+ds_list_add(global.orange_robots_list,id);
