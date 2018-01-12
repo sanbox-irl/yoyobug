@@ -32,4 +32,4 @@ camera = camera_create_view(x, y, room_width, room_height, 0, -1, -1, -1, 0, 0);
 view_set_camera(target_view, camera);
 
 
-
+alarm[0] = 1;
