@@ -1,6 +1,7 @@
 if point_in_rectangle(	mouse_x,			mouse_y,
 						term_x,				term_y-term_height/15,
 						term_x+term_width,	term_y)	{
+	debug_message("IN THE RECTANGLE");
 	if mouse_check_button_pressed(mb_left)
 		{
 		selected_at_first = true;
@@ -25,3 +26,4 @@ if selected		{
 		term_y = clamp(term_y,0	+	term_height/15,		room_height	-	term_height/15);
 }
 	
+debug_message(string(mouse_x) + string(",") + string(mouse_y));

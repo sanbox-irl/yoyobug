@@ -15,3 +15,5 @@ switch (move_dir) {
 		sprite_index = spr_robot_down;
 		break;
 }
+
+script_execute(powerup_script);

@@ -1,6 +1,6 @@
 timer	=	0;
 small_timer = 0;
-color = obj_room_controller.pillar_color_map[? irandom(5)];
+color = obj_tower_controller_parent.pillar_color_map[? irandom(5)];
 
 state_machine_init();
 state_create("Init_State",state_about_to_spawn_init_state);
