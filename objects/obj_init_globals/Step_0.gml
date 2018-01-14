@@ -8,3 +8,7 @@ for (var i = 0; i < global.grid_width; ++i) {
 		global.game_grid[# i,j] = instance_place(i*tile_width+tile_width+16,j*tile_width+tile_width+16,obj_robot);
 	}
 }
+
+if keyboard_check_pressed(vk_delete)	{
+	global.dev_mode = !global.dev_mode;	
+}

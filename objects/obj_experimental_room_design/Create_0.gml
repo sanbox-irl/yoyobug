@@ -25,3 +25,5 @@ state_create("True Idle",state_true_idle);
 state_init("Find Terminal Locations");
 
 tower_layer = "Instances";
+mp_grid = mp_grid_create(0,0,global.grid_width+tile_width,global.grid_height+tile_width,tile_width,tile_width);
+mp_grid_add_instances(mp_grid,obj_solid,false);

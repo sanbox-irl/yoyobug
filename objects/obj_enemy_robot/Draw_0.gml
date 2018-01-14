@@ -17,4 +17,6 @@ switch (state_name) {
 		break;
 }
 
- 
+//if global.dev_mode = false	{
+//	draw_path(path,x,y,false);
+//}

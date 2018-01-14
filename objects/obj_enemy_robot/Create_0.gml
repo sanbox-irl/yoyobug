@@ -29,4 +29,5 @@ last_dir = noone;
 
 path = path_add();
 path_set_kind(path,0);
-path_set_precision(path,8);
+path_set_precision(path,1);
+do_once = true;

@@ -1,6 +1,6 @@
-if obj_robot_controller.state_name != "Waiting for Enter"	{
-	exit;
-}	
+//if obj_robot_controller.state_name != "Waiting for Enter"	{
+//	exit;
+//}	
 	
 	
 
@@ -47,3 +47,13 @@ if gamepad_button_check_pressed(0, gp_start)	{
 		press_enter();
 	}
 }
+
+if gamepad_button_check_pressed(0, gp_shoulderlb)	{
+	with obj_input_terminal	{
+		keyboard_string = "spawn";
+		press_enter();
+	}
+}
+
+
+

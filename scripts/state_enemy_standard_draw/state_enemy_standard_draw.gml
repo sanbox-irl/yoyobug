@@ -30,9 +30,12 @@ if obj_robot_controller.update_enemy		{
 
 }
 
-
-if mp_grid_path(obj_robot_controller.mp_grid,path,x,y,target.x,target.y,false)	{
-	path_start(path,1*global.dt,path_action_stop,true);
+if global.start		{
+	if instance_exists(target)	{
+		if mp_grid_path(obj_experimental_room_design.mp_grid,path,x+tile_width/2,y+tile_width/2,target.x_to+16,target.y_to+16,false)	{
+			path_start(path,1*global.dt,path_action_stop,false);
+		}
+	}
 }
 
 
@@ -46,10 +49,9 @@ if mp_grid_path(obj_robot_controller.mp_grid,path,x,y,target.x,target.y,false)	{
 //}
 
 
-if place_meeting(x,y,obj_explosions)
-	{
+if place_meeting(x,y,obj_explosions)	{
 	to_be_destroyed = true;
-	}
+}
 
 
 

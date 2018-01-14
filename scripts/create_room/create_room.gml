@@ -85,7 +85,7 @@ for (var i = 0; i < list_size; ++i) {
 		continue;	
 	}
 	list_size		= ds_list_size(percent_enemy_list);
-	var probability = 1/(list_size);
+	var probability = 3/(list_size);
 	
 	if chance(probability)	{
 		_x = percent_enemy_list[| i] mod global.grid_width;

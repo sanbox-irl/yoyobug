@@ -15,3 +15,8 @@ if state_var[DRAW_VAR]	{
 	
 	draw_set_color(c_white);
 }
+
+
+if global.dev_mode	{
+	mp_grid_draw(mp_grid);
+}

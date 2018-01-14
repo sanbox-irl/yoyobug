@@ -1,1 +1,0 @@
-mp_grid_draw(obj_robot_controller.mp_grid);
