@@ -16,3 +16,5 @@ switch (state_name) {
 		draw_self();
 		break;
 }
+
+ 

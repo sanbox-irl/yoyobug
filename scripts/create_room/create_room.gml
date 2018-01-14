@@ -44,41 +44,16 @@ for (var i = 0; i < nlevel_width; ++i) {
 			break;
 	}
 }
-#region Tower List Making
-////Find the First Tower Position:
-//random_number	= irandom_range(0,ds_list_size(tower1_list) -1);
-//tower1_abs_pos	= tower1_list[| random_number];
-
-//tower1[X_ARRAY] = tower1_abs_pos mod global.grid_width;	//This is probably 18;
-//tower1[Y_ARRAY] = tower1_abs_pos div global.grid_width; //This is probably 18;
-
-////Tower 2
-//random_number	= irandom_range(0,ds_list_size(tower2_list) -1);
-//tower2_abs_pos	= tower2_list[| random_number];
-
-//tower2[X_ARRAY] = tower2_abs_pos mod global.grid_width;
-//tower2[Y_ARRAY] = tower2_abs_pos div global.grid_width;
-
-////Tower 3
-//random_number	= irandom_range(0,ds_list_size(tower3_list) -1);
-//tower3_abs_pos	= tower3_list[| random_number];
-
-//tower3[X_ARRAY] = tower3_abs_pos mod global.grid_width;	//This is probably 18;
-//tower3[Y_ARRAY] = tower3_abs_pos div global.grid_width; //This is probably 18;
-
-//debug_message(string("TOWER 3 X = ") + string(tower3[X_ARRAY]));
-//debug_message(string("TOWER 3 Y = ") + string(tower3[Y_ARRAY]));
-#endregion
 
 //Walls Loop
 for (var i = 0; i < ds_list_size(walls_list); ++i) {
     _x = walls_list[| i] mod global.grid_width;
 	_y = walls_list[| i] div global.grid_width;
 	
-	instance_create_layer(_x*tile_width+tile_width,_y*tile_width+tile_width,"Higher_Instances",obj_solid);
+	instance_create_layer(_x*tile_width+tile_width,_y*tile_width+tile_width,"Instances",obj_walls);
 }
 
-//Percent Walls
+//Percent Spawners
 	//Spawn the First one;
 var list_size	= ds_list_size(percent_spawner);
 random_number	= irandom_range(0,(list_size-1));
@@ -101,6 +76,8 @@ for (var i = 0; i < list_size; ++i) {
 		ds_list_delete(percent_spawner,i);
 	}
 }
+
+
 
 //Percent Enemy
 for (var i = 0; i < list_size; ++i) {
@@ -139,10 +116,10 @@ for (var i = 0; i < ds_list_size(percent_player_spawn); ++i) {
 	if chance(probability)	{
 		_x = percent_player_spawn[| i] mod global.grid_width;
 		_y = percent_player_spawn[| i] div global.grid_width;
-		instance_create_layer(_x*tile_width+tile_width,_y*tile_width+tile_width,"Instances",obj_solid);
+		instance_create_layer(_x*tile_width+tile_width,_y*tile_width+tile_width,"Instances",obj_walls);
 	}
 }	
 	
-	
+organize_walls();
 	
 

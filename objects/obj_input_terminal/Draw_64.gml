@@ -1,3 +1,4 @@
+exit;
 //Figure out Scaling
 var cam = obj_camera;
 global.x_scale	= display_get_gui_width()/cam.width;

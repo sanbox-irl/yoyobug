@@ -11,3 +11,20 @@ if state_var[0] <= 0	{
 	debug_message(string("Killing Robot ") + string(id));
 	image_speed = 0;
 }
+
+
+switch (move_dir) {
+    case up:
+        sprite_index = spr_robot_up;
+        break;
+    case left:
+        sprite_index = spr_robot_left;
+        break;
+	case right:
+		sprite_index = spr_robot_right;
+		break;
+	default:
+		sprite_index = spr_robot_down;
+		break;
+}
+

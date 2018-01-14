@@ -23,3 +23,5 @@ state_create("Wait to Respawn Towers",state_wait_to_spawn);
 state_create("True Idle",state_true_idle);
 
 state_init("Find Terminal Locations");
+
+tower_layer = "Instances";

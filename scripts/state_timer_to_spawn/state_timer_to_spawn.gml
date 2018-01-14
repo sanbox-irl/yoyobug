@@ -55,7 +55,4 @@ if state_timer/60 > time_left	{
 		}
 	
 	}
-	
-	
-
 }	

@@ -11,13 +11,17 @@ switch (state_name) {
 			draw_self();
 		shader_reset();
 		draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,0,image_blend,state_var[0]);
-		break;	
+		break;
+	case "Powerup_State":
+		script_execute(powerup_draw);
+		break;
 	default:
 		draw_self();
 		break;
 }
 
-//Get the Color
+exit;
+//Get the Name
 var _strng = string(ds_list_find_index(global.orange_robots_list,id));
 var _strng_width = string_width(_strng);
 var _strng_place = 0;

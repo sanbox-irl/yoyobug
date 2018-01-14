@@ -26,4 +26,3 @@ if selected		{
 		term_y = clamp(term_y,0	+	term_height/15,		room_height	-	term_height/15);
 }
 	
-debug_message(string(mouse_x) + string(",") + string(mouse_y));

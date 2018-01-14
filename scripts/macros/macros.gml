@@ -21,3 +21,5 @@
 #macro PASS_VAR		0
 #macro DRAW_VAR		1
 #macro BOOL_VAR		2
+
+#macro ATTACK_VAR	4

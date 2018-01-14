@@ -20,7 +20,8 @@
         "e4ebe29c-5e9a-41bc-87a4-78e5acf42c27",
         "98d682e3-ab5e-4379-9f45-a45448617732",
         "0fcc2f4b-1113-4898-8a03-a66a634a2415",
-        "f35ee2b0-0278-4175-a8a4-ea1918f46f2e"
+        "f35ee2b0-0278-4175-a8a4-ea1918f46f2e",
+        "c9a8238d-6850-4a3e-b150-c5ef0926d5fe"
     ],
     "filterType": "GMScript",
     "folderName": "Text Input",

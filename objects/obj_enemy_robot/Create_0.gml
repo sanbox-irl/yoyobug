@@ -8,8 +8,6 @@ state_create("End_Draw",state_enemy_end_draw);
 state_init("Init_Draw");
 
 
-
-
 target = instance_nearest(x,y,obj_robot);
 
 x_pos = 0;
@@ -29,3 +27,6 @@ _target_place = array_create(2,0);
 
 last_dir = noone;
 
+path = path_add();
+path_set_kind(path,0);
+path_set_precision(path,8);

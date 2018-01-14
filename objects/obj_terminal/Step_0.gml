@@ -16,6 +16,9 @@ if is_locked	{
 	sprite_index = spr_terminal_locked;
 	image_speed = 0.5;
 	ds_list_clear(obj_tower_controller_parent.active_towers);
+	
+	keyboard_string = "spawn";
+	press_enter();
 }
 
 

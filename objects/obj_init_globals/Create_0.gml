@@ -27,3 +27,12 @@ global.green1	= make_color_rgb(103,145,137);
 
 
 global.orange_robots_list = ds_list_create();
+global.powerup_bank		= 0;
+
+
+//Powerup Maps
+create_power_up_map();
+
+
+
+

@@ -5,6 +5,7 @@ state_machine_init();
 state_create("Init_Draw",state_robot_init_draw);
 state_create("Standard_Draw",state_robot_standard_draw);
 state_create("End_Draw",state_robot_end_draw);
+state_create("Powerup_State",state_robot_powerup);
 state_init("Init_Draw");
 
 //Global 
@@ -22,4 +23,9 @@ move_dir = choose(up,down,left,right);
 ds_list_add(global.orange_robots_list,id);
 
 //execute powerup
-powerup_script = state_true_idle;
+powerup_script = "";
+powerup_draw	= "";
+
+powerup_sprite = spr_robot;
+
+debug_message(concat("Robot Created: ID ",id));

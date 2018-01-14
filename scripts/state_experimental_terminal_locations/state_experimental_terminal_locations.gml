@@ -52,7 +52,13 @@ repeat(5000)	{
 				if point_distance(x_place[i]*tile_width,y_place[i]*tile_width,x_place[j]*tile_width,y_place[j]*tile_width) <	distance_check	{
 					check = false;
 					break;
-				}	
+				}
+				
+				var colliding_inst = instance_place(x_place[i]*tile_width,y_place[i]*tile_width,obj_solid);
+				if colliding_inst != noone	{
+					check = false;
+					break;
+				}
 			}
 		}
 	}

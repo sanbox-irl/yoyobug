@@ -1,3 +1,4 @@
+exit;
 nineslice(spr_interior_input,term_x,term_y,term_x+term_width,term_y+term_height);
 var apple_gray = make_color_rgb(142,142,145)
 var term_end_x = term_x + term_width;

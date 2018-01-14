@@ -11,9 +11,15 @@ image_index+=img_spd*0.2;
 
 /*Collision Code	--- Goal: When player hits the node, gets one energy. One enemy hits the node: energy is destroyed.*/
 	//Player Collision
-if place_meeting(x,y,obj_robot)	{
-	global.energy++;
-	instance_destroy();
+var _robot = instance_place(x,y,obj_robot);
+
+if _robot != noone	{
+	with _robot	{
+		state_switch("Powerup_State",0);
+		powerup_script = powerup_knight_step;
+		powerup_draw	= powerup_knight_draw;
+	}
+	to_be_destroyed = true;
 }
 
 	//Enemy Colliision
@@ -22,3 +28,6 @@ if place_meeting(x,y,obj_enemy_robot)	{
 }
 
 
+if to_be_destroyed		{
+	instance_destroy();	
+}

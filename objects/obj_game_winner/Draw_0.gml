@@ -1,8 +1,4 @@
 var _color = c_white;
-//_color = choose(c_white, "nope");
-//if _color != c_white	{
-//	_color = choose(global.purple1, global.green1);
-//}
 
 var light_source = 8;
 var light_destination = 8;
