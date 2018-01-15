@@ -1,16 +1,53 @@
 var params = argument0;
 var returnable = "";
 
-var place;
+if !(instance_exists(obj_tower_controller_parent))	{
+	run = false;
+	screen_shake(4,30);
+	exit;	
+}
+var count = 0;
+var total_run = 5000;
+repeat (total_run) {
+	count++;
+	var list = obj_tower_controller_parent.percent_player_spawn;
+	var random_number = irandom_range(0, ds_list_size(list)-1);
 
+	var _x = list[| random_number] mod global.grid_width;
+	var _y = list[| random_number] div global.grid_width;
+	
+	if place_meeting(_x,_y,obj_solid)	{
+		continue;	
+	}
+	
+	if place_meeting(_x,_y,obj_terminal)	{
+		continue;	
+	}
+	
+	if place_meeting(_x,_y,obj_terminal_pillar)	{
+		continue;	
+	}
+	
+	if place_meeting(_x,_y,obj_enemy_spawner)	{
+		continue;	
+	}
+	
+	if place_meeting(_x,_y,obj_enemy_robot)	{
+		continue;	
+	}
+	
+	if place_meeting(_x,_y,obj_robot)	{
+		continue;	
+	}
 
-do {
-	place[X_ARRAY] = irandom_range(1,global.grid_width);
-	place[Y_ARRAY] = irandom_range(1,global.grid_height);
-} until (global.game_grid[# place[X_ARRAY],place[Y_ARRAY]] == noone);
-
-for (var i = 0; i < array_length_1d(place); ++i) {
-   place[i]*=tile_width;
+	break;
 }
 
-return spawn(place[X_ARRAY],place[Y_ARRAY]);
+if count = total_run	{
+	screen_shake(4,30);
+	run = false;
+	exit;
+}
+
+
+return spawn(_x*tile_width,_y*tile_width);

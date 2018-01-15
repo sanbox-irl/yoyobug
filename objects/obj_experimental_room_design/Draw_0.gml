@@ -16,7 +16,11 @@ if state_var[DRAW_VAR]	{
 	draw_set_color(c_white);
 }
 
+if keyboard_check_pressed(vk_f1)	{
+	toggle_grid = !toggle_grid;
+}
 
-if global.dev_mode	{
+
+if toggle_grid	{
 	mp_grid_draw(mp_grid);
 }

@@ -9,10 +9,9 @@ if point_distance(x,y,x_to,y_to) > 3	{
 		}
 		
 
-if place_meeting(x,y,obj_enemy_robot)
-	{
+if place_meeting(x,y,obj_enemy_robot)	{
 	to_be_destroyed = true;
-	}
+}
 
 
 if to_be_destroyed	{

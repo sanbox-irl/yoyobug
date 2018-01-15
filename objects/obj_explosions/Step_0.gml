@@ -1,17 +1,14 @@
-counter += global.dt;
+scale-=(1/3);
+scale = max(1,scale);
 
-scale = counter/kill_frame;
-scale = clamp(scale,0,1);
-
-if counter >= kill_frame*2.5	{
-	instance_destroy(id);
-	instance_destroy(caller);
+if scale == 1	{
+	counter+=global.dt;
 }
 
-var to_die = collision_circle(x,y,scale,obj_robot_parent,false,false)	
+to_die = instance_place(x,y,obj_robot_parent);
+instance_destroy(to_die);
 
-if to_die != noone	{
-	if to_die != caller	{
-		instance_destroy(to_die);
-	}
+
+if counter >  5 {
+	instance_destroy();	
 }

@@ -27,3 +27,7 @@ state_init("Find Terminal Locations");
 tower_layer = "Instances";
 mp_grid = mp_grid_create(0,0,global.grid_width+tile_width,global.grid_height+tile_width,tile_width,tile_width);
 mp_grid_add_instances(mp_grid,obj_solid,false);
+mp_grid_add_instances(mp_grid,obj_enem_spawner,false);
+mp_grid_add_instances(mp_grid,obj_terminal, false);
+mp_grid_add_instances(mp_grid,obj_terminal_pillar,false);
+toggle_grid = false;

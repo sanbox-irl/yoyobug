@@ -102,12 +102,15 @@ if robo_number > 2	{
 
 
 //Player Spawn
+for (var i = 0; i < 2; ++i) {
 random_number = irandom_range(0, ds_list_size(percent_player_spawn)-1);
 	_x = percent_player_spawn[| random_number] mod global.grid_width;
 	_y = percent_player_spawn[| random_number] div global.grid_width;
 	instance_create_layer(_x*tile_width+tile_width,_y*tile_width+tile_width,"Instances",obj_robot);
 	ds_list_delete(percent_player_spawn,random_number);
-	
+}
+
+//Make Random Walls where the player could have been.
 for (var i = 0; i < ds_list_size(percent_player_spawn); ++i) {
 	if percent_player_spawn[| i] == undefined	{
 		continue;	

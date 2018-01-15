@@ -1,3 +1,7 @@
+///@func spawn(x,y);
+///@param x
+///@param y;
+
 var x_place_ = argument0;
 var y_place_ = argument1;
 

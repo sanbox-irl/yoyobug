@@ -1,5 +1,5 @@
 /// @description Update the Step
-global.dt = delta_time/1000000 * 60;
+global.dt = delta_time/1000000 *60;
 global.enter = keyboard_check_pressed(vk_enter);
 
 
