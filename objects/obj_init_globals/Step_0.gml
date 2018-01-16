@@ -12,3 +12,4 @@ for (var i = 0; i < global.grid_width; ++i) {
 if keyboard_check_pressed(vk_delete)	{
 	global.dev_mode = !global.dev_mode;	
 }
+

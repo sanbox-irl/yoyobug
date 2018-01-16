@@ -13,3 +13,7 @@ final_rad = tile_width/2;
 draw_small_circle = false;
 
 end_spawning_circle = false;
+
+if place_meeting(x,y,obj_robot)	{
+	instance_destroy();
+}

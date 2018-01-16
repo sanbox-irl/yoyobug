@@ -20,6 +20,10 @@ repeat (total_run) {
 		continue;	
 	}
 	
+	if place_meeting(_x,_y,obj_robot_spawner)	{
+		continue;	
+	}
+	
 	if place_meeting(_x,_y,obj_terminal)	{
 		continue;	
 	}
@@ -40,15 +44,15 @@ repeat (total_run) {
 		continue;	
 	}
 	
-	instance_create_layer(_x,_y,"Instances",obj_robot);
+
 	break;
 }
 
-if count = total_run	{
+if count >= (total_run - 1)	{
 	screen_shake(4,30);
 	run = false;
-	exit;
+	return;
 }
 
 
-return spawn(_x*tile_width,_y*tile_width);
+return spawn(_x,_y);

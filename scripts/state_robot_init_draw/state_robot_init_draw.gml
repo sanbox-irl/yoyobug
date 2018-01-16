@@ -5,6 +5,8 @@ if state_var[DRAW_VAR] > sprite_height-1	{
 		calling_circle.end_spawning_circle = true;	
 	}
 	move_to_grid(x,y,tile_width);
+	x_to = x;
+	y_to = y;
 	state_switch("Standard_Draw",0);
 }
 

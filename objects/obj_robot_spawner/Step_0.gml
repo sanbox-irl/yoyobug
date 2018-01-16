@@ -7,6 +7,3 @@ if small_timer > 15	{
 }
 
 state_execute();
-
-
-debug_message(ds_map_find_value(state_keys,state));

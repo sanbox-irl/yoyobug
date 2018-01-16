@@ -64,5 +64,3 @@ shader_set(sh_recolor);
 shader_reset();
 
 draw_set_alpha(1);
-
-

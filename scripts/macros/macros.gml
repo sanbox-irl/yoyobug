@@ -6,6 +6,7 @@
 #macro	down		270
 #macro terminal		obj_input_terminal
 #macro tile_width	32
+#macro TILE_WIDTH	32
 
 ///Terminal Tower Macros
 #macro	TOWER_X		0
@@ -23,3 +24,7 @@
 #macro BOOL_VAR		2
 
 #macro ATTACK_VAR	4
+#macro RIGHT_ARRAY	0
+#macro UP_ARRAY		1
+#macro LEFT_ARRAY	2
+#macro DOWN_ARRAY	3

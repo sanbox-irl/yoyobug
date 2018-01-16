@@ -32,3 +32,5 @@ if global.energy == 0	{
 if keyboard_check_pressed(vk_f2)	{
 	toggle = !toggle;	
 }
+
+debug_message(instance_number(obj_robot));
