@@ -11,3 +11,5 @@ _color = [1.0,0.3,0.3,1]; /// Red;
 temp_alpha = 0;
 previous_energy = 0;
 make_red = false;
+
+toggle = false;

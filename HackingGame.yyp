@@ -1119,6 +1119,14 @@
             }
         },
         {
+            "Key": "4974c5fa-7c6c-4925-a547-ee4d6be1a3e8",
+            "Value": {
+                "id": "2e41b0b6-dfb6-40fb-80d3-fccfcb275ffe",
+                "resourcePath": "objects\\obj_gui\\obj_gui.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4a2ad39e-bbf2-4c3d-97c5-366b20ce92fd",
             "Value": {
                 "id": "0827e6d6-1896-4457-bab0-18acc7310a66",
@@ -4205,8 +4213,11 @@
         "457d3c22-e6b7-4351-8484-b4ff07dc52a1",
         "949aecec-1491-4b85-acd4-6933ee58c9d2",
         "3b97659c-23cd-49f5-9d95-13d229079e62",
+        "df3f4ea9-15e6-415b-9d75-68c3117825e9",
+        "874423f6-4c58-4425-88f1-0f8376e3782b",
         "c2b3b65a-f711-4116-9fca-56e31b73a7c8",
         "dec94dbf-48d3-41eb-8235-0b8f93ecf686",
+        "ae44e6bb-f4d2-4744-ba7f-25562c984cd2",
         "4d6a5399-9e9f-43c6-8f86-adacbc221a29",
         "0b1eb25d-2ce1-48d3-87de-b32edb6d787a",
         "4a6750a7-b621-40a6-addf-c025ff0e9f69",
@@ -4428,16 +4439,13 @@
         "60d62b50-79c5-4386-8841-759276c64f1c",
         "3541cdf3-7985-471a-a4a3-61f846f353ed",
         "7347040b-7201-48cc-bd55-efc610534da3",
-        "ae44e6bb-f4d2-4744-ba7f-25562c984cd2",
         "183583ad-7cf7-41f5-ad36-a7cddd9b14a5",
         "911120db-a13d-4316-a220-e2aadef06d22",
         "21dd6177-f54d-48e3-a1e6-66da37e62910",
         "9078d15c-3cef-4d47-bda1-09ca9d510a12",
-        "df3f4ea9-15e6-415b-9d75-68c3117825e9",
         "e83fb17d-87b0-4900-b0ed-d14231828f96",
         "8b2d8ede-768d-4d13-9dde-e8dfe3756a53",
-        "02a70094-c292-4330-921a-7274a10be309",
-        "874423f6-4c58-4425-88f1-0f8376e3782b"
+        "02a70094-c292-4330-921a-7274a10be309"
     ],
     "tutorial": ""
 }

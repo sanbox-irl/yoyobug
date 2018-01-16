@@ -28,3 +28,7 @@ if global.energy == 0	{
 	temp_alpha = 1;	
 	}
 }
+
+if keyboard_check_pressed(vk_f2)	{
+	toggle = !toggle;	
+}

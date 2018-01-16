@@ -3,13 +3,12 @@ counter+=global.dt/60;
 percent_time = counter / random_time;
 
 if percent_time >	1	{
-	//Spawn the New Robot:
-	instance_create_layer(x+tile_width,y+2*tile_width,"Instances",obj_enemy_robot);
+	if instance_number(obj_enemy_robot) < 6	{
+		instance_create_layer(x+tile_width,y+2*tile_width,"Instances",obj_enemy_robot);
+	}
 	
-	
-	
-	
-	
+	image_speed = 0.5;
+
 	
 	
 	counter = 0;
@@ -17,3 +16,8 @@ if percent_time >	1	{
 	random_time = irandom_range(3,6);
 }
 
+if (image_index == (image_number-1))	{
+	debug_message(image_index);
+	image_index = 0;
+	image_speed = 0;
+}
