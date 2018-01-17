@@ -12,7 +12,8 @@
         "bce93a46-43a3-4305-a90c-75000c3c9680",
         "12c86e41-0d44-43d0-9018-7a411d43362a",
         "c89976ed-5c10-4379-943c-0e44bc752f21",
-        "a5b03884-4d6e-42d5-b9d1-4c20a7243216"
+        "a5b03884-4d6e-42d5-b9d1-4c20a7243216",
+        "37cf6bf4-5fcf-43ff-9a4c-07b8f9651eb9"
     ],
     "filterType": "GMScript",
     "folderName": "State Machine Itself",

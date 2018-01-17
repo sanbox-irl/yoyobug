@@ -1,3 +1,7 @@
+if keyboard_check_pressed(vk_anykey)	&& !(keyboard_check_pressed(vk_enter))	{
+	state_switch("Keyboard_Input",0);
+}
+
 #region Inputs
 var lh_axis = gamepad_axis_value(0,gp_axislh);
 var lv_axis = gamepad_axis_value(0,gp_axislv);
@@ -60,6 +64,10 @@ if gamepad_button_check_pressed(0, gp_shoulderlb)	{
 	}
 }
 
+if gamepad_button_check_pressed(0,gp_face2)	{
+	global.ping_hud = true;	
+}
+
 if (lh_axis < -0.75) && can_move[LEFT_ARRAY]	{
 	gp_to_text("move-left");
 	can_move[LEFT_ARRAY] = false;
@@ -102,18 +110,3 @@ for (var i = 0; i < array_length_1d(can_move); ++i) {
 		counter[i] = 0;
 	}
 }
-
-
-
-
-
-//if point_distance(0,0,lh_axis,lv_axis) < 0.2	{
-//	for (var i = 0; i < array_length_1d(can_move); ++i) {
-//	    can_move[i]= true;
-//	}
-//}
-
-
-
-
-

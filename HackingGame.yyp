@@ -847,6 +847,14 @@
             }
         },
         {
+            "Key": "36535d10-cffc-4f8b-b1ef-e4e0c939ab05",
+            "Value": {
+                "id": "54487932-9dc7-4eb2-b03b-7e008a5f0452",
+                "resourcePath": "scripts\\input_keyboard\\input_keyboard.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "36e20221-ca4d-47ab-8647-12a56b32a495",
             "Value": {
                 "id": "10e398cb-4eaf-469b-a34a-672e3866d0c1",
@@ -867,6 +875,14 @@
             "Value": {
                 "id": "8a739827-28bd-4e66-bd82-0f9ff0a64589",
                 "resourcePath": "scripts\/make_terminal_directions\/make_terminal_directions.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "37cf6bf4-5fcf-43ff-9a4c-07b8f9651eb9",
+            "Value": {
+                "id": "46360bd1-87d8-4eb6-84ca-9477906269c4",
+                "resourcePath": "scripts\\state_draw\\state_draw.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1122,7 +1138,7 @@
             "Key": "4974c5fa-7c6c-4925-a547-ee4d6be1a3e8",
             "Value": {
                 "id": "2e41b0b6-dfb6-40fb-80d3-fccfcb275ffe",
-                "resourcePath": "objects\\obj_gui\\obj_gui.yy",
+                "resourcePath": "objects\\obj_hud\\obj_hud.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1991,6 +2007,14 @@
             }
         },
         {
+            "Key": "83d2baca-cb52-4f79-8e55-6e82a78ad5fb",
+            "Value": {
+                "id": "6d677f28-eb6d-4370-bc75-042486dec829",
+                "resourcePath": "scripts\\debug_controls\\debug_controls.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "83d2bd55-d463-4085-a678-0aab274b4f10",
             "Value": {
                 "id": "754b2a61-79d6-4e77-9a5e-90ced322dcf9",
@@ -2651,6 +2675,14 @@
             "Value": {
                 "id": "5afef1de-b3b3-479f-902f-ac8d3ac1d376",
                 "resourcePath": "objects\/obj_camera_old\/obj_camera_old.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a9174d90-dc52-4ef9-a037-33c08eb597e4",
+            "Value": {
+                "id": "9f0dabbe-f42b-4dca-afe0-9760b823d335",
+                "resourcePath": "objects\\obj_experimental_input\\obj_experimental_input.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -3743,6 +3775,14 @@
             }
         },
         {
+            "Key": "e566461b-866a-4be2-a5a5-250e4d6cf539",
+            "Value": {
+                "id": "ef1a9510-e52f-4b84-9728-de5a0b3e044e",
+                "resourcePath": "scripts\\input_controller\\input_controller.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e5f825b3-3b30-49e9-91c6-c2f03a36abce",
             "Value": {
                 "id": "16efa3d1-b123-4cf7-af52-69ef50746799",
@@ -3907,6 +3947,14 @@
             "Value": {
                 "id": "5f81028a-1dd1-4bd3-8487-e995beb87a17",
                 "resourcePath": "scripts\/TweenAddCallbackUser\/TweenAddCallbackUser.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f0d7010f-ad34-40a4-b840-be0f2e51c9dc",
+            "Value": {
+                "id": "51a1e31f-9df4-45cf-a5ed-908bc6ab3508",
+                "resourcePath": "scripts\\check_gamepad_input\\check_gamepad_input.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -4414,6 +4462,7 @@
         "12c86e41-0d44-43d0-9018-7a411d43362a",
         "c89976ed-5c10-4379-943c-0e44bc752f21",
         "a5b03884-4d6e-42d5-b9d1-4c20a7243216",
+        "37cf6bf4-5fcf-43ff-9a4c-07b8f9651eb9",
         "a338f863-5698-4dee-84c8-5f5e60daccf3",
         "1b630d56-543b-43e5-ab91-9885ed682c6c",
         "ea371ef4-4f3e-4b1a-960f-795044c3fa20",
@@ -4454,7 +4503,11 @@
         "e83fb17d-87b0-4900-b0ed-d14231828f96",
         "8b2d8ede-768d-4d13-9dde-e8dfe3756a53",
         "02a70094-c292-4330-921a-7274a10be309",
-        "b9d499a6-ca73-496a-bf1e-adcb5dc4e2c9"
+        "b9d499a6-ca73-496a-bf1e-adcb5dc4e2c9",
+        "e566461b-866a-4be2-a5a5-250e4d6cf539",
+        "36535d10-cffc-4f8b-b1ef-e4e0c939ab05",
+        "f0d7010f-ad34-40a4-b840-be0f2e51c9dc",
+        "83d2baca-cb52-4f79-8e55-6e82a78ad5fb"
     ],
     "tutorial": ""
 }
