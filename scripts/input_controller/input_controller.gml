@@ -24,11 +24,11 @@ if gamepad_button_check_pressed(0, gp_padl)	{
 }
 
 if gamepad_button_check_pressed(0,gp_padr)	{
-	move_right = true;	
+	move_right = true;
 }
 
 if gamepad_button_check_pressed(0,gp_padu)	{
-	move_up = true;	
+	move_up = true;
 }
 
 if gamepad_button_check_pressed(0,gp_padd)	{
@@ -47,45 +47,49 @@ if gamepad_button_check_pressed(0,gp_face2)	{
 	ping_hd = true;
 }
 
-if (lh_axis < -0.75) && can_move[LEFT_ARRAY]	{
-	gp_to_text("move-left");
-	can_move[LEFT_ARRAY] = false;
+if gamepad_button_check_pressed(0,gp_select)	{
+	fscreen = true;	
 }
 
-if (lh_axis > 0.75) && can_move[RIGHT_ARRAY]	{
-	gp_to_text("move-right");
-	can_move[RIGHT_ARRAY] = false;
-}
+//if (lh_axis < -0.75) && can_move[LEFT_ARRAY]	{
+//	gp_to_text("move-left");
+//	can_move[LEFT_ARRAY] = false;
+//}
 
-if (lv_axis < -0.75) && can_move[UP_ARRAY]	{
-	gp_to_text("move-up");
-	can_move[UP_ARRAY] = false;
-}
+//if (lh_axis > 0.75) && can_move[RIGHT_ARRAY]	{
+//	gp_to_text("move-right");
+//	can_move[RIGHT_ARRAY] = false;
+//}
 
-if (lv_axis > 0.75) && can_move[DOWN_ARRAY]	{
-	gp_to_text("move-down");
-	can_move[DOWN_ARRAY] = false;
-}
+//if (lv_axis < -0.75) && can_move[UP_ARRAY]	{
+//	gp_to_text("move-up");
+//	can_move[UP_ARRAY] = false;
+//}
+
+//if (lv_axis > 0.75) && can_move[DOWN_ARRAY]	{
+//	gp_to_text("move-down");
+//	can_move[DOWN_ARRAY] = false;
+//}
 
 
-//Reset Conditions
-if abs(lh_axis) < 0.2	{
-	can_move[LEFT_ARRAY] = true;
-	can_move[RIGHT_ARRAY] = true;
-}
+////Reset Conditions
+//if abs(lh_axis) < 0.2	{
+//	can_move[LEFT_ARRAY] = true;
+//	can_move[RIGHT_ARRAY] = true;
+//}
 
-if abs(lv_axis) < 0.2	{
-	can_move[UP_ARRAY] = true;
-	can_move[DOWN_ARRAY] = true;
-}
+//if abs(lv_axis) < 0.2	{
+//	can_move[UP_ARRAY] = true;
+//	can_move[DOWN_ARRAY] = true;
+//}
 
-for (var i = 0; i < array_length_1d(can_move); ++i) {
-	if (can_move[i] == false)	{
-		counter[i]+=global.dt;
-	}
+//for (var i = 0; i < array_length_1d(can_move); ++i) {
+//	if (can_move[i] == false)	{
+//		counter[i]+=global.dt;
+//	}
 	
-	if (counter[i] >= 10)	{
-		can_move[i] = true;
-		counter[i] = 0;
-	}
-}
+//	if (counter[i] >= 10)	{
+//		can_move[i] = true;
+//		counter[i] = 0;
+//	}
+//}

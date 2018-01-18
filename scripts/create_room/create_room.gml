@@ -96,9 +96,6 @@ for (var i = 0; i < list_size; ++i) {
 }
 
 var robo_number = instance_number(obj_enemy_robot) 
-if robo_number > 2	{
-	global.energy+= (robo_number - 2);
-}
 
 
 //Player Spawn

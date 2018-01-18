@@ -1,6 +1,12 @@
 var params = argument0;
 var returnable = "";
 
+if global.energy < 1	{
+	screen_shake(2,5);
+	run = false;
+	return;
+}
+
 if !(instance_exists(obj_tower_controller_parent))	{
 	run = false;
 	screen_shake(4,30);

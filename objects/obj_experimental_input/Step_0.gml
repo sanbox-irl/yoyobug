@@ -1,27 +1,56 @@
 state_execute();
 
-
 if move_left	{
-	move_execute("move_left");
+	with obj_input_terminal	{
+		keyboard_string = "move-left";
+		press_enter();
+	}
+	move_left = false;
 }
 
-move_left = execute_input(move_left,"move_left");
-move_right = execute_input(move_right,"move_right");
-move_down = execute_input(move_down,"move_down");
-move_up = execute_input(move_up,"move_up");
+if move_right	{
+	with obj_input_terminal	{
+		keyboard_string = "move-right";
+		press_enter();
+	}
+	move_right = false;
+}
+
+if move_up	{
+	with obj_input_terminal	{
+		keyboard_string = "move-up";
+		press_enter();
+	}
+	move_up = false;
+}
+
+if move_down	{
+	with obj_input_terminal	{
+		keyboard_string = "move-down";
+		press_enter();
+	}
+	move_down = false;
+}
+
+if exit_var		{
+	game_end();
+	exit_var = false;
+}
+
+if spawn_var	{
+	with obj_input_terminal	{
+		keyboard_string = "spawn";
+		press_enter();
+	}
+	spawn_var = false;	
+}
 
 if ping_hd	{
 	global.ping_hud = true;	
+	ping_hd = false;
 }
 
-if global.dev_mode && restart	{
-	game_restart();
+if fscreen	{
+	window_set_fullscreen(!window_get_fullscreen());
+	fscreen = false;
 }
-
-if global.dev_mode	{
-	exit_var = execute_input(exit_var,"exit");	
-}
-
-spawn_var = execute_input(spawn_var,"spawn");
-
-

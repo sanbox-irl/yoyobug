@@ -1,8 +1,8 @@
 {
-    "id": "be08a446-9972-4e1f-ac05-78cf02acd5a6",
+    "id": "32794284-fdcb-4741-9143-6f857d179961",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "execute_input",
+    "name": "draw_text_ocolor",
     "IsCompatibility": false,
     "IsDnD": false
 }
