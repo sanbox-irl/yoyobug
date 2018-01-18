@@ -20,52 +20,31 @@ if gamepad_button_check_pressed(0,gp_face3)	{
 }
 
 if gamepad_button_check_pressed(0, gp_padl)	{
-	with obj_input_terminal	{
-		keyboard_string = "move-left";
-		press_enter();
-	}	
+	move_left = true;	
 }
 
 if gamepad_button_check_pressed(0,gp_padr)	{
-	with obj_input_terminal	{
-		keyboard_string = "move-right";
-		press_enter();
-	}
-	
+	move_right = true;	
 }
 
 if gamepad_button_check_pressed(0,gp_padu)	{
-	with obj_input_terminal	{
-		keyboard_string = "move-up";
-		press_enter();
-	}
-	
+	move_up = true;	
 }
 
 if gamepad_button_check_pressed(0,gp_padd)	{
-	with obj_input_terminal	{
-		keyboard_string = "move-down";
-		press_enter();
-	}
-	
+	move_down = true;
 }
 
 if gamepad_button_check_pressed(0, gp_start)	{
-	with obj_input_terminal	{
-		keyboard_string = "exit";
-		press_enter();
-	}
+	exit_var = true;
 }
 
 if gamepad_button_check_pressed(0, gp_shoulderlb)	{
-	with obj_input_terminal	{
-		keyboard_string = "spawn";
-		press_enter();
-	}
+	spawn_var = true;
 }
 
 if gamepad_button_check_pressed(0,gp_face2)	{
-	global.ping_hud = true;	
+	ping_hd = true;
 }
 
 if (lh_axis < -0.75) && can_move[LEFT_ARRAY]	{
