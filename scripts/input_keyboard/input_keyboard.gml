@@ -39,3 +39,11 @@ if keyboard_check_pressed(vk_space)	{
 if keyboard_check_pressed(ord("F"))	{
 	fscreen = true;	
 }
+
+if keyboard_check_pressed(vk_shift)	{
+	game_restart();
+}
+
+if keyboard_check_pressed(ord("R"))	{
+	global.start = true;
+}

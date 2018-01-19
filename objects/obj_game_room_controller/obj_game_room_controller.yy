@@ -2,7 +2,7 @@
     "id": "a0849a35-6042-494a-adc6-fce6659f1dae",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_game_winner",
+    "name": "obj_game_room_controller",
     "eventList": [
         {
             "id": "169c2cef-826e-46dd-b2ad-f2a8d6ec92ef",
@@ -42,6 +42,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
+            "m_owner": "a0849a35-6042-494a-adc6-fce6659f1dae"
+        },
+        {
+            "id": "de24b9fe-d462-41ac-bc49-47e3e46c387c",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 4,
+            "eventtype": 7,
             "m_owner": "a0849a35-6042-494a-adc6-fce6659f1dae"
         }
     ],
