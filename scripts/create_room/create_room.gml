@@ -45,11 +45,12 @@ for (var i = 0; i < nlevel_width; ++i) {
 	}
 }
 
+
 //Walls Loop
 for (var i = 0; i < ds_list_size(walls_list); ++i) {
-    _x = walls_list[| i] mod global.grid_width;
+	_x = walls_list[| i] mod global.grid_width;
 	_y = walls_list[| i] div global.grid_width;
-	
+		
 	instance_create_layer(_x*TILE_WIDTH+TILE_WIDTH,_y*TILE_WIDTH+TILE_WIDTH,"Instances",obj_walls);
 }
 
@@ -68,7 +69,7 @@ for (var i = 0; i < list_size; ++i) {
 	if (percent_spawner[|i] == undefined)	{
 		continue;	
 	}
-    var probability = 1/(ds_list_size(percent_spawner)+1);
+	var probability = 1/(ds_list_size(percent_spawner)+1);
 	if chance(probability)	{
 		_x = percent_spawner[| i] mod global.grid_width;
 		_y = percent_spawner[| i] div global.grid_width;
@@ -81,12 +82,12 @@ for (var i = 0; i < list_size; ++i) {
 
 //Percent Enemy
 for (var i = 0; i < list_size; ++i) {
-    if percent_enemy_list[| i] == undefined	{
+	if percent_enemy_list[| i] == undefined	{
 		continue;	
 	}
 	list_size		= ds_list_size(percent_enemy_list);
 	var probability = 3/(list_size);
-	
+		
 	if chance(probability)	{
 		_x = percent_enemy_list[| i] mod global.grid_width;
 		_y = percent_enemy_list[| i] div global.grid_width;
@@ -94,9 +95,6 @@ for (var i = 0; i < list_size; ++i) {
 		ds_list_delete(percent_enemy_list,i);
 	}
 }
-
-var robo_number = instance_number(obj_enemy_robot) 
-
 
 //Player Spawn
 for (var i = 0; i < 2; ++i) {
@@ -112,14 +110,21 @@ for (var i = 0; i < ds_list_size(percent_player_spawn); ++i) {
 	if percent_player_spawn[| i] == undefined	{
 		continue;	
 	}
-	var probability = 0.5;
+	var probability = 0.3;
 	if chance(probability)	{
 		_x = percent_player_spawn[| i] mod global.grid_width;
 		_y = percent_player_spawn[| i] div global.grid_width;
 		instance_create_layer(_x*TILE_WIDTH+TILE_WIDTH,_y*TILE_WIDTH+TILE_WIDTH,"Instances",obj_walls);
 	}
 }	
-	
+		
 organize_walls();
-	
+
+
+
+
+
+
+
+
 

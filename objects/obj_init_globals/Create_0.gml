@@ -3,7 +3,7 @@ global.dt = 0;
 global.start = false
 
 global.grid_width = 18;
-global.grid_height = 10;
+global.grid_height = 9;
 global.game_grid = ds_grid_create(global.grid_width,global.grid_height);
 
 global.dev_mode = true;
@@ -14,10 +14,6 @@ var starting_energy = 3;
 global.energy = starting_energy; 
 global.is_playroom	= false;
 
-
-if window_get_fullscreen()	{
-	global.fullscreen = true;	
-} else global.fullscreen = false;
 
 global.purple1 = make_color_rgb(63,54,86);
 global.blue1	= make_color_rgb(66,91,121);

@@ -90,7 +90,6 @@ repeat(5000)	{
 			y_term_place[i]	= y_place[i]		+	lengthdir_y(1,random_direc[i]);
 		
 			//Check the Random Numbers Now.
-		
 			for (var j = 0; j < i; ++j) {
 				//General checks
 				if x_term_place[i] == x_term_place[j]	{
@@ -134,7 +133,11 @@ repeat(5000)	{
 					check_term = false;
 					break;
 				}
-			
+
+				if place_meeting(x,y,obj_solid)	{
+					check_term = false;
+					break;
+				}
 			}
 		}
 	}
