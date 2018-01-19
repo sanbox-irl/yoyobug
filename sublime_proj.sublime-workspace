@@ -32,14 +32,6 @@
 			}
 		},
 		{
-			"file": "scripts/input_controller/input_controller.gml",
-			"settings":
-			{
-				"buffer_size": 1841,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "objects/obj_input_terminal/Draw_64.gml",
 			"settings":
 			{
@@ -51,7 +43,16 @@
 			"file": "objects/obj_explosions/Draw_0.gml",
 			"settings":
 			{
-				"buffer_size": 106,
+				"buffer_size": 305,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "objects/obj_explosions/Create_0.gml",
+			"settings":
+			{
+				"buffer_size": 156,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -102,10 +103,12 @@
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N",
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects",
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_enemy_spawner",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_explosions",
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_input_terminal"
 	],
 	"file_history":
 	[
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/input_controller/input_controller.gml",
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_camera/Create_0.gml",
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/create_room/create_room.gml",
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/state_spawn_towers/state_spawn_towers.gml",
@@ -239,35 +242,6 @@
 				},
 				{
 					"buffer": 3,
-					"file": "scripts/input_controller/input_controller.gml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1841,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								331,
-								331
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/GameMaker Language (GML) Bundle/gml.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
 					"file": "objects/obj_input_terminal/Draw_64.gml",
 					"semi_transient": true,
 					"settings":
@@ -279,8 +253,8 @@
 						"selection":
 						[
 							[
-								1655,
-								1655
+								1489,
+								1489
 							]
 						],
 						"settings":
@@ -289,7 +263,35 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 684.0,
+						"translation.y": 570.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "objects/obj_explosions/Draw_0.gml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 305,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								123,
+								123
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GameMaker Language (GML) Bundle/gml.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -297,19 +299,19 @@
 				},
 				{
 					"buffer": 5,
-					"file": "objects/obj_explosions/Draw_0.gml",
+					"file": "objects/obj_explosions/Create_0.gml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 106,
+						"buffer_size": 156,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								106,
-								106
+								156,
+								156
 							]
 						],
 						"settings":
