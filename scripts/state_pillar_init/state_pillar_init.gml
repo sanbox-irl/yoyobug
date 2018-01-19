@@ -7,7 +7,7 @@ if state_var[BOOL_VAR] == 0	{
 	term_spr		 =	ref.tower_grid[# tower_number, TERM_DIREC];
 	
 	//Make our Floor Mat
-	floor_mat = instance_create_layer(x,y,"Background_Instances",obj_floor_mat);
+	floor_mat = instance_create_layer(x,y,"Background_Layer",obj_floor_mat);
 	floor_mat.originator_tower	= id;
 	floor_mat.color				= color;
 	state_var[BOOL_VAR] = 1;

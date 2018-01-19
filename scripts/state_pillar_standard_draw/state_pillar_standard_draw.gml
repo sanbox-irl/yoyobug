@@ -5,7 +5,7 @@ if tower_locked	{
 
 //This is where we make the terminals. 
 if state_new	{
-	terminal_inst = instance_create_layer(x_place_terminal,y_place_terminal,"Higher_Instances",obj_terminal);
+	terminal_inst = instance_create_layer(x_place_terminal,y_place_terminal,"Instances",obj_terminal);
 	terminal_inst.originator_tower = id;
 	terminal_inst.spr = term_spr;
 	floor_mat.term_inst = terminal_inst;	

@@ -10,6 +10,6 @@ if !TweenIsPlaying(kill_tween)	{
 }
 
 if state_var[0] < 0	{
-	instance_create_layer(_x,_y,"Instances",obj_explosions);
+	instance_create_layer(_x,_y,"Effects_Instance",obj_explosions);
 	instance_destroy();
 }

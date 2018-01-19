@@ -3,7 +3,7 @@ if global.dev_mode {
 		time_left+=20;	
 	}
 }
-time_left = 15;
+time_left = 8;
 
 if state_timer/60 > time_left	{
 	state_var[DRAW_VAR] = false;					
@@ -31,7 +31,6 @@ if state_timer/60 > time_left	{
 	for (var i = 0; i < instance_number(obj_terminal_pillar); ++i) {
 	   var _inst = instance_find(obj_terminal_pillar,i);
 	   if (ds_list_find_index(active_towers,_inst.id) = -1)	{
-		   debug_message("Instance ID not found");
 		   if _inst.electrified == true	{
 			   ds_list_add(active_towers,_inst.id);  
 			   debug_message(string(_inst.id) + string(" Successfully Added"));

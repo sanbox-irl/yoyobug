@@ -1,3 +1,4 @@
+event_inherited();
 //Old Stuff
 image_speed = 0;
 color = 0;

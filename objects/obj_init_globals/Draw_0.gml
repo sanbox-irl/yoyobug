@@ -15,6 +15,6 @@ for (var i = 1; i < longitude; i++) {
 
 //Drawing East-West Lines
 for (var i = 1; i<latitude; ++i) {
-	draw_sprite_stretched_ext(spr_onepixel,0,TILE_WIDTH,TILE_WIDTH*i,room_width-(2*TILE_WIDTH),size,c_white,0.1);
+	draw_sprite_stretched_ext(spr_onepixel,0,TILE_WIDTH,TILE_WIDTH+TILE_WIDTH*i,room_width-(2*TILE_WIDTH),size,c_white,0.1);
 }
 draw_set_alpha(1);

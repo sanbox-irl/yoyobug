@@ -8,7 +8,9 @@ if state_var[0] <= 0	{
 		state_var[2] = 1;
 	}
 } else	{
-	debug_message(string("Killing Robot ") + string(id));
+	if state_new	{
+		debug_message(string("Killing Robot ") + string(id));
+	}
 	image_speed = 0;
 }
 

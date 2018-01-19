@@ -6,7 +6,7 @@ width = 640;
 height = 360;
 
 x_to = 0;
-y_to = 7;
+y_to = 14;
 
 x = x_to;
 y = y_to;

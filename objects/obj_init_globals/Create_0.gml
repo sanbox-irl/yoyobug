@@ -1,6 +1,6 @@
 //Delta Time
 global.dt = 0;
-global.start = false
+global.start = true;
 
 global.grid_width = 18;
 global.grid_height = 9;
