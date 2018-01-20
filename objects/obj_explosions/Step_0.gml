@@ -5,8 +5,10 @@ if scale == 1	{
 	counter+=global.dt;
 }
 
-to_die = instance_place(x,y,obj_robot_parent);
-instance_destroy(to_die);
+var to_die = instance_place(x,y,obj_robot_parent);
+if instance_exists(to_die)	{
+	to_die.to_be_destroyed = true;
+}
 
 
 if counter >  7 {

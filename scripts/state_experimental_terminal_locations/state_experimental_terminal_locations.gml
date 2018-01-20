@@ -15,9 +15,9 @@ var distance_check		= 2;
 distance_check		   *= TILE_WIDTH;
 
 repeat(5000)	{
-var cycles				= 0;
-#region MAIN TOWER LOOP
-var check = true;
+	var cycles				= 0;
+	#region MAIN TOWER LOOP
+	var check = true;
 	repeat(5000)	{
 		cycles++;
 		//Reset the x_place;

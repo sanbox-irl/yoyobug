@@ -5,7 +5,7 @@ var display_height = display_get_height();
  
 // set base ideal width/height
 ideal_width = 0; //360;
-ideal_height = 640;
+ideal_height = 360;
  
 zoom = 1;
  
@@ -22,7 +22,7 @@ if (display_width mod ideal_width != 0)
 {
     var _d = round(display_width/ideal_width);
     ideal_width= display_width/_d;
-}
+
  
 if (display_height mod ideal_height != 0)
 {

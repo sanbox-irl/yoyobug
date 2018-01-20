@@ -15,16 +15,16 @@ var _robot = instance_place(x,y,obj_robot);
 
 if _robot != noone	{
 	with _robot	{
-		state_switch("Powerup_State",0);
 		powerup_script = powerup_knight_step;
 		powerup_draw	= powerup_knight_draw;
 	}
 	to_be_destroyed = true;
+	global.energy++;
 }
 
 	//Enemy Colliision
 if place_meeting(x,y,obj_enemy_robot)	{
-	instance_destroy();	
+	to_be_destroyed = true;
 }
 
 

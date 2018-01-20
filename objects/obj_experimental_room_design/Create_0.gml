@@ -7,6 +7,12 @@ draw_collision_lines = false;
 offset[X_ARRAY] = sprite_get_width(spr_totems)/2;
 offset[Y_ARRAY] = -7;
 
+
+//Inital Behaviours:
+create_room();
+make_colors();
+make_terminal_directions();
+
 //Pathing
 mp_grid = mp_grid_create(0,0,global.grid_width+tile_width,global.grid_height+tile_width*2,tile_width,tile_width);
 mp_grid_add_instances(mp_grid,obj_solid,false);
@@ -14,11 +20,6 @@ mp_grid_add_instances(mp_grid,obj_enem_spawner,false);
 mp_grid_add_instances(mp_grid,obj_terminal, false);
 mp_grid_add_instances(mp_grid,obj_terminal_pillar,false);
 toggle_grid = false;
-
-//Inital Behaviours:
-create_room();
-make_colors();
-make_terminal_directions();
 
 
 state_machine_init();

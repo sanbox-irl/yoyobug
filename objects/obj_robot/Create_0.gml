@@ -5,7 +5,6 @@ state_machine_init();
 state_create("Init_Draw",state_robot_init_draw);
 state_create("Standard_Draw",state_robot_standard_draw);
 state_create("End_Draw",state_robot_end_draw);
-state_create("Powerup_State",state_robot_powerup);
 state_init("Init_Draw");
 
 //Global 

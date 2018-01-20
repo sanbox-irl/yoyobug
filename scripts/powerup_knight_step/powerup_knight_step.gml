@@ -1,6 +1,3 @@
-//Normal Move State;
-state_robot_standard_draw();
-
 //Knight Specific Code:
 var _dir = move_dir;
 

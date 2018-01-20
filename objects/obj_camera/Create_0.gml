@@ -6,7 +6,7 @@ width = 640;
 height = 360;
 
 x_to = 0;
-y_to = 14;
+y_to = 0;
 
 x = x_to;
 y = y_to;
@@ -27,7 +27,7 @@ view_set_wport(target_view, ideal_width);
 view_set_hport(target_view, ideal_height);
 
 //Build a camera at (0,0), with size 640x480, 0 degrees of angle, no target instance, instant-jupming hspeed and vspeed, with a 32 pixel border
-camera = camera_create_view(x, y, width, height, 0, -1, -1, -1, 0, 0);
+camera = camera_create_view(x, y, ideal_width, ideal_height, 0, -1, -1, -1, 0, 0);
 
 //Set view0 to use the camera "camera"
 view_set_camera(target_view, camera);
