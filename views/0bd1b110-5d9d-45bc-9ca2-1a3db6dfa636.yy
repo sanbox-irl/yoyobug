@@ -4,12 +4,7 @@
     "mvc": "1.1",
     "name": "0bd1b110-5d9d-45bc-9ca2-1a3db6dfa636",
     "children": [
-        "3426604c-77cc-45e5-a003-b0ca1afab144",
-        "b90ccf7b-32b0-48c8-9683-e70263759417",
-        "89740446-a897-4901-ada0-2a0025752391",
-        "83d2bd55-d463-4085-a678-0aab274b4f10",
-        "ce6f8f4e-0c4b-4d34-ae3d-daecc736f817",
-        "cc772f74-d080-42f5-b230-3a9373628761"
+        "ec417f56-6b07-477e-8e84-d32d57a7a437"
     ],
     "filterType": "GMObject",
     "folderName": "Unused",

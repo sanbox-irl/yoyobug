@@ -10,15 +10,17 @@ switch (state_name) {
         break;
 	case "End_Draw":
 		shader_set(sh_desaturate);
-			draw_self();
+			draw_self();	
 		shader_reset();
-		if image_xscale > 1.2	{
+		if image_xscale > 1.15	{
 			shader_set(sh_recolor);
 				draw_set_alpha(1);
 				shader_set_uniform_f_array(_uni_color,_color);
 				draw_sprite_ext(sprite_index,image_index,x,y,image_xscale,image_yscale,0,image_blend,1);
 			shader_reset();
-		} 
+		} else	{
+
+		}
 		break;	
 	default:
 		draw_self();

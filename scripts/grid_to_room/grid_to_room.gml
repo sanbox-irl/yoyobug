@@ -11,4 +11,3 @@ var returnable = (_coordinate)*TILE_WIDTH + TILE_WIDTH;
 
 return returnable;
 
-

@@ -3,7 +3,7 @@ if !instance_exists(originator_tower)	{
 }
 
 var tower = originator_tower;
-scale = 2*(tower.state_var[PASS_VAR]/tower.sprite_height);
+scale = (tower.state_var[PASS_VAR]/tower.sprite_height);
 
 
 if instance_number(obj_terminal) > 0	{
@@ -17,3 +17,5 @@ if instance_number(obj_terminal) > 0	{
 	}
 	}
 }
+
+radius_mod = wave(-2-offset_mod,2+offset_mod,2,0);

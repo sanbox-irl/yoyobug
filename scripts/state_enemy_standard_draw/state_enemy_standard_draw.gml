@@ -29,9 +29,12 @@ if global.start		{
 #endregion
 
 //Blow Ourselves up Good if We're Near the Player
-if instance_exists(target)	{
-	if point_distance(x,y,target.x,target.y) < tile_width*1.5 {
-		to_be_destroyed = true;
+if instance_exists(obj_robot)	{
+	var nearest_guy = instance_nearest(x,y,obj_robot)
+	if instance_exists(nearest_guy)	{
+		if point_distance(x,y,nearest_guy.x,nearest_guy.y) < tile_width*1.2 {
+			to_be_destroyed = true;
+		}
 	}
 }
 if to_be_destroyed	{

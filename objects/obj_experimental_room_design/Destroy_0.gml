@@ -1,5 +1,5 @@
 ds_grid_destroy(nlevel);
-ds_grid_destroy(tower_list);
+ds_list_destroy(tower_list);
 ds_list_destroy(walls_list);
 ds_list_destroy(percent_walls_list);
 ds_list_destroy(percent_enemy_list);

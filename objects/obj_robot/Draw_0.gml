@@ -5,6 +5,18 @@ switch (state_name) {
         break;
     case "Standard_Draw":
 		draw_self();
+		
+		if (invuln_frames > 0)	{
+			if (floor(invuln_frames) mod 8 == 0) {
+				invuln_draw = !invuln_draw;
+			}
+		} else invuln_draw = false;
+		if invuln_draw	{
+			shader_set(sh_white)
+				draw_self();
+			shader_reset();
+		}
+		
         break;
 	case "End_Draw":
 		shader_set(sh_desaturate);
@@ -21,3 +33,10 @@ if powerup_draw != ""	{
 	script_execute(powerup_draw);	
 }
 
+with (obj_generic_light)	{
+	gpu_set_blendmode(bm_add);
+		draw_set_alpha(0.05);
+		draw_circle_color(other.x+16,other.y+16,TILE_WIDTH,c_white,c_black,false);
+		draw_set_alpha(1);
+	gpu_set_blendmode(bm_normal);
+}

@@ -16,5 +16,5 @@ if state_var[BOOL_VAR] == 0	{
 	state_var[BOOL_VAR] = 1;
 }
 
-
+audio_sound_gain(obj_sound.menu_music,0,1000);
 state_switch("State_Gamestart_2",0);

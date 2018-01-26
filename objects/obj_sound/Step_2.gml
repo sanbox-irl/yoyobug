@@ -1,0 +1,1 @@
+room_last_frame = room;

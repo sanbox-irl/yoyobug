@@ -27,4 +27,6 @@ powerup_draw	= "";
 
 powerup_sprite = spr_robot;
 
+invuln_frames = 30;
+invuln_draw = true;
 debug_message(concat("Robot Created: ID ",id));

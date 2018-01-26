@@ -3,4 +3,5 @@ image_index = 0;
 
 counter = 0;
 
-random_time = irandom_range(3,6);
+random_time = irandom_range(2,6);
+percent_time = 0;

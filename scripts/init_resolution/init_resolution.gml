@@ -18,27 +18,23 @@ ideal_width = round(ideal_height*aspect_ratio);
  
 // PIXEL PERFECT SCALING
  
-if (display_width mod ideal_width != 0)
-{
+if (display_width mod ideal_width != 0)	{
     var _d = round(display_width/ideal_width);
     ideal_width= display_width/_d;
-
+}
  
-if (display_height mod ideal_height != 0)
-{
+if (display_height mod ideal_height != 0)	{
     var _d = round(display_height/ideal_height);
     ideal_height = display_height/_d;
 }
  
  
 // ELIMINATE ODD NUMBERED WIDTH AND HEIGHT VALUES
-if (ideal_width & 1)
-{
+if (ideal_width & 1)	{
     ideal_width++;
 }
  
-if (ideal_height & 1)
-{
+if (ideal_height & 1)	{
     ideal_height++;
 }
  
@@ -52,4 +48,4 @@ display_set_gui_size(ideal_width,ideal_height);
 
 
 
-alarm[0] = 1; // THIS ALARM SHOULD CENTER THE VIEW (we cannot center the view within this script because of limitations within gamemaker.)
+alarm[0] = 1;

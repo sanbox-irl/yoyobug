@@ -14,7 +14,8 @@
         "cc551ad9-deab-4f45-bb64-ef62f436a96c",
         "0c344655-6db4-45a3-a63f-047d3708dbb7",
         "1d7657c5-eae9-4931-8a83-21852d6cd190",
-        "c4719540-295e-45f8-8212-e3690c7512a0"
+        "c4719540-295e-45f8-8212-e3690c7512a0",
+        "3ff20ee1-e589-4c01-9ddc-334274c76e65"
     ],
     "filterType": "GMScript",
     "folderName": "Object State Machines",

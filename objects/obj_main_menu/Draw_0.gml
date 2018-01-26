@@ -15,3 +15,7 @@ draw_sprite_stretched(spr_green,0,top_left_x,top_left_y,len_x,len_y);
 
 
 draw_set_alpha(1);
+
+draw_set_color(c_white);
+draw_set_font(fnt_debug)
+draw_text(TILE_WIDTH,TILE_WIDTH*5,"Press X / Touch Screen / Press Enter To Begin");

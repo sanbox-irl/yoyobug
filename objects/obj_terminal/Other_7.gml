@@ -5,4 +5,4 @@ if sprite_index = spr_terminal	{
 	timer_start = true;
 	image_index = image_number-1;
 	image_speed = 0;
-} else exit;
+};

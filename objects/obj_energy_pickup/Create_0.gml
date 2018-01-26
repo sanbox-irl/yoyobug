@@ -1,3 +1,4 @@
 image_speed = 0;
 to_be_destroyed = false;
-knight_powerup = 0;
+powerup_number = irandom_range(0,1);
+

@@ -22,9 +22,14 @@
 #macro PASS_VAR		0
 #macro DRAW_VAR		1
 #macro BOOL_VAR		2
+#macro POWERUP_VAR	3
 
-#macro ATTACK_VAR	4
 #macro RIGHT_ARRAY	0
 #macro UP_ARRAY		1
 #macro LEFT_ARRAY	2
 #macro DOWN_ARRAY	3
+
+#macro HARD_LIGHT  0
+#macro SOFT_LIGHT  1
+
+#macro HALF_WIDTH TILE_WIDTH/2

@@ -6,7 +6,7 @@ width = 640;
 height = 360;
 
 x_to = 0;
-y_to = 0;
+y_to = 14;
 
 x = x_to;
 y = y_to;
@@ -15,6 +15,9 @@ y = y_to;
 shake_length = 0;
 shake_magnitude = 0;
 shake_remain = 0;
+shake_x = 0;
+shake_y = 0;
+
 
 //Enable the use of views
 view_enabled = true;

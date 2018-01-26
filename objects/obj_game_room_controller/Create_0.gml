@@ -14,3 +14,6 @@ def_length = sprite_width+6;
 lightning_length = def_length;
 
 transition_time = false;
+
+color = make_color_rgb(229,23,38);
+

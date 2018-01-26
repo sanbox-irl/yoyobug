@@ -12,7 +12,7 @@ for (var i = 0; i < robot_number; ++i) {
 	robot[i].attack_end_x = robot[i].x + attack_x;
 	robot[i].attack_end_y = robot[i].y + attack_y;
 	robot[i].attack_dir = dir;
-	missile[i] = instance_create_layer(robot[i].attack_end_x,robot[i].attack_end_y,"Instances",obj_missile);
+	//missile[i] = instance_create_layer(robot[i].attack_end_x,robot[i].attack_end_y,"Instances",obj_missile);
 }
 
 run=false;

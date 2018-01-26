@@ -36,7 +36,7 @@ if gamepad_button_check_pressed(0,gp_padd)	{
 }
 
 if gamepad_button_check_pressed(0, gp_start)	{
-	exit_var = true;
+	game_restart();
 }
 
 if gamepad_button_check_pressed(0, gp_shoulderlb)	{

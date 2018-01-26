@@ -27,3 +27,11 @@ if (begin_to_fade == true)	{
 	fade-=0.1;
 	fade = max(0,fade);
 }
+
+if (instance_number(obj_robot) == 0) && (global.energy == 0) && (instance_number(obj_about_to_spawn) == 0) 	{
+	game_over = true;
+}
+
+if game_over{
+	game_over_screen_alpha+=(1/120);	
+}

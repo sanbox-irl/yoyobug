@@ -1,0 +1,1 @@
+menu_music = audio_play_sound_on(global.mus_emitter,snd_music_menu_looped,true,1);

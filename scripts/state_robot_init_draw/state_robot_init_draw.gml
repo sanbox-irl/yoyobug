@@ -26,3 +26,4 @@ switch (move_dir) {
 		break;
 }
 
+invulnerable = 30;

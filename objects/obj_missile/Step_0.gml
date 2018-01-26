@@ -16,11 +16,8 @@ if point_distance(x,y,target_x,target_y) > 2	{
 
 }
 
-
-
 	
 var obj_to_destroy = instance_place(x,y,obj_enemy_robot)
-if !(obj_to_destroy == noone)
-	{
-		instance_destroy(obj_to_destroy);
+if !(obj_to_destroy == noone)	{
+		obj_to_destroy.to_be_destroyed = true;
 	}

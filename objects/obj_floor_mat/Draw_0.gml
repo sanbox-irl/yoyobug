@@ -1,5 +1,11 @@
 if can_draw	{
-	draw_sprite_ext(sprite_index,image_index,radius_x,radius_y,image_xscale*scale,image_yscale*scale,0,color,1);
+	// draw_sprite_ext(sprite_index,image_index,radius_x,radius_y,(image_xscale+radius_mod/20)*scale,(image_yscale+radius_mod/20)*scale,0,color,1);
+		gpu_set_blendmode(bm_add);
+		draw_set_alpha(0.1);
+			draw_circle_color(radius_x,radius_y,TILE_WIDTH*scale,c_white,c_black,false)
+		draw_set_alpha(1);
+		gpu_set_blendmode(bm_normal);
+		draw_circle_color(radius_x,radius_y,TILE_WIDTH*scale,color,color,false)
 }
 
 if can_draw_term	{

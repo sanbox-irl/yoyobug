@@ -23,3 +23,5 @@ kill_tween = TweenCreate(id);
 
 _uni_color	= shader_get_uniform(sh_recolor,"u_color");
 _color		= [color_get_red(c_red)*0.5,color_get_green(c_red)*0.5,color_get_blue(c_red)*0.5,1.0];
+
+can_make_energy = false

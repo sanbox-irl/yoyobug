@@ -27,8 +27,9 @@ if electrified	{
 	saved_robot = instance_place(x,y,obj_robot);
 	if (saved_robot != noone) && transition_time = false {
 		transition_time = true;
-		room_sprite = sprite_create_from_surface(application_surface, 0,0,display_get_gui_width(),display_get_gui_width(),false,false,0,0);
+		if instance_exists(obj_room_transition_handler)	{
+			obj_room_transition_handler.saved_robot = saved_robot;	
+		}
 	}
 	lightning_length -=5*global.dt;
-
 }

@@ -6,7 +6,7 @@ global.grid_width = 18;
 global.grid_height = 9;
 global.game_grid = ds_grid_create(global.grid_width,global.grid_height);
 
-global.dev_mode = true;
+global.dev_mode = false;
 
 init_part();
 
@@ -22,7 +22,7 @@ global.green1	= make_color_rgb(103,145,137);
 
 
 global.orange_robots_list = ds_list_create();
-global.powerup_bank		= 0;
+
 
 global.ping_hud = true;
 
