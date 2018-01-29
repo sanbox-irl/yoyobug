@@ -16,18 +16,21 @@ if state_timer <= time_left	{
 	
 	//Actual Collision Code
 	if state_timer > 30	{
-		for (var i = 0; i < ds_list_size(active_towers); ++i) {
+		_list_size = ds_list_size(active_towers);
+		for (var i = 0; i < _list_size; ++i) {
 			var _col_inst1 = active_towers[| i];
-			if i != number-1	{
+			if i != (_list_size-1)	{								
 				var _col_inst2 = active_towers[| i+1];
 			} else var _col_inst2 = active_towers[| 0];
-			if instance_exists(obj_robot_parent)	{
-				var _col = collision_line(_col_inst1.x+offset[X_ARRAY],_col_inst1.y+offset[Y_ARRAY],_col_inst2.x+offset[X_ARRAY],_col_inst2.y+offset[Y_ARRAY],obj_robot_parent,false,false);
-			}	else _col = noone;
+			
+			var _col = collision_line(	_col_inst1.x+offset[X_ARRAY],_col_inst1.y+offset[Y_ARRAY],
+										_col_inst2.x+offset[X_ARRAY],_col_inst2.y+offset[Y_ARRAY],obj_robot_parent,false,false);
 			if _col != noone	{
-				with _col	{
-					to_be_destroyed = true;
-				} 
+				if instance_exists(_col)	{
+					with _col	{
+						to_be_destroyed = true;
+					} 
+				}
 			}
 		}
 	}

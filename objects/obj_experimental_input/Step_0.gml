@@ -1,34 +1,22 @@
 state_execute();
 
 if move_left	{
-	with obj_input_terminal	{
-		keyboard_string = "move-left";
-		press_enter();
-	}
+	experimental_move(LEFT);
 	move_left = false;
 }
 
 if move_right	{
-	with obj_input_terminal	{
-		keyboard_string = "move-right";
-		press_enter();
-	}
+	experimental_move(RIGHT)
 	move_right = false;
 }
 
 if move_up	{
-	with obj_input_terminal	{
-		keyboard_string = "move-up";
-		press_enter();
-	}
+	experimental_move(UP)
 	move_up = false;
 }
 
 if move_down	{
-	with obj_input_terminal	{
-		keyboard_string = "move-down";
-		press_enter();
-	}
+	experimental_move(DOWN)
 	move_down = false;
 }
 

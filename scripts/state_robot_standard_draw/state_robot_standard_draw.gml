@@ -5,11 +5,16 @@ if state_new	{
 if point_distance(x,y,x_to,y_to) > 3	{
 	x = lerp(x,x_to,0.2);
 	y = lerp(y,y_to,0.2);
-	} else	{ 
-		x = x_to;
-		y = y_to;
-		
+	} else	{
+		if reset_coords == false	{
+			free_coordinates();
+			
+			x = x_to;
+			y = y_to;
+			update_coordinates(grid_name);
+			reset_coords = true;
 		}
+	}
 		
 
 if place_meeting(x,y,obj_enemy_robot) {

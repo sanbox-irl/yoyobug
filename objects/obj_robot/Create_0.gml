@@ -16,7 +16,7 @@ y_to = y;
 
 
 calling_circle = 0;
-move_dir = choose(up,down,left,right);
+move_dir = choose(UP,DOWN,LEFT,RIGHT);
 
 //add yourself to the list
 ds_list_add(global.orange_robots_list,id);
@@ -30,3 +30,8 @@ powerup_sprite = spr_robot;
 invuln_frames = 30;
 invuln_draw = true;
 debug_message(concat("Robot Created: ID ",id));
+
+grid_name = PLAYER;
+
+add_self_to_grid(grid_name);
+reset_coords = false;

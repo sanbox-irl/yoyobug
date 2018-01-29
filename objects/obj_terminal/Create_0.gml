@@ -10,3 +10,6 @@ timer_spr = spr_greentimer;
 timer_start = false;
 
 debug_message(string("Terminal Created: Coordinates [") + string(x/tile_width)+string(",")+string(y/tile_width)+string("]"));
+
+grid_name = TERMINAL;
+update_coordinates(grid_name);

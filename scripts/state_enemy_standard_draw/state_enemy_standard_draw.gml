@@ -19,6 +19,9 @@ place[Y_ARRAY] = y;
 if global.start		{
 	if instance_exists(target)	{
 		if (floor(x) mod tile_width == 0) && (floor(y) mod tile_width = 0)	{
+			free_coordinates();
+			update_coordinates(ENEMY);
+			
 			if mp_grid_path(obj_experimental_room_design.mp_grid,path,x+tile_width/2,y+tile_width/2,target.x_to+tile_width/2,target.y_to+tile_width/2,false)	{
 				path_start(path,1*global.dt,path_action_stop,false);
 			}

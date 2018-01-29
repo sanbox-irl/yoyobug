@@ -24,3 +24,5 @@ state_create("Standard_Draw",state_pillar_standard_draw);
 state_create("End_Draw",state_pillar_end_draw);
 state_init("Init_Draw");
 
+grid_name = TOWER;
+update_coordinates(grid_name);

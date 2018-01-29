@@ -4,7 +4,23 @@
 		"selected_items":
 		[
 			[
+				"with",
+				"with (obj_generic_light)\tobjgenlight"
+			],
+			[
+				"draw_recn",
+				"draw_rectangle_color\tdraw_rectangle_color"
+			],
+			[
 				"draw_rec",
+				"draw_rectangle_color\tdraw_rectangle_color"
+			],
+			[
+				"obj_termina",
+				"obj_terminal_pillar\t〔Object〕"
+			],
+			[
+				"draw_rectange_colo",
 				"draw_rectangle_color\tdraw_rectangle_color"
 			],
 			[
@@ -15,15 +31,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "objects/obj_game_room_controller/Draw_0.gml",
-			"settings":
-			{
-				"buffer_size": 1089,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -38,7 +45,7 @@
 		[
 			[
 				"Package Control: ",
-				"Package Control: List Packages"
+				"Package Control: Enable Package"
 			],
 			[
 				"package control: ",
@@ -94,18 +101,39 @@
 	[
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N",
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects",
-		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_game_room_controller"
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_generic_light",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_robot",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_terminal",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_terminal_pillar",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/__ext_Array1D",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/__ext_Array2D",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/__ext_DSGrid",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/speed__"
 	],
 	"file_history":
 	[
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_debug/Draw_0.gml",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/state_robot_standard_draw/state_robot_standard_draw.gml",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/powerup_king_draw/powerup_king_draw.gml",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/powerup_king_step/powerup_king_step.gml",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_energy_pickup/Step_0.gml",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/create_power_up_map/create_power_up_map.gml",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_floor_mat/Draw_0.gml",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_generic_light/Draw_0.gml",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_terminal_pillar/Draw_0.gml",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_terminal/Draw_0.gml",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_robot/Draw_0.gml",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_enemy_robot/Draw_0.gml",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/macros/macros.gml",
+		"/C/Users/jjspi/AppData/Roaming/Sublime Text 3/Packages/User/objgenlight.sublime-snippet",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_game_room_controller/Draw_0.gml",
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_generic_light/Create_0.gml",
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_generic_light/Alarm_0.gml",
-		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_generic_light/Draw_0.gml",
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_enemy_spawner/Create_0.gml",
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_enemy_spawner/Step_0.gml",
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_init_globals/Draw_0.gml",
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/create_light_effect/create_light_effect.gml",
-		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_game_room_controller/Draw_0.gml",
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_experimental_room_design/Draw_0.gml",
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_explosions/Draw_0.gml",
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_experimental_input/Draw_0.gml",
@@ -138,6 +166,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			";\n",
 			"init_globals"
 		],
 		"highlight": true,
@@ -156,38 +185,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "objects/obj_game_room_controller/Draw_0.gml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1089,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								343,
-								343
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -239,6 +238,38 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"debug",
+				"objects\\obj_debug\\Draw_0.gml"
+			],
+			[
+				"robot_standar",
+				"scripts\\state_robot_standard_draw\\state_robot_standard_draw.gml"
+			],
+			[
+				"powerupking",
+				"scripts\\powerup_king_draw\\powerup_king_draw.gml"
+			],
+			[
+				"powerup_king",
+				"scripts\\powerup_king_step\\powerup_king_step.gml"
+			],
+			[
+				"obj_energy",
+				"objects\\obj_energy_pickup\\Step_0.gml"
+			],
+			[
+				"create_power",
+				"scripts\\create_power_up_map\\create_power_up_map.gml"
+			],
+			[
+				"obj_floor_",
+				"objects\\obj_floor_mat\\Draw_0.gml"
+			],
+			[
+				"obj_robot",
+				"objects\\obj_enemy_robot\\Draw_0.gml"
+			],
 			[
 				"generic_light",
 				"objects\\obj_generic_light\\Draw_0.gml"

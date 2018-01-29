@@ -4,7 +4,10 @@
 #macro	right		0
 #macro	left		180
 #macro	down		270
-#macro terminal		obj_input_terminal
+#macro RIGHT		0
+#macro UP			90
+#macro LEFT			180
+#macro DOWN			270
 #macro tile_width	32
 #macro TILE_WIDTH	32
 
@@ -33,3 +36,12 @@
 #macro SOFT_LIGHT  1
 
 #macro HALF_WIDTH TILE_WIDTH/2
+
+//Grid Macros
+#macro FREE			-4
+#macro WALL			1000
+#macro PLAYER		1001
+#macro ENEMY		999
+#macro TOWER		1003
+#macro TERMINAL     998
+#macro SPAWNER		1005

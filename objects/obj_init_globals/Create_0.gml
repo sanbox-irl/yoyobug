@@ -2,11 +2,6 @@
 global.dt = 0;
 global.start = true;
 
-global.grid_width = 18;
-global.grid_height = 9;
-global.game_grid = ds_grid_create(global.grid_width,global.grid_height);
-
-global.dev_mode = false;
 
 init_part();
 
@@ -29,6 +24,6 @@ global.ping_hud = true;
 //Powerup Maps
 create_power_up_map();
 
-
+global.enter = false;
 
 

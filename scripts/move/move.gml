@@ -20,18 +20,20 @@ if !(dir_ang == "")	{
 	for (var i = 0; i < robots_number; ++i) {
 		robot[i]		= instance_find(obj_robot,i);
 		if robot[i].to_be_destroyed == false	{
-		var		x_move	= lengthdir_x(TILE_WIDTH,dir_ang);
-		var		y_move	= lengthdir_y(TILE_WIDTH,dir_ang);
+			var		x_move	= lengthdir_x(TILE_WIDTH,dir_ang);
+			var		y_move	= lengthdir_y(TILE_WIDTH,dir_ang);
 
-		for (var j = 1; j < (real(magnitude)+1); ++j) {
-			if ((!	(	instance_place(	robot[i].x+x_move*j,robot[i].y+y_move*j,obj_solid)	))	&&
-			   (!	(	instance_place(	robot[i].x+x_move*j,robot[i].y+y_move*j,obj_robot)	))	){
-				robot[i].x_to +=	x_move*j;
-				robot[i].y_to +=	y_move*j;
-			} else break;
-		}
-		robot[i].move_dir		= dir_ang;
-		robot[i].move_magnitude = real(magnitude);
+			for (var j = 1; j < (real(magnitude)+1); ++j) {
+				if ((!	(	instance_place(	robot[i].x+x_move*j,robot[i].y+y_move*j,obj_solid)	))	&&
+				   (!	(	instance_place(	robot[i].x+x_move*j,robot[i].y+y_move*j,obj_robot)	))	){
+					robot[i].x_to +=	x_move*j;
+					robot[i].y_to +=	y_move*j;
+				} else break;
+			}
+			robot[i].move_dir		= dir_ang;
+			robot[i].move_magnitude = real(magnitude);
+			
+			
 		}
 	}
 
@@ -43,3 +45,5 @@ if !(dir_ang == "")	{
 run = false;
 
 return _returnable;
+
+exit

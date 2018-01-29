@@ -9,7 +9,6 @@ for (var i = 0; i < number; ++i) {
 	_inst[i].tower_number = i;
 }
 
-mp_grid_clear_all(mp_grid);
 mp_grid_add_instances(mp_grid,obj_solid,false);
 mp_grid_add_instances(mp_grid,obj_terminal, false);
 mp_grid_add_instances(mp_grid,obj_terminal_pillar,false);

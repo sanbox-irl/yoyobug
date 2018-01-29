@@ -9,15 +9,24 @@ offset[Y_ARRAY] = -7;
 
 
 //Inital Behaviours:
+init_grid();
 create_room();
 make_colors();
 make_terminal_directions();
 
 //Pathing
-mp_grid = mp_grid_create(0,0,global.grid_width+tile_width,global.grid_height+tile_width*2,tile_width,tile_width);
+mp_grid = mp_grid_create(0,0,global.grid_width,global.grid_height,tile_width,tile_width);
 mp_grid_add_instances(mp_grid,obj_solid,false);
 mp_grid_add_instances(mp_grid,obj_terminal, false);
 mp_grid_add_instances(mp_grid,obj_terminal_pillar,false);
+
+for (var i = 0; i < global.grid_width; i++)	{
+	for (var k = 0; k < global.grid_height; k++)	{
+		if global.game_grid[# i,k] ==  WALL	{
+			mp_grid_add_cell(mp_grid,i,k);	
+		}
+	}
+}
 toggle_grid = false;
 
 
