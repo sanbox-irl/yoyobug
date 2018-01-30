@@ -40,9 +40,13 @@
 	"command_palette":
 	{
 		"height": 392.0,
-		"last_filter": "Package Control: ",
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"GameMaker: New Script"
+			],
 			[
 				"Package Control: ",
 				"Package Control: Enable Package"
@@ -58,10 +62,6 @@
 			[
 				"indentation",
 				"Indentation: Reindent Lines"
-			],
-			[
-				"",
-				"Build: New Build System"
 			],
 			[
 				"PACKAGE",
@@ -80,7 +80,7 @@
 	},
 	"console":
 	{
-		"height": 62.0,
+		"height": 68.0,
 		"history":
 		[
 			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
@@ -113,8 +113,24 @@
 	],
 	"file_history":
 	[
-		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_debug/Draw_0.gml",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/room_creation_critical_path/room_creation_critical_path.gml",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/state_timer_to_spawn/state_timer_to_spawn.gml",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/grid_collision_line/grid_collision_line.gml",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/room_creation_grid/room_creation_grid.gml",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/create_room_grid/create_room_grid.gml",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/macros/macros.gml",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/experimental_move/experimental_move.gml",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/update_coordinates/update_coordinates.gml",
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/state_robot_standard_draw/state_robot_standard_draw.gml",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/state_enemy_standard_draw/state_enemy_standard_draw.gml",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/parent_actor/Create_0.gml",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/init_grid/init_grid.gml",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/room_to_grid/room_to_grid.gml",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/grid_place_meeting/grid_place_meeting.gml",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_robot/Step_0.gml",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_experimental_input/Step_0.gml",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/move/move.gml",
+		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_debug/Draw_0.gml",
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/powerup_king_draw/powerup_king_draw.gml",
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/powerup_king_step/powerup_king_step.gml",
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_energy_pickup/Step_0.gml",
@@ -125,7 +141,6 @@
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_terminal/Draw_0.gml",
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_robot/Draw_0.gml",
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_enemy_robot/Draw_0.gml",
-		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/macros/macros.gml",
 		"/C/Users/jjspi/AppData/Roaming/Sublime Text 3/Packages/User/objgenlight.sublime-snippet",
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_game_room_controller/Draw_0.gml",
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_generic_light/Create_0.gml",
@@ -137,7 +152,6 @@
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_experimental_room_design/Draw_0.gml",
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_explosions/Draw_0.gml",
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_experimental_input/Draw_0.gml",
-		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/state_timer_to_spawn/state_timer_to_spawn.gml",
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/create_room/create_room.gml",
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/objects/obj_explosions/Create_0.gml",
 		"/C/Users/jjspi/OneDrive/Documents/GameMakerStudio2/N/scripts/reactive_essential_objects/reactive_essential_objects.gml",
@@ -151,7 +165,7 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 28.0
 	},
 	"find_in_files":
 	{
@@ -192,11 +206,11 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 28.0
 	},
 	"input":
 	{
-		"height": 39.0
+		"height": 40.0
 	},
 	"layout":
 	{
@@ -229,7 +243,7 @@
 	"project": "sublime_proj.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -238,6 +252,78 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"room_creat",
+				"scripts\\room_creation_critical_path\\room_creation_critical_path.gml"
+			],
+			[
+				"room_creation",
+				"scripts\\room_creation_grid\\room_creation_grid.gml"
+			],
+			[
+				"create_room_grid",
+				"scripts\\create_room_grid\\create_room_grid.gml"
+			],
+			[
+				"grid_",
+				"scripts\\grid_collision_line\\grid_collision_line.gml"
+			],
+			[
+				"state_timer",
+				"scripts\\state_timer_to_spawn\\state_timer_to_spawn.gml"
+			],
+			[
+				"macro",
+				"scripts\\macros\\macros.gml"
+			],
+			[
+				"experim",
+				"scripts\\experimental_move\\experimental_move.gml"
+			],
+			[
+				"update_",
+				"scripts\\update_coordinates\\update_coordinates.gml"
+			],
+			[
+				"state_robot_",
+				"scripts\\state_robot_standard_draw\\state_robot_standard_draw.gml"
+			],
+			[
+				"room_to",
+				"scripts\\room_to_grid\\room_to_grid.gml"
+			],
+			[
+				"parent_actor",
+				"objects\\parent_actor\\Create_0.gml"
+			],
+			[
+				"state_enemy_standa",
+				"scripts\\state_enemy_standard_draw\\state_enemy_standard_draw.gml"
+			],
+			[
+				"experimental_input",
+				"objects\\obj_experimental_input\\Step_0.gml"
+			],
+			[
+				"init_grid",
+				"scripts\\init_grid\\init_grid.gml"
+			],
+			[
+				"grid_place",
+				"scripts\\grid_place_meeting\\grid_place_meeting.gml"
+			],
+			[
+				"obj_robot",
+				"objects\\obj_robot\\Step_0.gml"
+			],
+			[
+				"experimen",
+				"scripts\\experimental_move\\experimental_move.gml"
+			],
+			[
+				"move",
+				"scripts\\move\\move.gml"
+			],
 			[
 				"debug",
 				"objects\\obj_debug\\Draw_0.gml"
@@ -267,10 +353,6 @@
 				"objects\\obj_floor_mat\\Draw_0.gml"
 			],
 			[
-				"obj_robot",
-				"objects\\obj_enemy_robot\\Draw_0.gml"
-			],
-			[
 				"generic_light",
 				"objects\\obj_generic_light\\Draw_0.gml"
 			],
@@ -285,10 +367,6 @@
 			[
 				"game_contro",
 				"objects\\obj_game_room_controller\\Draw_0.gml"
-			],
-			[
-				"state_timer",
-				"scripts\\state_timer_to_spawn\\state_timer_to_spawn.gml"
 			],
 			[
 				"obj_experimental_ro",

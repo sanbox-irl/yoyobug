@@ -1,4 +1,3 @@
-randomize();
 var list, x_place,y_place, x_room_place,y_room_place, x_term_place, y_term_place, random_direc;
 tower_grid = ds_grid_create(number*10,number*10);
 
