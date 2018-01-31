@@ -10,6 +10,10 @@ room_creation_critical_path();
 //Create Random Variations
 room_creation_broken_paths();
 
+//Actually drop us in the first room:
+room_creation_start();
+
+
 //Debugging Variables
 global.dimensions = ds_grid_create(width,height);
 ds_grid_clear(global.dimensions,"");

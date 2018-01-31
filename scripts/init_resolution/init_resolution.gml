@@ -44,8 +44,6 @@ max_zoom = floor(display_width/ideal_width);
 // resize application surface
 surface_resize(application_surface, ideal_width, ideal_height);
 window_set_size(ideal_width, ideal_height);
-display_set_gui_size(ideal_width,ideal_height);
-
 
 
 alarm[0] = 1;
