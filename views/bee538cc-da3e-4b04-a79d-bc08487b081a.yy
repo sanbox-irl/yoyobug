@@ -6,7 +6,9 @@
     "children": [
         "e83fb17d-87b0-4900-b0ed-d14231828f96",
         "e6e3b9c5-3307-4afb-b978-5e9d77832c02",
-        "02c8d9e2-7c16-478f-99e7-8d0a2eee2de9"
+        "02c8d9e2-7c16-478f-99e7-8d0a2eee2de9",
+        "c1401165-4691-431e-96fe-fad63428fb77",
+        "6869213f-9d6a-4f45-b0b7-a6d469e5c055"
     ],
     "filterType": "GMScript",
     "folderName": "Room Creation Scripts",

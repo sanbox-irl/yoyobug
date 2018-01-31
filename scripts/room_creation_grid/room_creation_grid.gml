@@ -72,3 +72,5 @@ for (var i = 0; i < height; ++i) {
 }
 
 #endregion
+
+room_set_width(global.room_run_grid[# 0, 0],10000);
