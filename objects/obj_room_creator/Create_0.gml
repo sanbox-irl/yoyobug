@@ -1,4 +1,4 @@
-global.dev_mode = false;
+global.dev_mode = true;
 //Initalize Our Rooms & Give Them Random Size
 room_creation_grid();
 
@@ -8,16 +8,10 @@ room_creation_find_room_dimensions();
 room_creation_critical_path();
 
 //Create Random Variations
-room_creation_broken_paths();
+//room_creation_broken_paths();
 
 //Actually drop us in the first room:
-room_creation_start();
+//room_creation_start();
 
 
 //Debugging Variables
-global.dimensions = ds_grid_create(width,height);
-ds_grid_clear(global.dimensions,"");
-count_w = 0;
-count_h = 0;
-original_room = room;
-move_through = true;

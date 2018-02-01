@@ -1,18 +1,20 @@
-#macro DOOR		1
-#macro REVERSE	2
-#macro ALL_DOOR 3
-#macro NORMAL	0
+///Generate Direction Maps
+for (var i = 0; i < width; ++i) {
+    for (var k = 0; k < height; ++k) {
+	    ds_map_replace(global.room_grid[# i,k],"down",false);
+		ds_map_replace(global.room_grid[# i,k],"left",true);
+		ds_map_replace(global.room_grid[# i,k],"up",false);
+		ds_map_replace(global.room_grid[# i,k],"right",true);
+	}
+}
 
-global.dev_mode = true;
-global.critical_path = ds_grid_create(width,height);
-ds_grid_clear(global.critical_path,NORMAL);
 
 var steering = 0,
 	y_axis	 = (height-1),
 	x_axis	 = MAIN;
 
-repeat(10000)	{
-	//Actually do the Marking
+//The Marking of the Critical Path
+do	{
 	steering = irandom_range(0,5);
 	if steering < 3	{
 		x_axis--;	
@@ -21,16 +23,11 @@ repeat(10000)	{
 		x_axis++;
 	}
 	else if steering = 3 {
-		switch (global.critical_path[# x_axis,y_axis]) {
-		    case NORMAL:
-		        global.critical_path[# x_axis,y_axis] = DOOR;
-		        break;
-		    case REVERSE:
-		        global.critical_path[# x_axis,y_axis] = ALL_DOOR;
-		        break;
-		}
+		ds_map_replace(global.room_grid[# x_axis, y_axis],"up",true);
 		y_axis--;
-		global.critical_path[# x_axis,y_axis] = REVERSE;
+		if (y_axis >= 0)	{
+			ds_map_replace(global.room_grid[# x_axis, y_axis],"down",true);
+		}
 	}
 	
 	//Wrap the Values:
@@ -40,7 +37,4 @@ repeat(10000)	{
 		x_axis = (width-1)
 	}
 
-	if y_axis < 0	{
-		break;
-	}
-}
+} until (y_axis < 0);

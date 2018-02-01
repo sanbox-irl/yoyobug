@@ -8,12 +8,12 @@ height = 8;
 width = 3;
 
 
-global.room_run_grid = ds_grid_create(width,height);
+global.room_grid = ds_grid_create(width,height);
 
-//Create ALL the Rooms:
-for (var i = 0; i < height; ++i) {
-	for (var k = 0; k< width; ++k)	{
-    	global.room_run_grid[# k,i] = room_add();
+//Create our DS Maps
+for (var i = 0; i < width; ++i) {
+    for (var k = 0; k < height; ++k) {
+	    global.room_grid[# i,k] =	ds_map_create();
 	}
 }
 
@@ -26,8 +26,8 @@ var _h = 0;
 for (var i = 0; i < height; ++i) {
     _w = 20 * TILE_WIDTH;
 	_h = 11 * TILE_WIDTH;
-	room_set_width(global.room_run_grid[# MAIN,i],_w);
-	room_set_height(global.room_run_grid[# MAIN,i],_h);
+	ds_map_replace(global.room_grid[# MAIN,i],"width",_w);
+	ds_map_replace(global.room_grid[# MAIN,i],"height",_h);
 }
 
 //Set the Big Room(s)
@@ -41,8 +41,8 @@ repeat (1+_chance)	{
 	_w = 40*TILE_WIDTH;
 	_h = 22*TILE_WIDTH;
 	
-	room_set_width(global.room_run_grid[# MAIN,_big_room],_w);
-	room_set_height(global.room_run_grid[# MAIN,_big_room],_h);
+	ds_map_replace(global.room_grid[# MAIN,_big_room],"width",_w);
+	ds_map_replace(global.room_grid[# MAIN,_big_room],"height",_h);
 }
 #endregion
 
@@ -51,8 +51,8 @@ repeat (1+_chance)	{
 for (var i = 0; i < height; ++i) {
     _w = 10 * TILE_WIDTH;
 	_h = 6 * TILE_WIDTH;
-	room_set_width(global.room_run_grid[# LEFT_ROOM,i],_w);
-	room_set_height(global.room_run_grid[# LEFT_ROOM,i],_h);
+	ds_map_replace(global.room_grid[# LEFT_ROOM,i],"width",_w);
+	ds_map_replace(global.room_grid[# LEFT_ROOM,i],"height",_h);
 }
 #endregion
 
@@ -67,8 +67,8 @@ for (var i = 0; i < height; ++i) {
 		_h = 11 * TILE_WIDTH;
 	}
 	
-	room_set_width(global.room_run_grid[# LEFT_ROOM,i],_w);
-	room_set_height(global.room_run_grid[# LEFT_ROOM,i],_h);
+	ds_map_replace(global.room_grid[# RIGHT_ROOM,i],"width",_w);
+	ds_map_replace(global.room_grid[# RIGHT_ROOM,i],"height",_h);
 }
 
 #endregion
