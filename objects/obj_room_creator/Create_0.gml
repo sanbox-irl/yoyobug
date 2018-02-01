@@ -11,7 +11,7 @@ room_creation_critical_path();
 //room_creation_broken_paths();
 
 //Actually drop us in the first room:
-//room_creation_start();
+room_creation_start();
 
 
 //Debugging Variables

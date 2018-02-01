@@ -11,63 +11,24 @@
 9 = NO ENTRANCES -- SECRET.
 */
 
-for (var i = (height-2); i > (-1); --i) {
-    #region Right Checks
-	if chance(0.3)	{
-		global.critical_path[# RIGHT, i] = 3;
-		
-		//Check Below to Make Sure it Makes Sense
-		switch (global.critical_path[# RIGHT, (i+1)]) {
-		    case NORMAL:
-		         global.critical_path[# RIGHT, (i+1)] = DOOR;
-		         break;
-			case DOOR:
-		         break;
-			case REVERSE:
-				global.critical_path[# RIGHT, (i+1)] = ALL_DOOR;
-				break;
-		}
-		
-		//Check Above
-		switch (global.critical_path[# RIGHT, (i-1)]) {
-		    case NORMAL:
-		         global.critical_path[# RIGHT, (i-1)] = REVERSE;
-		         break;
-			case REVERSE:
-		         break;
-			case DOOR:
-				global.critical_path[# RIGHT, (i-1)] = ALL_DOOR;
-				break;
-		}
-		
+for (var i = 0; i < height; ++i) {
+	var _right_map	=	global.room_grid[# RIGHT_ROOM, i],
+		_main_map	=	global.room_grid[# MAIN, i],
+		_right_under_map = global.room_grid[# RIGHT_ROOM, i++],
+		_left_map	=	global.room_grid[# LEFT_ROOM, i],
+		_left_under_map = global.room_grid[# LEFT_ROOM, i++];
+
+	if (_right_map[? "critical"] == false)	{
+		_right_map[? "left"] = false;
+		_main_map[? "right"] = false;
+		_right_map[? "down"] = true;
+		_right_under_map[? "up"] = true;
 	}
-	#endregion
-	if chance(0.3)	{
-		global.critical_path[# LEFT, i] = 3;
-		
-		//Check Below to Make Sure it Makes Sense
-		switch (global.critical_path[# LEFT, (i+1)]) {
-		    case NORMAL:
-		         global.critical_path[# LEFT, (i+1)] = DOOR;
-		         break;
-			case DOOR:
-		         break;
-			case REVERSE:
-				global.critical_path[# LEFT, (i+1)] = ALL_DOOR;
-				break;
-		}
-		
-		//Check Above
-		switch (global.critical_path[# LEFT, (i-1)]) {
-		    case NORMAL:
-		         global.critical_path[# LEFT, (i-1)] = REVERSE;
-		         break;
-			case REVERSE:
-		         break;
-			case DOOR:
-				global.critical_path[# LEFT, (i-1)] = ALL_DOOR;
-				break;
-		}
-		
+
+	if (_left_map[? "critical"] == false)	{
+		_left_map[? "right"] = false;
+		_main_map[? "left"] = false;
+		_left_map[? "under"] = true;
+		_left_under_map[? "up"] = true;
 	}
 }
