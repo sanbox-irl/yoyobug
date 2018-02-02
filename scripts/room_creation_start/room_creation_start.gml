@@ -1,3 +1,5 @@
+#macro MARGIN 6*TILE_WIDTH
+
 var _widest = 0,
 	_tallest = 0,
 	_test	= 0;
@@ -30,8 +32,23 @@ for (var i = 0; i < width; ++i) {
 	} 
 }
 
-var _extra_xspace = 4*TILE_WIDTH*(width+1),
-	_extra_yspace = 4*TILE_WIDTH*(height+1);
+var _extra_xspace = MARGIN*(width+1),
+	_extra_yspace = MARGIN*(height+1);
 
 room_height = _tallest + _extra_yspace;
 room_width = _widest + _extra_xspace;
+
+//Give each Room Coordinates:
+var incrementer = array_create(2);
+incrementer[X_ARRAY] = room_width/width;
+incrementer[Y_ARRAY] = room_height/height;
+
+for (var i = 0; i < width; ++i) {
+	for (var k = 0; k < height; ++k) {
+		var _map = global.room_grid[# i,k];
+		var _x_orig = MARGIN*2 + incrementer[X_ARRAY]*(i)	-	(ds_map_find_value(_map,"width")/2);
+		var _y_orig = MARGIN*2 + incrementer[Y_ARRAY]*(k)	-	(ds_map_find_value(_map,"height")/2);
+		ds_map_replace(_map,"x_origin",	_x_orig);
+		ds_map_replace(_map,"y_origin", _y_orig);
+	}
+}

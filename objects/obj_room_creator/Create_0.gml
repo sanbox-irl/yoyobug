@@ -10,6 +10,9 @@ room_creation_critical_path();
 //Create Random Variations
 //room_creation_broken_paths();
 
+//Tile Creations
+create_exterior_tiles();
+
 //Actually drop us in the first room:
 room_creation_start();
 
