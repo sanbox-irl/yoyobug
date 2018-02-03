@@ -38,3 +38,4 @@ view_set_camera(target_view, camera);
 
 alarm[0] = 1;
 aspeed = 4;
+camera_toggle = true;
