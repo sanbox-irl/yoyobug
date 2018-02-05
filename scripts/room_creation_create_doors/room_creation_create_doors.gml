@@ -46,6 +46,7 @@ for (i=0; i < width; ++i) {
 			var _y = _map[? "y_origin"] + _map[? "door_left"]*TILE_WIDTH;
 			var door = instance_create_layer(_x,_y,"Instances",obj_door);
 			door.orientation = "vertical";
+			door.map = _map;
 
 			var _data = tilemap_get_at_pixel(global.collision_tilemap,_x,_y);
 			if !tile_get_empty(_data)	{
@@ -66,7 +67,8 @@ for (i=0; i < width; ++i) {
 			var _y = _map[? "y_origin"] + _map[? "door_right"]*TILE_WIDTH;
 			var door = instance_create_layer(_x,_y,"Instances",obj_door);
 			door.orientation = "vertical";
-			
+			door.map = _map;
+
 			var _data = tilemap_get_at_pixel(global.collision_tilemap,_x,_y);
 			if !tile_get_empty(_data)	{
 				_data = tile_set_empty(_data);
@@ -86,6 +88,7 @@ for (i=0; i < width; ++i) {
 			var _y = _map[? "y_origin"];
 			var door = instance_create_layer(_x,_y,"Instances",obj_door);
 			door.orientation = "horizontal";
+			door.map = _map;
 
 			var _data = tilemap_get_at_pixel(global.collision_tilemap,_x,_y);
 			if !tile_get_empty(_data)	{
@@ -107,6 +110,7 @@ for (i=0; i < width; ++i) {
 			var _y = _map[? "y_origin"] + (_map[? "vcells"]-1)*TILE_WIDTH;
 			var door = instance_create_layer(_x,_y,"Instances",obj_door);
 			door.orientation = "horizontal";
+			door.map = _map;
 
 			var _data = tilemap_get_at_pixel(global.collision_tilemap,_x,_y);
 			if !tile_get_empty(_data)	{

@@ -1,5 +1,3 @@
-
-
 for (i = 0; i< TILE_WIDTH;  i+=(TILE_WIDTH)/3) {
     var x_place = x+i*vertical;
     var y_place = y+i*horizontal; 

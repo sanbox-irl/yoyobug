@@ -7,4 +7,3 @@ if orientation = "horizontal"   {
 } else  {
     debug_message("You made a typo!");
 }
-
