@@ -5,8 +5,8 @@
 ///@param dest_y
 ///@param min_dist_step
 ///@param max_dist_step
-///@ymin min_side_step
-///@ymax max_side_step
+///@param min_side_step
+///@param max_side_step
 
 //                  0   1   2   3     4     5     6     7
 /** Draws a lightning between points.

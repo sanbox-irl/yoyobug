@@ -7,7 +7,6 @@ init_part();
 
 var starting_energy = 3;
 global.energy = starting_energy; 
-global.is_playroom	= false;
 
 
 global.purple1 = make_color_rgb(63,54,86);

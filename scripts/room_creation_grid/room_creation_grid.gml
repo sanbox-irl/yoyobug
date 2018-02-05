@@ -24,51 +24,75 @@ var _h = 0;
 
 #region MAIN
 for (var i = 0; i < height; ++i) {
-    _w = 20 * TILE_WIDTH;
-	_h = 11 * TILE_WIDTH;
-	ds_map_replace(global.room_grid[# MAIN,i],"width",_w);
-	ds_map_replace(global.room_grid[# MAIN,i],"height",_h);
+	_map = global.room_grid[# MAIN, i];
+	var _hcells = 20;
+	var _vcells = 11;
+	_map[? "hcells"] = _hcells;
+	_map[? "vcells"] = _vcells;
+	
+    _w = _hcells * TILE_WIDTH;
+	_h = _vcells * TILE_WIDTH;
+	_map[? "width"] = _w;
+	_map[? "height"] = _h;
 }
 
 //Set the Big Room(s)
-var _chance = 0;
+var _big_number = 0;
 if chance(0.3)	{
-	_chance = 1;
+	_big_number = 1;
 }
 
-repeat (1+_chance)	{
+repeat (1+_big_number)	{
 	var _big_room = irandom_range(0,(height-2));
-	_w = 40*TILE_WIDTH;
-	_h = 22*TILE_WIDTH;
+	var _map = global.room_grid[# MAIN, _big_room];
+	var _hcells = 40;
+	var _vcells = 22;
+	_map[? "hcells"] = _hcells;
+	_map[? "vcells"] = _vcells;
 	
-	ds_map_replace(global.room_grid[# MAIN,_big_room],"width",_w);
-	ds_map_replace(global.room_grid[# MAIN,_big_room],"height",_h);
+	_w = _hcells*TILE_WIDTH;
+	_h = _vcells*TILE_WIDTH;
+	_map[? "width"] = _w;
+	_map[? "height"] = _h;
 }
 #endregion
 
 #region LEFT
 //Left Rooms
 for (var i = 0; i < height; ++i) {
-    _w = 10 * TILE_WIDTH;
-	_h = 6 * TILE_WIDTH;
-	ds_map_replace(global.room_grid[# LEFT_ROOM,i],"width",_w);
-	ds_map_replace(global.room_grid[# LEFT_ROOM,i],"height",_h);
+	_map = global.room_grid[# LEFT_ROOM,i];
+	var _hcells = 10;
+		_vcells = 6;
+	_map[? "hcells"] = _hcells;
+	_map[? "vcells"] = _vcells;
+
+    _w = _hcells * TILE_WIDTH;
+	_h = _vcells * TILE_WIDTH;
+	_map[? "width"] = _w;
+	_map[? "height"] = _h;
 }
 #endregion
 
 #region RIGHT
 //Right Rooms
 for (var i = 0; i < height; ++i) {
-    if chance(0.4)	{
-		_w = 10 * TILE_WIDTH;
-		_h = 6 * TILE_WIDTH;	
+    _map = global.room_grid[# RIGHT_ROOM, i];
+	if chance(0.4)	{
+		var _hcells = 10,
+			_vcells = 6;	
 	} else	{
-		_w = 20 * TILE_WIDTH;
-		_h = 11 * TILE_WIDTH;
+		var _hcells = 20,
+			_vcells = 11;
 	}
+
+	_map[? "hcells"] = _hcells;
+	_map[? "vcells"] = _vcells;
+
+	_w = _hcells*TILE_WIDTH;
+	_h = _vcells*TILE_WIDTH;
 	
-	ds_map_replace(global.room_grid[# RIGHT_ROOM,i],"width",_w);
-	ds_map_replace(global.room_grid[# RIGHT_ROOM,i],"height",_h);
+	_map[? "width"] = _w;
+	_map[? "height"] = _h;
 }
 
 #endregion

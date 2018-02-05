@@ -48,6 +48,17 @@ for (var i = 0; i < width; ++i) {
 		var _map = global.room_grid[# i,k];
 		var _x_orig = MARGIN*2 + incrementer[X_ARRAY]*(i)	-	(ds_map_find_value(_map,"width")/2);
 		var _y_orig = MARGIN*2 + incrementer[Y_ARRAY]*(k)	-	(ds_map_find_value(_map,"height")/2);
+		
+		var _diff = _x_orig mod TILE_WIDTH;
+		if _diff != 0	{
+			_x_orig-= _diff;
+		}
+		
+		var _diff = _y_orig mod TILE_WIDTH;
+		if _diff != 0	{
+			_y_orig-=_diff;	
+		}
+		
 		ds_map_replace(_map,"x_origin",	_x_orig);
 		ds_map_replace(_map,"y_origin", _y_orig);
 	}
