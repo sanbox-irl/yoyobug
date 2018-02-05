@@ -1,9 +1,9 @@
 ///Generate Direction Maps
 for (var i = 0; i < width; ++i) {
     for (var k = 0; k < height; ++k) {
-	    ds_map_replace(global.room_grid[# i,k],"down",false);
+	    ds_map_replace(global.room_grid[# i,k],"bottom",false);
 		ds_map_replace(global.room_grid[# i,k],"left",true);
-		ds_map_replace(global.room_grid[# i,k],"up",false);
+		ds_map_replace(global.room_grid[# i,k],"top",false);
 		ds_map_replace(global.room_grid[# i,k],"right",true);
 		ds_map_replace(global.room_grid[# i,k],"critical",false);
 	}
@@ -24,11 +24,11 @@ do	{
 		x_axis++;
 	}
 	else if steering = 3 {
-		ds_map_replace(global.room_grid[# x_axis, y_axis],"up",true);
+		ds_map_replace(global.room_grid[# x_axis, y_axis],"top",true);
 		ds_map_replace(global.room_grid[# x_axis, y_axis],"critical",true);
 		y_axis--;
 		if (y_axis >= 0)	{
-			ds_map_replace(global.room_grid[# x_axis, y_axis],"down",true);
+			ds_map_replace(global.room_grid[# x_axis, y_axis],"bottom",true);
 			ds_map_replace(global.room_grid[# x_axis, y_axis],"critical",true);
 		}
 	}

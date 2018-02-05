@@ -43,7 +43,7 @@ var incrementer = array_create(2);
 incrementer[X_ARRAY] = room_width/width;
 incrementer[Y_ARRAY] = room_height/height;
 
-for (var i = 0; i < width; ++i) {
+for (var i = 0; i < width; ++i) { 
 	for (var k = 0; k < height; ++k) {
 		var _map = global.room_grid[# i,k];
 		var _x_orig = MARGIN*2 + incrementer[X_ARRAY]*(i)	-	(ds_map_find_value(_map,"width")/2);

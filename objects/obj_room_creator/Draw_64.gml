@@ -26,12 +26,12 @@ for (var _w = 0; _w < width; ++_w) {
 	
 		draw_text(	draw_xorigin + x_change, draw_yorigin	+ y_change,	_dimensions);
 		
-		if ds_map_find_value(_map,"up") == true	{
+		if ds_map_find_value(_map,"top") == true	{
 			draw_sprite_stretched(spr_onepixel,0,
 					(draw_xorigin + x_change + TILE_WIDTH*1.5 ), (draw_yorigin-TILE_WIDTH)+ y_change,10,10);	
 		}
 	
-		if ds_map_find_value(_map,"down") == true	{
+		if ds_map_find_value(_map,"bottom") == true	{
 			draw_sprite_stretched(spr_onepixel,0,
 					(draw_xorigin + x_change + TILE_WIDTH*1.5 ), (draw_yorigin+TILE_WIDTH)+ y_change,10,10);
 		}
