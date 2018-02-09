@@ -4,6 +4,7 @@ var _x, _y;
 nlevel = csv_to_grid("stage0.csv",true,undefined,undefined,undefined);
 nlevel_width = ds_grid_width(nlevel);
 
+
 dedicated_tower_list= ds_list_create();
 tower_list			= ds_list_create();
 walls_list			= ds_list_create();

@@ -55,3 +55,4 @@ if to_be_destroyed	{
 	state_var[0] = 1;
 	state_switch("End_Draw",0);
 }
+

@@ -18,8 +18,8 @@ y_to = y;
 calling_circle = 0;
 move_dir = choose(UP,DOWN,LEFT,RIGHT);
 
-//add yourself to the list
-ds_list_add(global.orange_robots_list,id);
+////add yourself to the list
+//ds_list_add(global.orange_robots_list,id);
 
 //execute powerup
 powerup_script = "";

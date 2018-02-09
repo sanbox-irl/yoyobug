@@ -13,7 +13,11 @@
         "5a7de08e-7149-4c3f-aa34-3a91f9e964df",
         "c52c8305-a3de-4189-bf57-52dd7e286843",
         "31deca73-5f16-4245-b8d7-237bdef6b769",
-        "7f27abc8-31e0-4966-bd54-a68fbf0e8b2d"
+        "7f27abc8-31e0-4966-bd54-a68fbf0e8b2d",
+        "c64b610e-50ce-4ed0-baf3-40f6c136dae4",
+        "6df2536f-3396-42e1-958f-b5db10e34071",
+        "342da8d8-c8c7-448d-85c5-dcc81a252269",
+        "d69cd66e-3936-4564-a9c5-104e183e3e08"
     ],
     "filterType": "GMScript",
     "folderName": "Room Creation Scripts",

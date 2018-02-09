@@ -17,6 +17,13 @@ for (var i = 0; i < width; ++i) {
 	}
 }
 
+//Set Our Generic Map Attributes:
+for (var i = 0; i < width; ++i) {
+    for (var k = 0; k < height; ++k) {
+	   _map =  global.room_grid[# i,k];
+	   _map[? "size"] = 0;
+	}
+}
 
 //Size the Rooms:
 var _w = 0;
@@ -34,6 +41,7 @@ for (var i = 0; i < height; ++i) {
 	_h = _vcells * TILE_WIDTH;
 	_map[? "width"] = _w;
 	_map[? "height"] = _h;
+	_map[? "size"] = "normal" //This is redundant, but keeping for clarity right now.
 }
 
 //Set the Big Room(s)
@@ -54,6 +62,7 @@ repeat (1+_big_number)	{
 	_h = _vcells*TILE_WIDTH;
 	_map[? "width"] = _w;
 	_map[? "height"] = _h;
+	_map[? "size"] = "big";
 }
 #endregion
 
@@ -70,6 +79,8 @@ for (var i = 0; i < height; ++i) {
 	_h = _vcells * TILE_WIDTH;
 	_map[? "width"] = _w;
 	_map[? "height"] = _h;
+
+	_map[? "size"] = "small"
 }
 #endregion
 
@@ -79,10 +90,12 @@ for (var i = 0; i < height; ++i) {
     _map = global.room_grid[# RIGHT_ROOM, i];
 	if chance(0.4)	{
 		var _hcells = 10,
-			_vcells = 6;	
+			_vcells = 6;
+			_map[? "size"] = "small";	
 	} else	{
 		var _hcells = 20,
 			_vcells = 11;
+			_map[? "size"] = "normal";
 	}
 
 	_map[? "hcells"] = _hcells;
@@ -94,5 +107,4 @@ for (var i = 0; i < height; ++i) {
 	_map[? "width"] = _w;
 	_map[? "height"] = _h;
 }
-
 #endregion

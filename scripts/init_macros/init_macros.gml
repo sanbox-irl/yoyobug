@@ -55,3 +55,9 @@ enum ext_tiles	{
 	right_shoulder = ext_tiles.last_top + 3,
 	right_bottom_shoulder = ext_tiles.last_top+4
 }
+
+enum grid_val {
+	ext_walls = 0,
+	none = 1,
+	wall = 2
+}
