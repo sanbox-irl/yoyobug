@@ -21,3 +21,4 @@ var _x = global.ox + TILE_WIDTH*4;
 var _y = global.oy + TILE_WIDTH*3;
 
 instance_create_layer(_x,_y,"Instances",obj_robot);
+

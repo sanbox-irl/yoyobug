@@ -1,3 +1,7 @@
+if not toggle_grid	{
+	exit;	
+}
+
 draw_set_alpha(0.4);
 draw_rectangle_ocolor(0,0,room_width,room_height,c_black,false);
 draw_set_alpha(1);
