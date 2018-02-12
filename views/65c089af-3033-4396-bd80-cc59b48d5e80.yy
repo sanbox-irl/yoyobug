@@ -7,7 +7,7 @@
         "5152da5e-61e1-4446-a240-4a34d7aacab1",
         "8908e09c-05d6-4aff-90ed-26d25adb09be",
         "90e34758-39cb-4035-8e4b-24c1f3be012f",
-        "73e20b9a-3900-43b5-b061-eca8c98e534e"
+        "4775e164-4284-4571-98a2-6bfde4b20570"
     ],
     "filterType": "GMObject",
     "folderName": "In-Game Objects",

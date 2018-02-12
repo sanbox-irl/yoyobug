@@ -60,6 +60,8 @@ for (i=0; i < width; ++i) {
 			
 			door.x_destination = _x_dest;
 			door.y_destination = _y_dest;
+
+			_map[? "left_door"] = door;
 		}
 
 		if _map[? "right"] 	{
@@ -80,7 +82,9 @@ for (i=0; i < width; ++i) {
 				_y_dest = _map_dest[? "y_origin"] + (_map_dest[? "door_left"])*TILE_WIDTH;
 			
 			door.x_destination = _x_dest;
-			door.y_destination = _y_dest;		
+			door.y_destination = _y_dest;
+			
+			_map[? "right_door"] = door;
 		}
 
 		if _map[? "top"] 	{
@@ -102,6 +106,8 @@ for (i=0; i < width; ++i) {
 				
 				door.x_destination = _x_dest;
 				door.y_destination = _y_dest;
+
+				_map[? "top_door"] = door;
 			}
 		}
 
@@ -122,7 +128,9 @@ for (i=0; i < width; ++i) {
 				_y_dest = _map_dest[? "y_origin"] + TILE_WIDTH;
 			
 			door.x_destination = _x_dest;
-			door.y_destination = _y_dest;	
+			door.y_destination = _y_dest;
+
+			_map[? "bottom_door"] = door;
 		}
 
 		

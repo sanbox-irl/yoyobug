@@ -22,11 +22,6 @@ for (var i=0; i < width; i++) {
         var _chunk = _array[0];
         var _string = "";
 
-        if ds_grid_height(_chunk) > 1   {
-            debug_message("This grid is taller than 1. Everything is messed up. You messed up.")
-            debug_message(ds_grid_height(_chunk));
-        }
-
         var _for_length = ds_grid_width(_chunk);
 
         for (var j=0; j<_for_length; j++) { 
@@ -48,8 +43,6 @@ for (var i=0; i < width; i++) {
                     }
             }
         }
-
         _map[? "string"] = _string;
-        debug_message(_string);
     }
 }

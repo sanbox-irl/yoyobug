@@ -2,7 +2,7 @@ if state_new	{
 	invuln_frames = 30;	
 }
 
-if point_distance(x,y,x_to,y_to) > 3	{
+if point_distance(x,y,x_to,y_to) > 5	{
 	x = lerp(x,x_to,0.2);
 	y = lerp(y,y_to,0.2);
 	} else	{

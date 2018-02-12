@@ -12,13 +12,3 @@ repeat (100) {
     }
 }
 
-//Then Make our Standard Game Grid:
-global.game_grid = ds_grid_create(global.current_room[? "hcells"], global.current_room[? "vcells"]);
-room_creation_load_strings(global.current_room);
-
-//Let's Make one Robot:
-var _x = global.ox + TILE_WIDTH*4;
-var _y = global.oy + TILE_WIDTH*3;
-
-instance_create_layer(_x,_y,"Instances",obj_robot);
-

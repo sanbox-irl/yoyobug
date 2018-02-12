@@ -34,7 +34,6 @@ for (var j=0; j<_l; ++j) {
 
     if _obj!=noone{
         var _inst = instance_create_layer(_x,_y,"Instances",_obj);
-        global.game_grid[# i,k] = _inst;
 		ds_list_add(created_list,_inst);
     }
 	i++;

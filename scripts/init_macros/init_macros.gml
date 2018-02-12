@@ -36,14 +36,29 @@
 
 #macro HALF_WIDTH TILE_WIDTH/2
 
+//Grid Enums
+enum grid_name	{
+	free = -4,
+	player = 0,
+	wall = 1,
+	enemy = 2,
+	tower = 3,
+	terminal = 4,
+	solid_obj = 5,
+	door = -1
+}
+
+
+
 //Grid Macros
-#macro FREE			-4
-#macro WALL			1000
-#macro PLAYER		1001
-#macro ENEMY		999
-#macro TOWER		1003
-#macro TERMINAL     998
-#macro SPAWNER		1005
+#macro FREE			grid_name.free
+#macro WALL			grid_name.wall
+#macro PLAYER		grid_name.player
+#macro ENEMY		grid_name.enemy
+#macro TOWER		grid_name.solid_obj
+#macro TERMINAL     grid_name.terminal
+#macro SPAWNER		grid_name.solid_obj
+#macro DOOR			grid_name.door
 
 
 ///ENUMS:

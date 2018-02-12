@@ -5,7 +5,6 @@ if state_var[BOOL_VAR] == 0	{
 	}
 	switch (rcase)	{
 	    case "tutorial":
-	        room_to_go = rm_tutorial;
 	        break;
 	    case "play":
 	        room_to_go = room0;

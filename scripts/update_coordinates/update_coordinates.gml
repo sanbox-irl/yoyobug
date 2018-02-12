@@ -6,7 +6,9 @@ var _input = argument0;
 var x_diff = x - global.ox;
 var y_diff = y - global.oy;
 
-room_coord[X_ARRAY] = (x_diff div TILE_WIDTH);
-room_coord[Y_ARRAY] = (y_diff div TILE_WIDTH);
+if x_diff > 0 && y_diff > 0	{
+	room_coord[X_ARRAY] = (x_diff div TILE_WIDTH);
+	room_coord[Y_ARRAY] = (y_diff div TILE_WIDTH);
+}
 
 global.game_grid[# room_coord[X_ARRAY], room_coord[Y_ARRAY]] = _input;

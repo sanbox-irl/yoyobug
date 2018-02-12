@@ -1,8 +1,8 @@
 {
-    "id": "96eea188-2cc0-4ed2-b8c3-e5fe868ac887",
+    "id": "a455eb43-b2e0-4f18-bbcd-f3180c0fc4ec",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "state_transition_init",
+    "name": "state_room_handler_cleanup",
     "IsCompatibility": false,
     "IsDnD": false
 }

@@ -1,8 +1,8 @@
 {
-    "id": "32794284-fdcb-4741-9143-6f857d179961",
+    "id": "304826e3-b173-4c5b-b538-5eaa51737dcd",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "draw_text_ocolor",
+    "name": "state_door_all_doors_unlocked",
     "IsCompatibility": false,
     "IsDnD": false
 }

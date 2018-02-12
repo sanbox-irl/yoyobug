@@ -12,14 +12,15 @@ draw_set_valign(fa_center);
 draw_set_halign(fa_center);
 draw_set_font(fnt_debugging_font);
 
-
+var hcells = ds_grid_width(global.game_grid),
+	vcells = ds_grid_height(global.game_grid);
 
 
 for (var _w = 0; _w < hcells; ++_w) {
     for (var _h = 0; _h < vcells; ++_h) {
 
-	var id_to_print = string(global.game_grid[# _w,_h]);
-	
+	var id_to_print = global.game_grid[# _w,_h];
+	//id_to_print = debug_convert_to_readable(id_to_print);
 
 	var _x = global.ox + _w*TILE_WIDTH + HALF_WIDTH;
 	var _y = global.oy + _h*TILE_WIDTH + HALF_WIDTH;
@@ -27,3 +28,5 @@ for (var _w = 0; _w < hcells; ++_w) {
 	draw_text(_x,_y,id_to_print);
 	}
 }
+
+draw_set_color(c_white);

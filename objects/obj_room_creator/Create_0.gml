@@ -26,13 +26,8 @@ room_creation_create_doors();
 //Generate Strings for Each Room:
 room_creation_create_strings();
 
-
-//Debug Tools:
-global.update_room = false;
-recycle_rooms = false;
-created_list = ds_list_create();
-recycle_list = ds_list_create();
-
 //Find Our Starting Room:
 room_creation_starting_room();
 
+
+instance_create_layer(0,0,"Controller_Layer",obj_room_handler);

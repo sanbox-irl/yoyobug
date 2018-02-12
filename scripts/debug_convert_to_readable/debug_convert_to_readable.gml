@@ -30,6 +30,10 @@ switch (_id) {
 		_id = "Tower";
 		draw_set_color(c_yellow);
 		break;
+	case DOOR:
+		_id = "DOOR";
+		draw_set_color(c_yellow);
+		break;
 }
 
 return _id;

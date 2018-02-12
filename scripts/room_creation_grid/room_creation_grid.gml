@@ -7,6 +7,8 @@ randomize();
 height = 8;
 width = 3;
 
+global.rooms_height = height;
+global.rooms_width = width;
 
 global.room_grid = ds_grid_create(width,height);
 
@@ -22,6 +24,8 @@ for (var i = 0; i < width; ++i) {
     for (var k = 0; k < height; ++k) {
 	   _map =  global.room_grid[# i,k];
 	   _map[? "size"] = 0;
+	   _map[? "deactivate_list"] = 0;
+	   _map[? "electrified"] = true;
 	}
 }
 

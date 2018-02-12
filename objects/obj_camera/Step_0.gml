@@ -1,8 +1,8 @@
 if update_camera {
-	x_to = ds_map_find_value(global.current_room,"x_origin");
-	y_to = ds_map_find_value(global.current_room,"y_origin");
+	x_to = global.ox;
+	y_to = global.oy;
 	
-	ping_recycle = true;
+	ready_to_ping = true;
 	
 	switch (global.current_room[? "size"]) {
 		case "small":
@@ -24,6 +24,16 @@ if update_camera {
 	update_camera = false;
 }
 
+//Send a ping back to the Room Handler that We're Safely in the New Rooms:
+if ready_to_ping	{
+	if point_distance(x_to,y_to,x,y) < 5	{
+		if instance_exists(obj_room_handler)	{
+			obj_room_handler.begin_recycle = true;	
+		}
+	}
+}
+
+
 x += (x_to - x)/25;
 y += (y_to - y)/25;
 
@@ -41,11 +51,6 @@ shake_remain = max(0,shake_remain-((1/shake_length)*shake_magnitude))
 camera_set_view_pos(view_camera[target_view],x, y);
 camera_set_view_size(view_camera[target_view],width,height)
 
-
-if ((point_distance(x,y,x_to,y_to) < 50) && (ping_recycle == true))	{
-	obj_room_creator.recycle_rooms = true;
-	ping_recycle = false;
-}
 
 if global.dev_mode {
 	debug_camera_step();	

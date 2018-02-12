@@ -17,9 +17,13 @@ with (obj_robot)	{
 			y_move	= yp + lengthdir_y(1,dir_ang);
 
 
-		var col = (global.game_grid[# x_move, y_move] > ENEMY)
+		var col = global.game_grid[# x_move, y_move];
 
-		if col == false	{
+		if col > 0 {
+			col = false;
+		} else col = true;
+
+		if col == true	{
 			x_to = global.ox + x_move*TILE_WIDTH;
 			y_to = global.oy + y_move*TILE_WIDTH;
 			reset_coords = false;

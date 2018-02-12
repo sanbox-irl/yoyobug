@@ -13,8 +13,8 @@ height = height_to;
 
 
 //Find Where to Go:
-x_to = ds_map_find_value(global.current_room,"x_origin");
-y_to = ds_map_find_value(global.current_room,"y_origin");
+x_to = global.ox;
+y_to = global.oy;
 
 x = x_to;
 y = y_to;
@@ -52,4 +52,4 @@ if global.dev_mode = true	{
 	camera_toggle= false;
 }
 update_camera = false;
-ping_recycle = false;
+ready_to_ping = false;

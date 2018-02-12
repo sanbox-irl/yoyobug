@@ -13,7 +13,9 @@
         "c18c83d1-6c2f-4d1a-88a5-e5052af7256b",
         "623b63d2-dc70-4a0b-862c-e756c4f86b76",
         "996ac4f5-db87-409b-b870-e920e00aa9ee",
-        "e66c6040-f112-43e3-a373-5ed00689e609"
+        "e66c6040-f112-43e3-a373-5ed00689e609",
+        "1231f33b-4547-42e3-bd95-d9b48672fde9",
+        "47c6f59e-017e-4c45-95ea-bdaa1e36f2ef"
     ],
     "filterType": "GMScript",
     "folderName": "Grid Scripts",

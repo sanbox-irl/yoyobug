@@ -24,7 +24,9 @@
         "949aecec-1491-4b85-acd4-6933ee58c9d2",
         "3b97659c-23cd-49f5-9d95-13d229079e62",
         "df3f4ea9-15e6-415b-9d75-68c3117825e9",
-        "874423f6-4c58-4425-88f1-0f8376e3782b"
+        "874423f6-4c58-4425-88f1-0f8376e3782b",
+        "02a70094-c292-4330-921a-7274a10be309",
+        "6b0cba69-0538-4dea-bb1c-8fc637fb4e01"
     ],
     "filterType": "GMScript",
     "folderName": "General Game Scripts",

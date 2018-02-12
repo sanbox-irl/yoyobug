@@ -1,3 +1,8 @@
+if not electrified	{
+	exit;	
+}
+
+//Draws the Lines
 for (i = 0; i< TILE_WIDTH;  i+=(TILE_WIDTH)/3) {
     var x_place = x+i*vertical;
     var y_place = y+i*horizontal; 
@@ -5,6 +10,7 @@ for (i = 0; i< TILE_WIDTH;  i+=(TILE_WIDTH)/3) {
 					10+charge_var, 40+charge_var, 2+charge_var, 4+charge_var);
 }
 
+//Draws the Line to Destination
 if !global.dev_mode  {
     exit;
 }
